@@ -51,6 +51,7 @@ namespace UsbMonitor
         
         internal static void HwndHandler(IUsbMonitor monitor, IntPtr hwnd, int msg, IntPtr wparam, IntPtr lparam)
         {
+			// ccc
             if (msg == WM_DEVICECHANGE)
             {
                 UsbDeviceChangeEvent deviceChangeEvent = (UsbDeviceChangeEvent)wparam.ToInt32();
