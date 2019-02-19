@@ -2,6 +2,9 @@
 
 namespace UsbMonitor
 {
+    /// <summary>
+    /// Device interfaces
+    /// </summary>
     public enum UsbDeviceInterface
     {
         /// <summary>

@@ -7,6 +7,9 @@ using System.Runtime.InteropServices;
 
 namespace UsbMonitor
 {
+    /// <summary>
+    /// Device change manager
+    /// </summary>
     public class DeviceChangeManager
     {
         private const int DEVICE_NOTIFY_WINDOW_HANDLE = 0x00000000;
@@ -14,11 +17,22 @@ namespace UsbMonitor
 
         private const int WM_DEVICECHANGE = 0x0219;
 
+        private readonly Guid InterfaceClassGuid = new Guid(0x4d1e55b2, 0xf16f, 0x11cf, 0x88, 0xcb, 0x00, 0x11, 0x11, 0x00, 0x00, 0x30);
+
+
+
         private IntPtr deviceEventHandle;
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public DeviceChangeManager()
         { }
 
+        /// <summary>
+        /// Register windows for notification
+        /// </summary>
+        /// <param name="windowHandle">Windows handle of the main window</param>
         public void Register(IntPtr windowHandle)
         {
             int size = Marshal.SizeOf(typeof(DevBroadcastDeviceInterface));
@@ -27,7 +41,7 @@ namespace UsbMonitor
             deviceInterface.Size = (uint)size;
             deviceInterface.DeviceType = (uint)UsbDeviceType.DeviceInterface; // DBT_DEVTYP_DEVICEINTERFACE;
             deviceInterface.Reserved = 0;
-            //deviceInterface.ClassGuid = new Guid().ToByteArray();
+            deviceInterface.ClassGuid = InterfaceClassGuid;
 
             IntPtr buffer = Marshal.AllocHGlobal(size);
             Marshal.StructureToPtr(deviceInterface, buffer, true);
@@ -40,6 +54,9 @@ namespace UsbMonitor
             Marshal.FreeHGlobal(buffer);
         }
 
+        /// <summary>
+        /// Unregister notifications
+        /// </summary>
         public void Unregister()
         {
             if (this.deviceEventHandle != IntPtr.Zero)
@@ -49,9 +66,16 @@ namespace UsbMonitor
             this.deviceEventHandle = IntPtr.Zero;
         }
         
+        /// <summary>
+        /// Main windows message handler and dispatcher
+        /// </summary>
+        /// <param name="monitor">Monitor class to signal notifications</param>
+        /// <param name="hwnd">Window handle</param>
+        /// <param name="msg">Window message</param>
+        /// <param name="wparam">W parameter</param>
+        /// <param name="lparam">L parameter</param>
         internal static void HwndHandler(IUsbMonitor monitor, IntPtr hwnd, int msg, IntPtr wparam, IntPtr lparam)
         {
-			// ccc
             if (msg == WM_DEVICECHANGE)
             {
                 UsbDeviceChangeEvent deviceChangeEvent = (UsbDeviceChangeEvent)wparam.ToInt32();
@@ -156,7 +180,7 @@ namespace UsbMonitor
                 }
             }
         }
-               
+
         private static T GuidToEnum<T>(Guid guid)
         {
             T en = Enum.GetValues(typeof(T)).Cast<T>().Where(e =>
@@ -180,7 +204,7 @@ namespace UsbMonitor
         }
 
         [StructLayout(LayoutKind.Sequential)]
-        public struct DevBroadcastOEM
+        private struct DevBroadcastOEM
         {
             public uint Size;
             public uint DeviceType;
@@ -190,7 +214,7 @@ namespace UsbMonitor
         }
 
         [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Auto)]
-        struct DevBroadcastPort
+        private struct DevBroadcastPort
         {
             public uint Size;
             public uint DeviceType;
@@ -200,7 +224,7 @@ namespace UsbMonitor
         }
 
         [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Auto)]
-        public struct DevBroadcastDeviceInterface
+        private struct DevBroadcastDeviceInterface
         {
             public uint Size;
             public uint DeviceType;
@@ -211,7 +235,7 @@ namespace UsbMonitor
         }
 
         [StructLayout(LayoutKind.Sequential)]
-        public struct DevBroadcastVolume
+        private struct DevBroadcastVolume
         {
             public uint Size;
             public uint DeviceType;
@@ -221,7 +245,7 @@ namespace UsbMonitor
         }
 
         [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Auto)]
-        struct DevBroadcastHandle
+        private struct DevBroadcastHandle
         {
             public uint Size;
             public uint DeviceType;
