@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace UsbMonitor
+﻿namespace UsbMonitor
 {
-    
+
     public class UsbEventOemArgs : UsbEventArgs
     {
         public UsbEventOemArgs(UsbDeviceChangeEvent action, uint identifier, uint suppFunc) : base(action)
