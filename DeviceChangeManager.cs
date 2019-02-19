@@ -48,144 +48,114 @@ namespace UsbMonitor
             }
             this.deviceEventHandle = IntPtr.Zero;
         }
-
-        public static UsbEventOemArgs OnDeviceOem(UsbDeviceChangeEvent action, IntPtr lparam)
-        {
-            var oem = (DevBroadcastOEM)Marshal.PtrToStructure(lparam, typeof(DevBroadcastOEM));
-            Debug.WriteLine($"OEM: Size={oem.Size}, DeviceType={oem.DeviceType}, Reserved={oem.Reserved}, Identifier={oem.Identifier}, SuppFunc={oem.SuppFunc}");
-            return new UsbEventOemArgs(action, oem.Identifier, oem.SuppFunc);
-        }
-
-        public static UsbEventVolumeArgs OnDeviceVolume(UsbDeviceChangeEvent action, IntPtr lparam)
-        {
-            var volume = (DevBroadcastVolume)Marshal.PtrToStructure(lparam, typeof(DevBroadcastVolume));
-            char[] drives = DrivesFromMask(volume.UnitMask);
-            string drivesStr = drives.Select(d => $"{d}:").Aggregate((a, b) => $"{a}, {b}");
-            Debug.WriteLine($"Volume: size={volume.Size}, deviceType={volume.DeviceType}, reserved={volume.Reserved}, unitmask={volume.UnitMask}, flags={volume.Flags}, drives={drivesStr}");
-            return new UsbEventVolumeArgs(action, volume.UnitMask, volume.Flags, drives);
-        }
-
-        public static UsbEventPortArgs OnDevicePort(UsbDeviceChangeEvent action, IntPtr lparam)
-        {
-            var port = (DevBroadcastPort)Marshal.PtrToStructure(lparam, typeof(DevBroadcastPort));
-            Debug.WriteLine($"Port: Size={port.Size}, DeviceType={port.DeviceType}, Reserved={port.Reserved}, Name={port.Name}");
-            return new UsbEventPortArgs(action, port.Name);
-        }
-
-        public static UsbEventDeviceInterfaceArgs OnDeviceInterface(UsbDeviceChangeEvent action, IntPtr lparam)
-        {
-            var device = (DevBroadcastDeviceInterface)Marshal.PtrToStructure(lparam, typeof(DevBroadcastDeviceInterface));
-            Debug.WriteLine($"DeviceInterface: Size={device.Size}, DeviceType={device.DeviceType}, Reserved={device.Reserved}, ClassGuid={device.ClassGuid}, Name={device.Name}");
-            return new UsbEventDeviceInterfaceArgs(action, device.ClassGuid, GuidToEnum<UsbDeviceInterface>(device.ClassGuid), device.Name);
-        }
-
-        public static UsbEventHandleArgs OnDeviceHandle(UsbDeviceChangeEvent action, IntPtr lparam)
-        {
-            var handle = (DevBroadcastHandle)Marshal.PtrToStructure(lparam, typeof(DevBroadcastHandle));
-            Debug.WriteLine($"DeviceInterface: Size={handle.Size}, DeviceType={handle.DeviceType}, Reserved={handle.Reserved}, Handle={handle.Handle}, DevNotify={handle.DevNotify}, EventGuid={handle.EventGuid}, NameOffset={handle.NameOffset}, Data={handle.Data}");
-            return new UsbEventHandleArgs(action, handle.Handle, handle.DevNotify, handle.EventGuid, handle.NameOffset, handle.Data);
-        }
-
-        internal static IntPtr HwndHandler(IUsbMonitor monitor, IntPtr hwnd, int msg, IntPtr wparam, IntPtr lparam, ref bool handled)
+        
+        internal static void HwndHandler(IUsbMonitor monitor, IntPtr hwnd, int msg, IntPtr wparam, IntPtr lparam)
         {
             if (msg == WM_DEVICECHANGE)
             {
                 UsbDeviceChangeEvent deviceChangeEvent = (UsbDeviceChangeEvent)wparam.ToInt32();
                 switch (deviceChangeEvent)
                 {
-                    case UsbDeviceChangeEvent.Arrival:
-                    case UsbDeviceChangeEvent.QueryRemove:
-                    case UsbDeviceChangeEvent.QueryRemoveFailed:
-                    case UsbDeviceChangeEvent.RemovePending:
-                    case UsbDeviceChangeEvent.RemoveComplete:
-                        UsbDeviceType deviceType = (UsbDeviceType)Marshal.ReadInt32(lparam, 4);
-                        switch (deviceType)
-                        {
-                            case UsbDeviceType.OEM:
-                                var oemArgs = OnDeviceOem(deviceChangeEvent, lparam);
-                                // fire event
-                                (monitor as IUsbMonitorEvents)?.CallUsbOem(monitor, oemArgs);
-                                // execute command
-                                if ((monitor as IUsbMonitorCommands)?.UsbOemCommand?.CanExecute(oemArgs) ?? false)
-                                {
-                                    (monitor as IUsbMonitorCommands)?.UsbOemCommand?.Execute(oemArgs);
-                                }
-                                // call virtual method
-                                (monitor as IUsbMonitorOverrides)?.OnUsbOem(oemArgs);
-                                break;
-                            case UsbDeviceType.Volume:
-                                var volumeArgs = OnDeviceVolume(deviceChangeEvent, lparam);
-                                // fire event
-                                (monitor as IUsbMonitorEvents)?.CallUsbVolumem(monitor, volumeArgs);
-                                // execute command
-                                if ((monitor as IUsbMonitorCommands)?.UsbVolumeCommand?.CanExecute(volumeArgs) ?? false)
-                                {
-                                    (monitor as IUsbMonitorCommands)?.UsbVolumeCommand?.Execute(volumeArgs);
-                                }
-                                // call virtual method
-                                (monitor as IUsbMonitorOverrides)?.OnUsbVolume(volumeArgs);
-                                break;
-                            case UsbDeviceType.Port:
-                                var portArgs = OnDevicePort(deviceChangeEvent, lparam);
-                                // fire event
-                                (monitor as IUsbMonitorEvents)?.CallUsbPort(monitor, portArgs);
-                                // execute command
-                                if ((monitor as IUsbMonitorCommands)?.UsbPortCommand?.CanExecute(portArgs) ?? false)
-                                {
-                                    (monitor as IUsbMonitorCommands)?.UsbPortCommand?.Execute(portArgs);
-                                }
-                                // call virtual method
-                                (monitor as IUsbMonitorOverrides)?.OnUsbPort(portArgs);
-                                break;
-                            case UsbDeviceType.DeviceInterface:
-                                var interfaceArgs = OnDeviceInterface(deviceChangeEvent, lparam);
-                                // fire event
-                                var x = (monitor as IUsbMonitorEvents);
-                                (monitor as IUsbMonitorEvents)?.CallUsbDeviceInterface(monitor, interfaceArgs);
-                                // execute command
-                                if ((monitor as IUsbMonitorCommands)?.UsbDeviceInterfaceCommand?.CanExecute(interfaceArgs) ?? false)
-                                {
-                                    (monitor as IUsbMonitorCommands)?.UsbDeviceInterfaceCommand?.Execute(interfaceArgs);
-                                }
-                                // call virtual method
-                                (monitor as IUsbMonitorOverrides)?.OnUsbInterface(interfaceArgs);
-                                break;
-                            case UsbDeviceType.Handle:
-                                var handleArgs = OnDeviceHandle(deviceChangeEvent, lparam);
-                                // fire event
-                                (monitor as IUsbMonitorEvents)?.CallUsbHandle(monitor, handleArgs);
-                                // execute command
-                                if ((monitor as IUsbMonitorCommands)?.UsbHandleCommand?.CanExecute(handleArgs) ?? false)
-                                {
-                                    (monitor as IUsbMonitorCommands)?.UsbHandleCommand?.Execute(handleArgs);
-                                }
-                                // call virtual method
-                                (monitor as IUsbMonitorOverrides)?.OnUsbHandle(handleArgs);
-                                break;
-                            default:
-                                break;
-                        }
-                        break;
-                    case UsbDeviceChangeEvent.Changed:
-                        var changedArgs = new UsbEventArgs(deviceChangeEvent);
+                case UsbDeviceChangeEvent.Arrival:
+                case UsbDeviceChangeEvent.QueryRemove:
+                case UsbDeviceChangeEvent.QueryRemoveFailed:
+                case UsbDeviceChangeEvent.RemovePending:
+                case UsbDeviceChangeEvent.RemoveComplete:
+                    UsbDeviceType deviceType = (UsbDeviceType)Marshal.ReadInt32(lparam, 4);
+                    switch (deviceType)
+                    {
+                    case UsbDeviceType.OEM:
+                        var oem = (DevBroadcastOEM)Marshal.PtrToStructure(lparam, typeof(DevBroadcastOEM));
+                        Debug.WriteLine($"OEM: Size={oem.Size}, DeviceType={oem.DeviceType}, Reserved={oem.Reserved}, Identifier={oem.Identifier}, SuppFunc={oem.SuppFunc}");
+                        var oemArgs = new UsbEventOemArgs(deviceChangeEvent, oem.Identifier, oem.SuppFunc);
                         // fire event
-                        (monitor as IUsbMonitorEvents)?.CallUsbChanged(monitor, changedArgs);
+                        (monitor as IUsbMonitorEvents)?.CallUsbOem(monitor, oemArgs);
                         // execute command
-                        if ((monitor as IUsbMonitorCommands)?.UsbChangedCommand?.CanExecute(changedArgs) ?? false)
+                        if ((monitor as IUsbMonitorCommands)?.UsbOemCommand?.CanExecute(oemArgs) ?? false)
                         {
-                            (monitor as IUsbMonitorCommands)?.UsbChangedCommand?.Execute(changedArgs);
+                            (monitor as IUsbMonitorCommands)?.UsbOemCommand?.Execute(oemArgs);
                         }
                         // call virtual method
-                        (monitor as IUsbMonitorOverrides)?.OnUsbChanged(changedArgs);
+                        (monitor as IUsbMonitorOverrides)?.OnUsbOem(oemArgs);
                         break;
+                    case UsbDeviceType.Volume:
+                        var volume = (DevBroadcastVolume)Marshal.PtrToStructure(lparam, typeof(DevBroadcastVolume));
+                        char[] drives = DrivesFromMask(volume.UnitMask);
+                        string drivesStr = drives.Select(d => $"{d}:").Aggregate((a, b) => $"{a}, {b}");
+                        Debug.WriteLine($"Volume: size={volume.Size}, deviceType={volume.DeviceType}, reserved={volume.Reserved}, unitmask={volume.UnitMask}, flags={volume.Flags}, drives={drivesStr}");
+                        var volumeArgs = new UsbEventVolumeArgs(deviceChangeEvent, volume.UnitMask, volume.Flags, drives);
+                        // fire event
+                        (monitor as IUsbMonitorEvents)?.CallUsbVolumem(monitor, volumeArgs);
+                        // execute command
+                        if ((monitor as IUsbMonitorCommands)?.UsbVolumeCommand?.CanExecute(volumeArgs) ?? false)
+                        {
+                            (monitor as IUsbMonitorCommands)?.UsbVolumeCommand?.Execute(volumeArgs);
+                        }
+                        // call virtual method
+                        (monitor as IUsbMonitorOverrides)?.OnUsbVolume(volumeArgs);
+                        break;
+                    case UsbDeviceType.Port:
+                        var port = (DevBroadcastPort)Marshal.PtrToStructure(lparam, typeof(DevBroadcastPort));
+                        Debug.WriteLine($"Port: Size={port.Size}, DeviceType={port.DeviceType}, Reserved={port.Reserved}, Name={port.Name}");
+                        var portArgs = new UsbEventPortArgs(deviceChangeEvent, port.Name);
+                        // fire event
+                        (monitor as IUsbMonitorEvents)?.CallUsbPort(monitor, portArgs);
+                        // execute command
+                        if ((monitor as IUsbMonitorCommands)?.UsbPortCommand?.CanExecute(portArgs) ?? false)
+                        {
+                            (monitor as IUsbMonitorCommands)?.UsbPortCommand?.Execute(portArgs);
+                        }
+                        // call virtual method
+                        (monitor as IUsbMonitorOverrides)?.OnUsbPort(portArgs);
+                        break;
+                    case UsbDeviceType.DeviceInterface:
+                        var device = (DevBroadcastDeviceInterface)Marshal.PtrToStructure(lparam, typeof(DevBroadcastDeviceInterface));
+                        Debug.WriteLine($"DeviceInterface: Size={device.Size}, DeviceType={device.DeviceType}, Reserved={device.Reserved}, ClassGuid={device.ClassGuid}, Name={device.Name}");
+                        var interfaceArgs = new UsbEventDeviceInterfaceArgs(deviceChangeEvent, device.ClassGuid, GuidToEnum<UsbDeviceInterface>(device.ClassGuid), device.Name);
+                        // fire event
+                        (monitor as IUsbMonitorEvents)?.CallUsbDeviceInterface(monitor, interfaceArgs);
+                        // execute command
+                        if ((monitor as IUsbMonitorCommands)?.UsbDeviceInterfaceCommand?.CanExecute(interfaceArgs) ?? false)
+                        {
+                            (monitor as IUsbMonitorCommands)?.UsbDeviceInterfaceCommand?.Execute(interfaceArgs);
+                        }
+                        // call virtual method
+                        (monitor as IUsbMonitorOverrides)?.OnUsbInterface(interfaceArgs);
+                        break;
+                    case UsbDeviceType.Handle:
+                        var handle = (DevBroadcastHandle)Marshal.PtrToStructure(lparam, typeof(DevBroadcastHandle));
+                        Debug.WriteLine($"DeviceInterface: Size={handle.Size}, DeviceType={handle.DeviceType}, Reserved={handle.Reserved}, Handle={handle.Handle}, DevNotify={handle.DevNotify}, EventGuid={handle.EventGuid}, NameOffset={handle.NameOffset}, Data={handle.Data}");
+                        var handleArgs = new UsbEventHandleArgs(deviceChangeEvent, handle.Handle, handle.DevNotify, handle.EventGuid, handle.NameOffset, handle.Data);
+                        // fire event
+                        (monitor as IUsbMonitorEvents)?.CallUsbHandle(monitor, handleArgs);
+                        // execute command
+                        if ((monitor as IUsbMonitorCommands)?.UsbHandleCommand?.CanExecute(handleArgs) ?? false)
+                        {
+                            (monitor as IUsbMonitorCommands)?.UsbHandleCommand?.Execute(handleArgs);
+                        }
+                        // call virtual method
+                        (monitor as IUsbMonitorOverrides)?.OnUsbHandle(handleArgs);
+                        break;
+                    default:
+                        break;
+                    }
+                    break;
+                case UsbDeviceChangeEvent.Changed:
+                    var changedArgs = new UsbEventArgs(deviceChangeEvent);
+                    // fire event
+                    (monitor as IUsbMonitorEvents)?.CallUsbChanged(monitor, changedArgs);
+                    // execute command
+                    if ((monitor as IUsbMonitorCommands)?.UsbChangedCommand?.CanExecute(changedArgs) ?? false)
+                    {
+                        (monitor as IUsbMonitorCommands)?.UsbChangedCommand?.Execute(changedArgs);
+                    }
+                    // call virtual method
+                    (monitor as IUsbMonitorOverrides)?.OnUsbChanged(changedArgs);
+                    break;
                 }
             }
-            handled = false;
-            return IntPtr.Zero;
         }
-
-
-
+               
         private static T GuidToEnum<T>(Guid guid)
         {
             T en = Enum.GetValues(typeof(T)).Cast<T>().Where(e =>

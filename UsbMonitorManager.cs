@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Runtime.InteropServices;
 
 namespace UsbMonitor
 {
@@ -8,8 +7,6 @@ namespace UsbMonitor
     /// </summary>
     public partial class UsbMonitorManager : DeviceChangeManager, IUsbMonitorEvents
     {
-        //private const int WM_DEVICECHANGE = 0x0219;
-       
         private IntPtr windowHandle;
 
         #region IUsbMonitorEvents
@@ -86,60 +83,5 @@ namespace UsbMonitor
         {
             Unregister();
         }
-
-        //private IntPtr HwndHandler(IntPtr hwnd, int msg, IntPtr wparam, IntPtr lparam, ref bool handled)
-        //{
-        //    DeviceChangeManager.HwndHandler(this, hwnd, msg, wparam, lparam, ref handled);
-        //    //if (msg == WM_DEVICECHANGE)
-        //    //{
-        //    //    UsbDeviceChangeEvent deviceChangeEvent = (UsbDeviceChangeEvent)wparam.ToInt32();
-        //    //    switch (deviceChangeEvent)
-        //    //    {
-        //    //    case UsbDeviceChangeEvent.Arrival:
-        //    //    case UsbDeviceChangeEvent.QueryRemove:
-        //    //    case UsbDeviceChangeEvent.QueryRemoveFailed:
-        //    //    case UsbDeviceChangeEvent.RemovePending:
-        //    //    case UsbDeviceChangeEvent.RemoveComplete:
-        //    //        UsbDeviceType deviceType = (UsbDeviceType)Marshal.ReadInt32(lparam, 4);
-        //    //        switch (deviceType)
-        //    //        {
-        //    //        case UsbDeviceType.OEM:
-        //    //            var oemArgs = OnDeviceOem(deviceChangeEvent, lparam);
-        //    //            // fire event
-        //    //            this.UsbOem?.Invoke(this, oemArgs);
-        //    //            break;
-        //    //        case UsbDeviceType.Volume:
-        //    //            var volumeArgs = OnDeviceVolume(deviceChangeEvent, lparam);
-        //    //            // fire event
-        //    //            this.UsbVolume?.Invoke(this, volumeArgs);
-        //    //            break;
-        //    //        case UsbDeviceType.Port:
-        //    //            var portArgs = OnDevicePort(deviceChangeEvent, lparam);
-        //    //            // fire event
-        //    //            this.UsbPort?.Invoke(this, portArgs);
-        //    //            break;
-        //    //        case UsbDeviceType.DeviceInterface:
-        //    //            var interfaceArgs = OnDeviceInterface(deviceChangeEvent, lparam);
-        //    //            // fire event
-        //    //            this.UsbDeviceInterface?.Invoke(this, interfaceArgs);
-        //    //            break;
-        //    //        case UsbDeviceType.Handle:
-        //    //            var handleArgs = OnDeviceHandle(deviceChangeEvent, lparam);
-        //    //            // fire event
-        //    //            this.UsbHandle?.Invoke(this, handleArgs);
-        //    //            break;
-        //    //        default:
-        //    //            break;
-        //    //        }
-        //    //        break;
-        //    //    case UsbDeviceChangeEvent.Changed:
-        //    //        // fire event
-        //    //        this.UsbChanged?.Invoke(this, new UsbEventArgs(deviceChangeEvent));
-        //    //        break;
-        //    //    }
-        //    //}
-        //    handled = false;
-        //    return IntPtr.Zero;
-        //}
     }
 }
