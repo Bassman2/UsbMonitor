@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Topics>
+  <Topic id="ef3e50b7-de80-4612-b398-e61c2faa511f" visible="True" isDefault="true" title="Welcome to the WPF USB Monitor">
+    <HelpKeywords>
+      <HelpKeyword index="K" term="Welcome" />
+    </HelpKeywords>
+  </Topic>
+  <Topic id="b456dacb-1cca-402f-9d1b-4fc3447d4846" visible="True" isSelected="true" title="Version History">
+    <HelpKeywords>
+      <HelpKeyword index="K" term="version, history" />
+    </HelpKeywords>
+  </Topic>
+</Topics>

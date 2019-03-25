@@ -1,0 +1,90 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UsbMonitorShare", "UsbMonitorShare\UsbMonitorShare.shproj", "{BD41BE34-5D22-458E-B6C3-A9D76FB8A0E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsDeviceCatcherEvent", "FormsDeviceCatcherEvent\FormsDeviceCatcherEvent.csproj", "{CDCA91FA-1944-4C6E-AF9E-3F0F3689E47E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsDeviceCatcherMember", "FormsDeviceCatcherMember\FormsDeviceCatcherMember.csproj", "{955B0715-33F6-4007-B3AC-44E7D706599C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsDeviceCatcherOverride", "FormsDeviceCatcherOverride\FormsDeviceCatcherOverride.csproj", "{97FFA554-3F5B-4153-A803-D85546F13F7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsUsbMonitor", "FormsUsbMonitor\FormsUsbMonitor.csproj", "{13347870-A28F-4965-82AF-9900536E1274}"
+EndProject
+Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "FormsUsbMonitorDocumentation", "FormsUsbMonitorDocumentation\FormsUsbMonitorDocumentation.shfbproj", "{C4F78FBA-4939-4782-8883-79216AAD99FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDeviceCatcherEvent", "WpfDeviceCatcherEvent\WpfDeviceCatcherEvent.csproj", "{FE03FB5A-3906-4093-8645-16D98AA054FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDeviceCatcherMember", "WpfDeviceCatcherMember\WpfDeviceCatcherMember.csproj", "{2A2D7ED9-B247-48CD-92E5-574ECC7CA87F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDeviceCatcherMvvm", "WpfDeviceCatcherMvvm\WpfDeviceCatcherMvvm.csproj", "{373DFC1B-22F1-4356-A50E-C7F5C19DFF20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDeviceCatcherOverride", "WpfDeviceCatcherOverride\WpfDeviceCatcherOverride.csproj", "{DC34D9F2-CF25-4A17-9738-34E6F5C18348}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfUsbMonitor", "WpfUsbMonitor\WpfUsbMonitor.csproj", "{64F9FA98-B57C-4AE0-9C31-A72F74FC2D51}"
+EndProject
+Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "WpfUsbMonitorDocumentation", "WpfUsbMonitorDocumentation\WpfUsbMonitorDocumentation.shfbproj", "{505B0644-89B7-424D-88BE-9949C6D6FF9A}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		UsbMonitorShare\UsbMonitorShare.projitems*{13347870-a28f-4965-82af-9900536e1274}*SharedItemsImports = 4
+		UsbMonitorShare\UsbMonitorShare.projitems*{64f9fa98-b57c-4ae0-9c31-a72f74fc2d51}*SharedItemsImports = 4
+		UsbMonitorShare\UsbMonitorShare.projitems*{bd41be34-5d22-458e-b6c3-a9d76fb8a0e4}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDCA91FA-1944-4C6E-AF9E-3F0F3689E47E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDCA91FA-1944-4C6E-AF9E-3F0F3689E47E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDCA91FA-1944-4C6E-AF9E-3F0F3689E47E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDCA91FA-1944-4C6E-AF9E-3F0F3689E47E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{955B0715-33F6-4007-B3AC-44E7D706599C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{955B0715-33F6-4007-B3AC-44E7D706599C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{955B0715-33F6-4007-B3AC-44E7D706599C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{955B0715-33F6-4007-B3AC-44E7D706599C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97FFA554-3F5B-4153-A803-D85546F13F7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97FFA554-3F5B-4153-A803-D85546F13F7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97FFA554-3F5B-4153-A803-D85546F13F7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97FFA554-3F5B-4153-A803-D85546F13F7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13347870-A28F-4965-82AF-9900536E1274}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13347870-A28F-4965-82AF-9900536E1274}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13347870-A28F-4965-82AF-9900536E1274}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13347870-A28F-4965-82AF-9900536E1274}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4F78FBA-4939-4782-8883-79216AAD99FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4F78FBA-4939-4782-8883-79216AAD99FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4F78FBA-4939-4782-8883-79216AAD99FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE03FB5A-3906-4093-8645-16D98AA054FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE03FB5A-3906-4093-8645-16D98AA054FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE03FB5A-3906-4093-8645-16D98AA054FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE03FB5A-3906-4093-8645-16D98AA054FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A2D7ED9-B247-48CD-92E5-574ECC7CA87F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A2D7ED9-B247-48CD-92E5-574ECC7CA87F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A2D7ED9-B247-48CD-92E5-574ECC7CA87F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A2D7ED9-B247-48CD-92E5-574ECC7CA87F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{373DFC1B-22F1-4356-A50E-C7F5C19DFF20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{373DFC1B-22F1-4356-A50E-C7F5C19DFF20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{373DFC1B-22F1-4356-A50E-C7F5C19DFF20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{373DFC1B-22F1-4356-A50E-C7F5C19DFF20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC34D9F2-CF25-4A17-9738-34E6F5C18348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC34D9F2-CF25-4A17-9738-34E6F5C18348}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC34D9F2-CF25-4A17-9738-34E6F5C18348}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC34D9F2-CF25-4A17-9738-34E6F5C18348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64F9FA98-B57C-4AE0-9C31-A72F74FC2D51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64F9FA98-B57C-4AE0-9C31-A72F74FC2D51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64F9FA98-B57C-4AE0-9C31-A72F74FC2D51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64F9FA98-B57C-4AE0-9C31-A72F74FC2D51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{505B0644-89B7-424D-88BE-9949C6D6FF9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{505B0644-89B7-424D-88BE-9949C6D6FF9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{505B0644-89B7-424D-88BE-9949C6D6FF9A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {94CA31E8-A28A-4CA9-999F-98CFFA08EFF4}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="f66f8b7e-a953-4524-8547-b51265e7787e" revisionNumber="1">
+	<developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<introduction>
+			<para>The topics in this section describe the various changes made to the Forms USB Monitor over the life of the project.</para>
+		</introduction>
+
+    <section>
+      <title>Version 2.0 was released on Feb. 20th, 2019.</title>
+			<content>
+				<list class="bullet">
+					<listItem>
+            <para>New interface (split of events)</para>
+					</listItem>
+        </list>
+      </content>
+    </section>
+
+		<relatedTopics>
+			<link xlink:href="ab5d4d52-2886-4a37-8eff-45565f95e13c" />
+		</relatedTopics>
+
+	</developerConceptualDocument>
+</topic>
