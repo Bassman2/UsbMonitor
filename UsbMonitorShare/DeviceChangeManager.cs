@@ -185,7 +185,7 @@ namespace UsbMonitor
         {
             T en = Enum.GetValues(typeof(T)).Cast<T>().Where(e =>
             {
-                return e.GetType().GetField(e.ToString()).GetCustomAttribute<GuidAttribute>().Guid == guid;
+                return e.GetType().GetField(e.ToString()).GetCustomAttribute<EnumGuidAttribute>().Guid == guid;
             }).FirstOrDefault();
             return en;
         }
@@ -213,7 +213,11 @@ namespace UsbMonitor
             public uint SuppFunc;
         }
 
+#if WINDOWS_UWP
+        [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Ansi)]
+#else
         [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Auto)]
+#endif
         private struct DevBroadcastPort
         {
             public uint Size;
@@ -223,7 +227,11 @@ namespace UsbMonitor
             public String Name;
         }
 
+#if WINDOWS_UWP
+        [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Ansi)]
+#else
         [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Auto)]
+#endif
         private struct DevBroadcastDeviceInterface
         {
             public uint Size;
@@ -244,7 +252,11 @@ namespace UsbMonitor
             public ushort Flags;
         }
 
+#if WINDOWS_UWP
+        [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Ansi)]
+#else
         [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Auto)]
+#endif
         private struct DevBroadcastHandle
         {
             public uint Size;
