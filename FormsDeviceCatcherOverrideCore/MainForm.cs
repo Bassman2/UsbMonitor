@@ -1,6 +1,6 @@
 ﻿using UsbMonitor;
 
-namespace DeviceCatcherMember
+namespace DeviceCatcherOverride
 {
     public partial class MainForm : UsbMonitorForm
     {

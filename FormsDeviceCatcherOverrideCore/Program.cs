@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace DeviceCatcherMember
+namespace DeviceCatcherOverride
 {
     static class Program
     {

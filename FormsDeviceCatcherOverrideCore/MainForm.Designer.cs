@@ -1,4 +1,4 @@
-﻿namespace DeviceCatcherMember
+﻿namespace DeviceCatcherOverride
 {
     partial class MainForm
     {
@@ -43,16 +43,15 @@
             this.textBox.Size = new System.Drawing.Size(800, 450);
             this.textBox.TabIndex = 0;
             // 
-            // MainForm
+            // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.textBox);
             this.Name = "MainForm";
             this.Text = "Device Catcher Override";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
