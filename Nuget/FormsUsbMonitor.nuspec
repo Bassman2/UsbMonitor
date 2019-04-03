@@ -1,24 +1,33 @@
 <?xml version="1.0"?>
 <package>
   <metadata>
-    <id>$id$</id>
-    <version>$version$</version>
-    <title>$title$</title>
+    <id>FormsUsbMonitor</id>
+    <version>2.1</version>
+    <title>FormsUsbMonitor</title>
     <authors>Ralf Beckers</authors>
     <owners>Ralf Beckers</owners>
     <license type="expression">MIT</license>
-    <projectUrl>https://github.com/Bassman2/FormsUsbMonitor</projectUrl>
+    <projectUrl>https://github.com/Bassman2/UsbMonitor</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Forms implementation of a USB monitor to signal if a USB device is plugged in or out. Documentation included.</description>
     <releaseNotes>Creation</releaseNotes>
     <copyright>Copyright 2017 - 2019 by Ralf Beckers</copyright>
     <tags>Forms USB Monitor</tags>
+	<repository type="Github" url="https://github.com/Bassman2/JenkinsWebApi" />
     <dependencies>
       <group targetFramework=".NETFramework4.5" />
+	  <group targetFramework=".NETCoreApp3.0" />
+	  
+	  
+	  
+      <group targetFramework=".NETStandard2.0" />
+      <group targetFramework="UAP1.0" />
     </dependencies>
   </metadata>
   <files>
-    <file src="FormsUsbMonitorLicense.txt" target="content" />
+    <file src="UsbMonitorLicense.txt" target="content" />
     <file src="..\FormsUsbMonitorDocumentation\Help\FormsUsbMonitor.chm" target="content" />
+	<file src="..\FormsUsbMonitor\bin\Release\**" target="lib/net45" />
+	<file src="..\FormsUsbMonitorCore\bin\Release\netcoreapp3.0\**" target="lib/netcoreapp3.0" />
   </files>
 </package>
