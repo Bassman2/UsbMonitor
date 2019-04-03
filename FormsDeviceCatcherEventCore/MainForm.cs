@@ -1,6 +1,7 @@
 ﻿using UsbMonitor;
 
-namespace DeviceCatcherMember
+
+namespace DeviceCatcherEvent
 {
     public partial class MainForm : UsbMonitorForm
     {
@@ -8,7 +9,7 @@ namespace DeviceCatcherMember
         {
             InitializeComponent();
 
-            this.UsbOem += (s,e) => { this.textBox.Text += e.ToString() + "\r\n"; }; 
+            this.UsbOem += (s, e) => { this.textBox.Text += e.ToString() + "\r\n"; };
             this.UsbVolume += (s, e) => { this.textBox.Text += e.ToString() + "\r\n"; };
             this.UsbPort += (s, e) => { this.textBox.Text += e.ToString() + "\r\n"; };
             this.UsbDeviceInterface += (s, e) => { this.textBox.Text += e.ToString() + "\r\n"; };
