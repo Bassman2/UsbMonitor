@@ -1,0 +1,50 @@
+version: 1.0.{build}
+image: Visual Studio 2017
+
+
+environment:
+  matrix:
+    #- PlatformToolset: v140
+    - PlatformToolset: v141
+
+platform:
+    - Any CPU
+    - x86
+    - x64
+    - ARM64
+    - ARM
+
+configuration:
+    - Release
+    - Debug
+
+build_script:
+    - cd "%APPVEYOR_BUILD_FOLDER%"
+    - msbuild UsbMonitor.sln /m /verbosity:minimal /t:FormsDeviceCatcherEvent;FormsDeviceCatcherMember;FormsDeviceCatcherOverride;FormsUsbMonitor;WpfDeviceCatcherEvent;WpfDeviceCatcherMember;WpfDeviceCatcherMvvm;WpfDeviceCatcherOverride;WpfUsbMonitor;UwpUsbMonitor;UwpDeviceCatchMember  /p:configuration="%configuration%" /p:platform="%platform%" /p:PlatformToolset="%PlatformToolset%" /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
+
+# after_build:
+    # - cd "%APPVEYOR_BUILD_FOLDER%"
+    # - ps: >-
+        # Push-AppveyorArtifact "WpfUsbMonitor\bin\$env:CONFIGURATION\WpfUsbMonitor.dll" -FileName WpfUsbMonitor.dll
+
+        # if ($($env:APPVEYOR_REPO_TAG) -eq "true" -and $env:CONFIGURATION -eq "Release" -and $env:PLATFORMTOOLSET -eq "v141") {
+            # $ZipFileName = "WpfUsbMonitor_$($env:APPVEYOR_REPO_TAG_NAME).zip"
+            # 7z a $ZipFileName WpfUsbMonitor\bin\$env:CONFIGURATION\WpfUsbMonitor.dll
+        # }
+
+# artifacts:
+  # - path: WpfUsbMonitor_*.zip
+    # name: releases
+
+# deploy:
+    # provider: GitHub
+    # auth_token:
+        # secure: !!TODO, see https://www.appveyor.com/docs/deployment/github/#provider-settings!!
+    # artifact: releases
+    # draft: false
+    # prerelease: false
+    # force_update: true
+    # on:
+        # appveyor_repo_tag: true
+        # PlatformToolset: v141
+        # configuration: Release
