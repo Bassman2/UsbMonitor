@@ -2,6 +2,9 @@
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Interop;
+using System.Windows.Markup;
+
+[assembly: XmlnsDefinition("http://schemas.microsoft.com/winfx/2006/xaml/presentation", "UsbMonitor")]
 
 namespace UsbMonitor
 {

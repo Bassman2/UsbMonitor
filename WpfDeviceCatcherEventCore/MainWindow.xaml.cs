@@ -1,5 +1,4 @@
-﻿using System;
-using UsbMonitor;
+﻿using UsbMonitor;
 
 namespace DeviceCatcherEvent
 {
