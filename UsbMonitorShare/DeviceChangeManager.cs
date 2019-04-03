@@ -35,8 +35,11 @@ namespace UsbMonitor
         /// <param name="windowHandle">Windows handle of the main window</param>
         public void Register(IntPtr windowHandle)
         {
+#if WINDOWS_UWP
+            int size = Marshal.SizeOf<DevBroadcastDeviceInterface>();
+#else
             int size = Marshal.SizeOf(typeof(DevBroadcastDeviceInterface));
-
+#endif
             var deviceInterface = new DevBroadcastDeviceInterface();
             deviceInterface.Size = (uint)size;
             deviceInterface.DeviceType = (uint)UsbDeviceType.DeviceInterface; // DBT_DEVTYP_DEVICEINTERFACE;
@@ -46,7 +49,16 @@ namespace UsbMonitor
             IntPtr buffer = Marshal.AllocHGlobal(size);
             Marshal.StructureToPtr(deviceInterface, buffer, true);
 
-            this.deviceEventHandle = NativeMethods.RegisterDeviceNotification(windowHandle, buffer, DEVICE_NOTIFY_WINDOW_HANDLE | DEVICE_NOTIFY_ALL_INTERFACE_CLASSES);
+            try
+            {
+                this.deviceEventHandle = NativeMethods.RegisterDeviceNotification(windowHandle, buffer, DEVICE_NOTIFY_WINDOW_HANDLE | DEVICE_NOTIFY_ALL_INTERFACE_CLASSES);
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+
             if (this.deviceEventHandle == IntPtr.Zero)
             {
                 int error = Marshal.GetLastWin32Error();
@@ -61,7 +73,14 @@ namespace UsbMonitor
         {
             if (this.deviceEventHandle != IntPtr.Zero)
             {
-                NativeMethods.UnregisterDeviceNotification(deviceEventHandle);
+                try
+                {
+                    NativeMethods.UnregisterDeviceNotification(deviceEventHandle);
+                }
+                catch (Exception ex)
+                {
+
+                }
             }
             this.deviceEventHandle = IntPtr.Zero;
         }
@@ -90,7 +109,11 @@ namespace UsbMonitor
                     switch (deviceType)
                     {
                     case UsbDeviceType.OEM:
+#if WINDOWS_UWP
+                        var oem = Marshal.PtrToStructure<DevBroadcastOEM>(lparam);
+#else
                         var oem = (DevBroadcastOEM)Marshal.PtrToStructure(lparam, typeof(DevBroadcastOEM));
+#endif
                         Debug.WriteLine($"OEM: Size={oem.Size}, DeviceType={oem.DeviceType}, Reserved={oem.Reserved}, Identifier={oem.Identifier}, SuppFunc={oem.SuppFunc}");
                         var oemArgs = new UsbEventOemArgs(deviceChangeEvent, oem.Identifier, oem.SuppFunc);
                         // fire event
@@ -104,7 +127,11 @@ namespace UsbMonitor
                         (monitor as IUsbMonitorOverrides)?.OnUsbOem(oemArgs);
                         break;
                     case UsbDeviceType.Volume:
+#if WINDOWS_UWP
+                        var volume = Marshal.PtrToStructure<DevBroadcastVolume>(lparam);
+#else
                         var volume = (DevBroadcastVolume)Marshal.PtrToStructure(lparam, typeof(DevBroadcastVolume));
+#endif
                         char[] drives = DrivesFromMask(volume.UnitMask);
                         string drivesStr = drives.Select(d => $"{d}:").Aggregate((a, b) => $"{a}, {b}");
                         Debug.WriteLine($"Volume: size={volume.Size}, deviceType={volume.DeviceType}, reserved={volume.Reserved}, unitmask={volume.UnitMask}, flags={volume.Flags}, drives={drivesStr}");
@@ -120,7 +147,11 @@ namespace UsbMonitor
                         (monitor as IUsbMonitorOverrides)?.OnUsbVolume(volumeArgs);
                         break;
                     case UsbDeviceType.Port:
+#if WINDOWS_UWP
+                        var port = Marshal.PtrToStructure<DevBroadcastPort>(lparam);
+#else
                         var port = (DevBroadcastPort)Marshal.PtrToStructure(lparam, typeof(DevBroadcastPort));
+#endif
                         Debug.WriteLine($"Port: Size={port.Size}, DeviceType={port.DeviceType}, Reserved={port.Reserved}, Name={port.Name}");
                         var portArgs = new UsbEventPortArgs(deviceChangeEvent, port.Name);
                         // fire event
@@ -134,7 +165,11 @@ namespace UsbMonitor
                         (monitor as IUsbMonitorOverrides)?.OnUsbPort(portArgs);
                         break;
                     case UsbDeviceType.DeviceInterface:
+#if WINDOWS_UWP
+                        var device = Marshal.PtrToStructure<DevBroadcastDeviceInterface>(lparam);
+#else
                         var device = (DevBroadcastDeviceInterface)Marshal.PtrToStructure(lparam, typeof(DevBroadcastDeviceInterface));
+#endif
                         Debug.WriteLine($"DeviceInterface: Size={device.Size}, DeviceType={device.DeviceType}, Reserved={device.Reserved}, ClassGuid={device.ClassGuid}, Name={device.Name}");
                         var interfaceArgs = new UsbEventDeviceInterfaceArgs(deviceChangeEvent, device.ClassGuid, GuidToEnum<UsbDeviceInterface>(device.ClassGuid), device.Name);
                         // fire event
@@ -148,7 +183,11 @@ namespace UsbMonitor
                         (monitor as IUsbMonitorOverrides)?.OnUsbInterface(interfaceArgs);
                         break;
                     case UsbDeviceType.Handle:
+#if WINDOWS_UWP
+                        var handle = Marshal.PtrToStructure<DevBroadcastHandle>(lparam);
+#else
                         var handle = (DevBroadcastHandle)Marshal.PtrToStructure(lparam, typeof(DevBroadcastHandle));
+#endif
                         Debug.WriteLine($"DeviceInterface: Size={handle.Size}, DeviceType={handle.DeviceType}, Reserved={handle.Reserved}, Handle={handle.Handle}, DevNotify={handle.DevNotify}, EventGuid={handle.EventGuid}, NameOffset={handle.NameOffset}, Data={handle.Data}");
                         var handleArgs = new UsbEventHandleArgs(deviceChangeEvent, handle.Handle, handle.DevNotify, handle.EventGuid, handle.NameOffset, handle.Data);
                         // fire event

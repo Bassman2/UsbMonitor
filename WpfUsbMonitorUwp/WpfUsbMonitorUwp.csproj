@@ -124,7 +124,6 @@
     <Compile Include="ICoreWindowInterop.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UsbMonitorManager.cs" />
-    <Compile Include="UsbMonitorWindow.cs" />
     <EmbeddedResource Include="Properties\UwpUsbMonitor.rd.xml" />
   </ItemGroup>
   <ItemGroup>
