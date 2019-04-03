@@ -1,6 +1,6 @@
 ﻿using UsbMonitor;
 
-namespace DeviceCatcher
+namespace DeviceCatcherMvvm
 {
     /// <summary>
     /// Interaction logic for MainView.xaml

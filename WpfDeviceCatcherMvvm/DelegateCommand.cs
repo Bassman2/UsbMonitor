@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace DeviceCatcher
+namespace DeviceCatcherMvvm
 {
     /// <summary>
     /// This class allows delegating the commanding logic to methods passed as parameters,

@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Windows.Threading;
 using UsbMonitor;
 
-namespace DeviceCatcher
+namespace DeviceCatcherMvvm
 {
     public class MainViewModel : INotifyPropertyChanged
     {
