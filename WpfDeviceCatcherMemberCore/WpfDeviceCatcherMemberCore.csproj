@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>DeviceCatcherMember</RootNamespace>
+    <StartupObject>DeviceCatcherMember.App</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="UnknownDrive.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WpfUsbMonitorCore\WpfUsbMonitorCore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="UnknownDrive.ico" />
+  </ItemGroup>
+
+</Project>
