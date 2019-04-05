@@ -38,7 +38,7 @@ namespace UsbMonitor
             //this.windowHandle = new WindowInteropHelper(window).EnsureHandle();
             //HwndSource.FromHwnd(this.windowHandle)?.AddHook(HwndHandler);
 
-            CoreWindow::GetForCurrentThread()
+            //CoreWindow::GetForCurrentThread()
 
 
             dynamic corewin = CoreWindow.GetForCurrentThread();
