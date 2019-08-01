@@ -153,8 +153,16 @@ namespace UsbMonitor
         /// Constructor
         /// </summary>
         public UsbMonitorForm()
+        { }
+ 
+        /// <summary>
+        /// Raises the System.Windows.Forms.Form.Load event.
+        /// </summary>
+        /// <param name="e">An System.EventArgs that contains the event data.</param>
+        protected override void OnLoad(EventArgs e)
         {
             Start();
+            base.OnLoad(e);
         }
 
         /// <summary>
