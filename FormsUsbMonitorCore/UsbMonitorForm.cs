@@ -157,6 +157,7 @@ namespace UsbMonitor
             Start();
         }
 
+
         /// <summary>
         /// Enable USB notification.
         /// </summary>
