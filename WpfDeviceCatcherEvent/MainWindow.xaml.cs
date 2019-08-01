@@ -1,7 +1,7 @@
 ﻿using System;
 using UsbMonitor;
 
-namespace DeviceCatcher
+namespace DeviceCatcherEvent
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

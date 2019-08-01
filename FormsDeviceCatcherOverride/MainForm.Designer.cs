@@ -50,7 +50,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.textBox);
             this.Name = "MainForm";
-            this.Text = "Device Catcher Member";
+            this.Text = "Device Catcher Override";
             this.ResumeLayout(false);
             this.PerformLayout();
 

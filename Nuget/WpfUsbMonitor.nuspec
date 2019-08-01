@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>$id$</id>
-    <version>$version$</version>
-    <title>$title$</title>
+    <id>WpfUsbMonitor</id>
+    <version>2.1</version>
+    <title>WpfUsbMonitor</title>
     <authors>Ralf Beckers</authors>
     <owners>Ralf Beckers</owners>
     <license type="expression">MIT</license>
-    <projectUrl>https://github.com/Bassman2/WpfUsbMonitor</projectUrl>
+    <projectUrl>https://github.com/Bassman2/UsbMonitor</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>WPF implementation of a USB monitor to signal if a USB device is plugged in or out. This implementation if Forms free and can also be used by MVVM. Documentation included.</description>
     <releaseNotes>New interface</releaseNotes>
@@ -15,10 +15,16 @@
     <tags>WPF USB Monitor MVVM</tags>
     <dependencies>
       <group targetFramework=".NETFramework4.5" />
+  	  <group targetFramework=".NETCoreApp3.0" />
+  	  <group targetFramework=".uap10" />
+
     </dependencies>
   </metadata>
   <files>
-    <file src="WpfUsbMonitorLicense.txt" target="content" />
+    <file src="UsbMonitorLicense.txt" target="content" />
     <file src="..\WpfUsbMonitorDocumentation\Help\WpfUsbMonitor.chm" target="content" />
+	<file src="..\WpfUsbMonitor\bin\Release\**" target="lib/net45" />
+	<file src="..\WpfUsbMonitorCore\bin\Release\netcoreapp3.0\**" target="lib/netcoreapp3.0" />
+	<file src="..\WpfUsbMonitorUwp\bin\Release\**" target="lib/uap10" />
   </files>
 </package>

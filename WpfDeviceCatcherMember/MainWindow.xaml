@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DeviceCatcher"
         mc:Ignorable="d"
-        Title="Device Catcher" Height="600" Width="800" Icon="UnknownDrive.ico">
+        Title="Device Catcher Member" Height="600" Width="800" Icon="UnknownDrive.ico">
     <Grid>
         <TextBox x:Name="textBox" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" />
     </Grid>

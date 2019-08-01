@@ -10,7 +10,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)DeviceChangeManager.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)GuidAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)EnumGuidAttribute.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IUsbMonitor.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IUsbMonitorCommands.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IUsbMonitorEvents.cs" />

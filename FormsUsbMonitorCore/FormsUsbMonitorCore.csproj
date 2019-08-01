@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon />
+    <StartupObject />
+    <AssemblyName>FormsUsbMonitor</AssemblyName>
+    <RootNamespace>FormsUsbMonitor</RootNamespace>
+    <Authors>Ralf Beckers</Authors>
+    <Company>Ralf Beckers</Company>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <Import Project="..\UsbMonitorShare\UsbMonitorShare.projitems" Label="Shared" />
+
+  <ItemGroup>
+    <Compile Update="UsbMonitorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>
