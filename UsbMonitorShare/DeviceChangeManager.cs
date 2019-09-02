@@ -53,7 +53,7 @@ namespace UsbMonitor
             {
                 this.deviceEventHandle = NativeMethods.RegisterDeviceNotification(windowHandle, buffer, DEVICE_NOTIFY_WINDOW_HANDLE | DEVICE_NOTIFY_ALL_INTERFACE_CLASSES);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
 
             }
@@ -77,7 +77,7 @@ namespace UsbMonitor
                 {
                     NativeMethods.UnregisterDeviceNotification(deviceEventHandle);
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
 
                 }
