@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UsbMonitorShare", "UsbMonitorShare\UsbMonitorShare.shproj", "{BD41BE34-5D22-458E-B6C3-A9D76FB8A0E4}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsDeviceCatcherEvent", "FormsDeviceCatcherEvent\FormsDeviceCatcherEvent.csproj", "{CDCA91FA-1944-4C6E-AF9E-3F0F3689E47E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsDeviceCatcherMember", "FormsDeviceCatcherMember\FormsDeviceCatcherMember.csproj", "{955B0715-33F6-4007-B3AC-44E7D706599C}"
@@ -12,8 +10,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsDeviceCatcherOverride", "FormsDeviceCatcherOverride\FormsDeviceCatcherOverride.csproj", "{97FFA554-3F5B-4153-A803-D85546F13F7D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsUsbMonitor", "FormsUsbMonitor\FormsUsbMonitor.csproj", "{13347870-A28F-4965-82AF-9900536E1274}"
-EndProject
-Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "FormsUsbMonitorDocumentation", "FormsUsbMonitorDocumentation\FormsUsbMonitorDocumentation.shfbproj", "{C4F78FBA-4939-4782-8883-79216AAD99FD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDeviceCatcherEvent", "WpfDeviceCatcherEvent\WpfDeviceCatcherEvent.csproj", "{FE03FB5A-3906-4093-8645-16D98AA054FB}"
 EndProject
@@ -24,8 +20,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDeviceCatcherOverride", "WpfDeviceCatcherOverride\WpfDeviceCatcherOverride.csproj", "{DC34D9F2-CF25-4A17-9738-34E6F5C18348}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfUsbMonitor", "WpfUsbMonitor\WpfUsbMonitor.csproj", "{64F9FA98-B57C-4AE0-9C31-A72F74FC2D51}"
-EndProject
-Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "WpfUsbMonitorDocumentation", "WpfUsbMonitorDocumentation\WpfUsbMonitorDocumentation.shfbproj", "{505B0644-89B7-424D-88BE-9949C6D6FF9A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfUsbMonitorUwp", "WpfUsbMonitorUwp\WpfUsbMonitorUwp.csproj", "{D04CE9B8-A7B9-44E0-A357-C713EC25AE22}"
 EndProject
@@ -64,6 +58,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDeviceCatcherMvvmCore", "WpfDeviceCatcherMvvmCore\WpfDeviceCatcherMvvmCore.csproj", "{4467A99B-B59C-4086-8D5A-5285138C548A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDeviceCatcherOverrideCore", "WpfDeviceCatcherOverrideCore\WpfDeviceCatcherOverrideCore.csproj", "{7A88A1B8-9645-4618-A6A8-3D7B6F14DBC8}"
+EndProject
+Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "WpfUsbMonitorDocumentation", "WpfUsbMonitorDocumentation\WpfUsbMonitorDocumentation.shfbproj", "{505B0644-89B7-424D-88BE-9949C6D6FF9A}"
+EndProject
+Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "FormsUsbMonitorDocumentation", "FormsUsbMonitorDocumentation\FormsUsbMonitorDocumentation.shfbproj", "{C4F78FBA-4939-4782-8883-79216AAD99FD}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UsbMonitorShare", "UsbMonitorShare\UsbMonitorShare.shproj", "{BD41BE34-5D22-458E-B6C3-A9D76FB8A0E4}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
