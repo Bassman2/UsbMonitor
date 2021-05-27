@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>UsbMonitor</RootNamespace>
+    <AssemblyName>WpfUsbMonitor</AssemblyName>
+    <Version>3.0.0</Version>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>Bassman.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>C:\Projects\UsbMonitor\UsbMonitor\WpfUsbMonitor50\WpfUsbMonitor.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Projects\UsbMonitor\WpfUsbMonitor50\WpfUsbMonitor50.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <Import Project="..\UsbMonitorShare\UsbMonitorShare.projitems" Label="Shared" />
+
+  <Import Project="..\WpfUsbMonitorShare\WpfUsbMonitorShare.projitems" Label="Shared" />
+
+</Project>

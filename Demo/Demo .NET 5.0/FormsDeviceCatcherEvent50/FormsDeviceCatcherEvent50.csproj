@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <Import Project="..\..\Demo Share\FormsDeviceCatcherEventShare\FormsDeviceCatcherEventShare.projitems" Label="Shared" />
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\UsbMonitor\FormsUsbMonitor50\FormsUsbMonitor50.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <Import Project="..\..\Demo Share\WpfDeviceCatcherMvvmShare\WpfDeviceCatcherMvvmShare.projitems" Label="Shared" />
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\UsbMonitor\WpfUsbMonitor60\WpfUsbMonitor60.csproj" />
+  </ItemGroup>
+
+</Project>
