@@ -18,7 +18,6 @@
       <group targetFramework=".NETFramework4.5" />
       <group targetFramework=".NETCoreApp3.1" />
       <group targetFramework=".NET5.0-WINDOWS" />
-      <group targetFramework=".NET6.0-WINDOWS" />
     </dependencies>
   </metadata>
   <files>
@@ -27,6 +26,5 @@
     <file src="..\UsbMonitor\FormsUsbMonitorFramework45\bin\Release\**" target="lib/net45" />
     <file src="..\UsbMonitor\FormsUsbMonitorCore31\bin\Release\netcoreapp3.1\**" target="lib/netcoreapp3.1" />
     <file src="..\UsbMonitor\FormsUsbMonitor50\bin\Release\net5.0-windows\**" target="lib/net5.0-windows" />
-    <file src="..\UsbMonitor\FormsUsbMonitor60\bin\Release\net6.0-windows\**" target="lib/net6.0-windows" />
   </files>
 </package>

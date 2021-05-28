@@ -35,7 +35,7 @@ jobs:
 
     - name: restore
       working-directory: .
-      run: msbuild UsbMonitor.sln /m /verbosity:minimal /t:restore /p:configuration="${{ matrix.build_configuration }}" /p:platform="${{ matrix.build_platform }}"
+      run: msbuild UsbMonitorWO6.sln /m /verbosity:minimal /t:restore /p:configuration="${{ matrix.build_configuration }}" /p:platform="${{ matrix.build_platform }}"
 
     - name: copy dummy key for signing
       working-directory: .
@@ -49,20 +49,23 @@ jobs:
            Copy-Item  appveyor_dummy.snk -Destination UsbMonitor\WpfUsbMonitor50\Bassman.snk
            Copy-Item  appveyor_dummy.snk -Destination UsbMonitor\FormsUsbMonitor50\Bassman.snk
 
-
-
     - name: MSBuild of solution
       working-directory: .
       run: |
            $env:SHFBROOT = "C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\"
-           msbuild UsbMonitor.sln /m /verbosity:minimal /p:configuration="${{ matrix.build_configuration }}" /p:platform="${{ matrix.build_platform }}"
+           msbuild UsbMonitorWO6.sln /m /verbosity:minimal /p:configuration="${{ matrix.build_configuration }}" /p:platform="${{ matrix.build_platform }}"
+
+    - name: Setup NuGet.exe
+      if: matrix.build_configuration == 'Release'
+      uses: nuget/setup-nuget@v1
 
     - name: Build NuGet package
       if: matrix.build_configuration == 'Release'
       working-directory: .
       run: |
            cd .\Nuget
-           pack.cmd
+           nuget pack FormsUsbMonitorWO6.nuspec -properties Configuration=${{ matrix.build_configuration }}
+           nuget pack WpfUsbMonitorWO6.nuspec -properties Configuration=${{ matrix.build_configuration }}
 
     - name: Archive artifacts
       if: matrix.build_configuration == 'Release'

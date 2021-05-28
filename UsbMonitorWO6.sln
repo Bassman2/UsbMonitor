@@ -1,0 +1,315 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UsbMonitorShare", "UsbMonitor\UsbMonitorShare\UsbMonitorShare.shproj", "{BD41BE34-5D22-458E-B6C3-A9D76FB8A0E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{055F4692-2154-455C-BE1E-50171D8BC5E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UsbMonitor", "UsbMonitor", "{C17E8DCA-DB09-45E4-A678-0BECA48FE893}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{3383CF2F-EB27-42A1-A235-E99297503AE5}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "WpfUsbMonitorShare", "UsbMonitor\WpfUsbMonitorShare\WpfUsbMonitorShare.shproj", "{F15EB8AE-3211-40CD-A1D9-952AEDA5A592}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FormsUsbMonitorShare", "UsbMonitor\FormsUsbMonitorShare\FormsUsbMonitorShare.shproj", "{2A112440-E40A-4B26-AD18-C38F502AF974}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfUsbMonitor50", "UsbMonitor\WpfUsbMonitor50\WpfUsbMonitor50.csproj", "{86840AAB-7711-4D0B-A522-DBC1ED49D9DF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfUsbMonitorCore31", "UsbMonitor\WpfUsbMonitorCore31\WpfUsbMonitorCore31.csproj", "{D7B47C7D-CADE-44F8-9036-9805BC3FD0F1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormsUsbMonitor50", "UsbMonitor\FormsUsbMonitor50\FormsUsbMonitor50.csproj", "{67A1D2C0-2F81-4FAB-BE7F-16174CF58680}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormsUsbMonitorCore31", "UsbMonitor\FormsUsbMonitorCore31\FormsUsbMonitorCore31.csproj", "{0AB14AC7-B356-4697-B9E8-247601F80606}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsUsbMonitorFramework45", "UsbMonitor\FormsUsbMonitorFramework45\FormsUsbMonitorFramework45.csproj", "{A1529179-BA0E-4AD8-9F89-3EC007AEA44E}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FormsDeviceCatcherEventShare", "Demo\Demo Share\FormsDeviceCatcherEventShare\FormsDeviceCatcherEventShare.shproj", "{E0967E4D-EB0C-4415-A37D-7FD9A997AC12}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FormsDeviceCatcherMemberShare", "Demo\Demo Share\FormsDeviceCatcherMemberShare\FormsDeviceCatcherMemberShare.shproj", "{DA0ACA86-056E-4140-9991-E9A33117FC1F}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FormsDeviceCatcherOverrideShare", "Demo\Demo Share\FormsDeviceCatcherOverrideShare\FormsDeviceCatcherOverrideShare.shproj", "{BCD3505C-CA92-4B95-9E52-9B1E3DA83CCF}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "WpfDeviceCatcherEventShare", "Demo\Demo Share\WpfDeviceCatcherEventShare\WpfDeviceCatcherEventShare.shproj", "{E8EAF939-AB22-4A59-AF89-44A085D3E4BC}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "WpfDeviceCatcherMemberShare", "Demo\Demo Share\WpfDeviceCatcherMemberShare\WpfDeviceCatcherMemberShare.shproj", "{96A1429B-ADB1-4B99-960A-2E2ED1C38FDC}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "WpfDeviceCatcherMvvmShare", "Demo\Demo Share\WpfDeviceCatcherMvvmShare\WpfDeviceCatcherMvvmShare.shproj", "{F53B6083-86CA-4E52-B354-AF9AABD490F9}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "WpfDeviceCatcherOverrideShare", "Demo\Demo Share\WpfDeviceCatcherOverrideShare\WpfDeviceCatcherOverrideShare.shproj", "{60BFC070-30C5-4FE8-B80E-9206DB3136D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsDeviceCatcherEventFramework45", "Demo\Demo .NET Framework 4.5\FormsDeviceCatcherEventFramework45\FormsDeviceCatcherEventFramework45.csproj", "{08DC8B4D-9990-49CB-8999-E74D103CBDFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsDeviceCatcherMemberFramework45", "Demo\Demo .NET Framework 4.5\FormsDeviceCatcherMemberFramework45\FormsDeviceCatcherMemberFramework45.csproj", "{A6778443-0808-4607-86CC-C6E5E41893F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormsDeviceCatcherOverrideFramework45", "Demo\Demo .NET Framework 4.5\FormsDeviceCatcherOverrideFramework45\FormsDeviceCatcherOverrideFramework45.csproj", "{496ACF30-26A9-4779-90FD-8D9A9B2501EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDeviceCatcherEventFramework45", "Demo\Demo .NET Framework 4.5\WpfDeviceCatcherEventFramework45\WpfDeviceCatcherEventFramework45.csproj", "{251E18E9-DD1F-4C19-9195-AB6713F3CB69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDeviceCatcherMemberFramework45", "Demo\Demo .NET Framework 4.5\WpfDeviceCatcherMemberFramework45\WpfDeviceCatcherMemberFramework45.csproj", "{E6C8B51A-0E70-4BAA-A3E8-2E37BC13DE0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDeviceCatcherMvvmFramework45", "Demo\Demo .NET Framework 4.5\WpfDeviceCatcherMvvmFramework45\WpfDeviceCatcherMvvmFramework45.csproj", "{9ABDC8E3-8026-4B1F-84AD-7452F838435E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDeviceCatcherOverrideFramework45", "Demo\Demo .NET Framework 4.5\WpfDeviceCatcherOverrideFramework45\WpfDeviceCatcherOverrideFramework45.csproj", "{A05F31E5-5018-4357-840B-02E652FE8569}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormsDeviceCatcherEvent50", "Demo\Demo .NET 5.0\FormsDeviceCatcherEvent50\FormsDeviceCatcherEvent50.csproj", "{30F3EBF9-DC2E-4476-9959-024E9583B12F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormsDeviceCatcherMember50", "Demo\Demo .NET 5.0\FormsDeviceCatcherMember50\FormsDeviceCatcherMember50.csproj", "{E6ED23EC-7F27-4FB5-8E9F-533FB2BB8A80}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo .NET 5.0", "Demo .NET 5.0", "{20D36533-BD04-4649-8D93-1549A343323F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo .NET Core 3.1", "Demo .NET Core 3.1", "{04CC0D9F-8BE6-4D2F-B0E4-60E1A7E83A60}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo .NET Framework 4.5", "Demo .NET Framework 4.5", "{FDDDCCAA-39BA-46C0-A0A1-3337A234C093}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo Share", "Demo Share", "{CFDD9361-239C-460F-AA49-374B7AB99BDD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormsDeviceCatcherOverride50", "Demo\Demo .NET 5.0\FormsDeviceCatcherOverride50\FormsDeviceCatcherOverride50.csproj", "{5ED7E0FE-8497-4E8D-A024-C6FF06B9D282}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormsDeviceCatcherMemberCore31", "Demo\Demo .NET Core 3.1\FormsDeviceCatcherMemberCore31\FormsDeviceCatcherMemberCore31.csproj", "{C152AAA5-E20F-4A0A-A2C5-6603EE40C0E2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormsDeviceCatcherEventCore31", "Demo\Demo .NET Core 3.1\FormsDeviceCatcherEventCore31\FormsDeviceCatcherEventCore31.csproj", "{3FF17C5A-CB64-41D0-927C-52F4E9C1D94C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormsDeviceCatcherOverrideCore31", "Demo\Demo .NET Core 3.1\FormsDeviceCatcherOverrideCore31\FormsDeviceCatcherOverrideCore31.csproj", "{45BC3854-6095-4A88-B7EC-836C2267C003}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfDeviceCatcherEvent50", "Demo\Demo .NET 5.0\WpfDeviceCatcherEvent50\WpfDeviceCatcherEvent50.csproj", "{C5631034-C065-45CA-A670-7C8E99ED0766}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfDeviceCatcherMember50", "Demo\Demo .NET 5.0\WpfDeviceCatcherMember50\WpfDeviceCatcherMember50.csproj", "{5675D714-11C7-461B-9328-BB6CB588A9ED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfDeviceCatcherMvvm50", "Demo\Demo .NET 5.0\WpfDeviceCatcherMvvm50\WpfDeviceCatcherMvvm50.csproj", "{AC09A16D-22AF-4F7F-9765-C8630ACF2E8C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfDeviceCatcherOverride50", "Demo\Demo .NET 5.0\WpfDeviceCatcherOverride50\WpfDeviceCatcherOverride50.csproj", "{6BDA8F28-F3E5-4BFB-989D-0FC5B6EBFD9A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfDeviceCatcherMemberCore31", "Demo\Demo .NET Core 3.1\WpfDeviceCatcherMemberCore31\WpfDeviceCatcherMemberCore31.csproj", "{5E9DDEBB-5B92-441D-97CB-1E6F31710205}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfDeviceCatcherEventCore31", "Demo\Demo .NET Core 3.1\WpfDeviceCatcherEventCore31\WpfDeviceCatcherEventCore31.csproj", "{BCCA26FE-5AF1-409A-B68F-966944284305}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfDeviceCatcherMvvmCore31", "Demo\Demo .NET Core 3.1\WpfDeviceCatcherMvvmCore31\WpfDeviceCatcherMvvmCore31.csproj", "{F5150EC5-C181-45A3-B37B-7DE545EFF5E0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfDeviceCatcherOverrideCore31", "Demo\Demo .NET Core 3.1\WpfDeviceCatcherOverrideCore31\WpfDeviceCatcherOverrideCore31.csproj", "{866BC40F-C4B6-47C8-B603-DC4E146957FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfUsbMonitorFramework45", "UsbMonitor\WpfUsbMonitorFramework45\WpfUsbMonitorFramework45.csproj", "{494A3E91-10E0-4F20-A0FC-77F0CE01E576}"
+EndProject
+Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "FormsUsbMonitorDocumentation", "Documentation\FormsUsbMonitorDocumentation\FormsUsbMonitorDocumentation.shfbproj", "{C4F78FBA-4939-4782-8883-79216AAD99FD}"
+EndProject
+Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "WpfUsbMonitorDocumentation", "Documentation\WpfUsbMonitorDocumentation\WpfUsbMonitorDocumentation.shfbproj", "{505B0644-89B7-424D-88BE-9949C6D6FF9A}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Demo\Demo Share\FormsDeviceCatcherEventShare\FormsDeviceCatcherEventShare.projitems*{08dc8b4d-9990-49cb-8999-e74d103cbdfe}*SharedItemsImports = 4
+		UsbMonitor\FormsUsbMonitorShare\FormsUsbMonitorShare.projitems*{0ab14ac7-b356-4697-b9e8-247601f80606}*SharedItemsImports = 5
+		UsbMonitor\UsbMonitorShare\UsbMonitorShare.projitems*{0ab14ac7-b356-4697-b9e8-247601f80606}*SharedItemsImports = 5
+		Demo\Demo Share\WpfDeviceCatcherEventShare\WpfDeviceCatcherEventShare.projitems*{251e18e9-dd1f-4c19-9195-ab6713f3cb69}*SharedItemsImports = 4
+		UsbMonitor\FormsUsbMonitorShare\FormsUsbMonitorShare.projitems*{2a112440-e40a-4b26-ad18-c38f502af974}*SharedItemsImports = 13
+		Demo\Demo Share\FormsDeviceCatcherEventShare\FormsDeviceCatcherEventShare.projitems*{30f3ebf9-dc2e-4476-9959-024e9583b12f}*SharedItemsImports = 5
+		Demo\Demo Share\FormsDeviceCatcherEventShare\FormsDeviceCatcherEventShare.projitems*{3ff17c5a-cb64-41d0-927c-52f4e9c1d94c}*SharedItemsImports = 5
+		Demo\Demo Share\FormsDeviceCatcherOverrideShare\FormsDeviceCatcherOverrideShare.projitems*{45bc3854-6095-4a88-b7ec-836c2267c003}*SharedItemsImports = 5
+		UsbMonitor\UsbMonitorShare\UsbMonitorShare.projitems*{494a3e91-10e0-4f20-a0fc-77f0ce01e576}*SharedItemsImports = 4
+		UsbMonitor\WpfUsbMonitorShare\WpfUsbMonitorShare.projitems*{494a3e91-10e0-4f20-a0fc-77f0ce01e576}*SharedItemsImports = 4
+		Demo\Demo Share\FormsDeviceCatcherOverrideShare\FormsDeviceCatcherOverrideShare.projitems*{496acf30-26a9-4779-90fd-8d9a9b2501eb}*SharedItemsImports = 4
+		Demo\Demo Share\WpfDeviceCatcherMemberShare\WpfDeviceCatcherMemberShare.projitems*{5675d714-11c7-461b-9328-bb6cb588a9ed}*SharedItemsImports = 5
+		Demo\Demo Share\WpfDeviceCatcherMemberShare\WpfDeviceCatcherMemberShare.projitems*{5e9ddebb-5b92-441d-97cb-1e6f31710205}*SharedItemsImports = 5
+		Demo\Demo Share\FormsDeviceCatcherOverrideShare\FormsDeviceCatcherOverrideShare.projitems*{5ed7e0fe-8497-4e8d-a024-c6ff06b9d282}*SharedItemsImports = 5
+		Demo\Demo Share\WpfDeviceCatcherOverrideShare\WpfDeviceCatcherOverrideShare.projitems*{60bfc070-30c5-4fe8-b80e-9206db3136d7}*SharedItemsImports = 13
+		UsbMonitor\FormsUsbMonitorShare\FormsUsbMonitorShare.projitems*{67a1d2c0-2f81-4fab-be7f-16174cf58680}*SharedItemsImports = 5
+		UsbMonitor\UsbMonitorShare\UsbMonitorShare.projitems*{67a1d2c0-2f81-4fab-be7f-16174cf58680}*SharedItemsImports = 5
+		Demo\Demo Share\WpfDeviceCatcherOverrideShare\WpfDeviceCatcherOverrideShare.projitems*{6bda8f28-f3e5-4bfb-989d-0fc5b6ebfd9a}*SharedItemsImports = 5
+		Demo\Demo Share\WpfDeviceCatcherOverrideShare\WpfDeviceCatcherOverrideShare.projitems*{866bc40f-c4b6-47c8-b603-dc4e146957fb}*SharedItemsImports = 5
+		UsbMonitor\UsbMonitorShare\UsbMonitorShare.projitems*{86840aab-7711-4d0b-a522-dbc1ed49d9df}*SharedItemsImports = 5
+		UsbMonitor\WpfUsbMonitorShare\WpfUsbMonitorShare.projitems*{86840aab-7711-4d0b-a522-dbc1ed49d9df}*SharedItemsImports = 5
+		Demo\Demo Share\WpfDeviceCatcherMemberShare\WpfDeviceCatcherMemberShare.projitems*{96a1429b-adb1-4b99-960a-2e2ed1c38fdc}*SharedItemsImports = 13
+		Demo\Demo Share\WpfDeviceCatcherMvvmShare\WpfDeviceCatcherMvvmShare.projitems*{9abdc8e3-8026-4b1f-84ad-7452f838435e}*SharedItemsImports = 4
+		Demo\Demo Share\WpfDeviceCatcherOverrideShare\WpfDeviceCatcherOverrideShare.projitems*{a05f31e5-5018-4357-840b-02e652fe8569}*SharedItemsImports = 4
+		UsbMonitor\FormsUsbMonitorShare\FormsUsbMonitorShare.projitems*{a1529179-ba0e-4ad8-9f89-3ec007aea44e}*SharedItemsImports = 4
+		UsbMonitor\UsbMonitorShare\UsbMonitorShare.projitems*{a1529179-ba0e-4ad8-9f89-3ec007aea44e}*SharedItemsImports = 4
+		Demo\Demo Share\FormsDeviceCatcherMemberShare\FormsDeviceCatcherMemberShare.projitems*{a6778443-0808-4607-86cc-c6e5e41893f4}*SharedItemsImports = 4
+		Demo\Demo Share\WpfDeviceCatcherMvvmShare\WpfDeviceCatcherMvvmShare.projitems*{ac09a16d-22af-4f7f-9765-c8630acf2e8c}*SharedItemsImports = 5
+		Demo\Demo Share\WpfDeviceCatcherEventShare\WpfDeviceCatcherEventShare.projitems*{bcca26fe-5af1-409a-b68f-966944284305}*SharedItemsImports = 5
+		Demo\Demo Share\FormsDeviceCatcherOverrideShare\FormsDeviceCatcherOverrideShare.projitems*{bcd3505c-ca92-4b95-9e52-9b1e3da83ccf}*SharedItemsImports = 13
+		UsbMonitor\UsbMonitorShare\UsbMonitorShare.projitems*{bd41be34-5d22-458e-b6c3-a9d76fb8a0e4}*SharedItemsImports = 13
+		Demo\Demo Share\FormsDeviceCatcherMemberShare\FormsDeviceCatcherMemberShare.projitems*{c152aaa5-e20f-4a0a-a2c5-6603ee40c0e2}*SharedItemsImports = 5
+		Demo\Demo Share\WpfDeviceCatcherEventShare\WpfDeviceCatcherEventShare.projitems*{c5631034-c065-45ca-a670-7c8e99ed0766}*SharedItemsImports = 5
+		UsbMonitor\UsbMonitorShare\UsbMonitorShare.projitems*{d7b47c7d-cade-44f8-9036-9805bc3fd0f1}*SharedItemsImports = 5
+		UsbMonitor\WpfUsbMonitorShare\WpfUsbMonitorShare.projitems*{d7b47c7d-cade-44f8-9036-9805bc3fd0f1}*SharedItemsImports = 5
+		Demo\Demo Share\FormsDeviceCatcherMemberShare\FormsDeviceCatcherMemberShare.projitems*{da0aca86-056e-4140-9991-e9a33117fc1f}*SharedItemsImports = 13
+		Demo\Demo Share\FormsDeviceCatcherEventShare\FormsDeviceCatcherEventShare.projitems*{e0967e4d-eb0c-4415-a37d-7fd9a997ac12}*SharedItemsImports = 13
+		Demo\Demo Share\WpfDeviceCatcherMemberShare\WpfDeviceCatcherMemberShare.projitems*{e6c8b51a-0e70-4baa-a3e8-2e37bc13de0d}*SharedItemsImports = 4
+		Demo\Demo Share\FormsDeviceCatcherMemberShare\FormsDeviceCatcherMemberShare.projitems*{e6ed23ec-7f27-4fb5-8e9f-533fb2bb8a80}*SharedItemsImports = 5
+		Demo\Demo Share\WpfDeviceCatcherEventShare\WpfDeviceCatcherEventShare.projitems*{e8eaf939-ab22-4a59-af89-44a085d3e4bc}*SharedItemsImports = 13
+		UsbMonitor\WpfUsbMonitorShare\WpfUsbMonitorShare.projitems*{f15eb8ae-3211-40cd-a1d9-952aeda5a592}*SharedItemsImports = 13
+		Demo\Demo Share\WpfDeviceCatcherMvvmShare\WpfDeviceCatcherMvvmShare.projitems*{f5150ec5-c181-45a3-b37b-7de545eff5e0}*SharedItemsImports = 5
+		Demo\Demo Share\WpfDeviceCatcherMvvmShare\WpfDeviceCatcherMvvmShare.projitems*{f53b6083-86ca-4e52-b354-af9aabd490f9}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86840AAB-7711-4D0B-A522-DBC1ED49D9DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86840AAB-7711-4D0B-A522-DBC1ED49D9DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86840AAB-7711-4D0B-A522-DBC1ED49D9DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86840AAB-7711-4D0B-A522-DBC1ED49D9DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7B47C7D-CADE-44F8-9036-9805BC3FD0F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7B47C7D-CADE-44F8-9036-9805BC3FD0F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7B47C7D-CADE-44F8-9036-9805BC3FD0F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7B47C7D-CADE-44F8-9036-9805BC3FD0F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67A1D2C0-2F81-4FAB-BE7F-16174CF58680}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67A1D2C0-2F81-4FAB-BE7F-16174CF58680}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67A1D2C0-2F81-4FAB-BE7F-16174CF58680}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67A1D2C0-2F81-4FAB-BE7F-16174CF58680}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AB14AC7-B356-4697-B9E8-247601F80606}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AB14AC7-B356-4697-B9E8-247601F80606}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AB14AC7-B356-4697-B9E8-247601F80606}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AB14AC7-B356-4697-B9E8-247601F80606}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1529179-BA0E-4AD8-9F89-3EC007AEA44E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1529179-BA0E-4AD8-9F89-3EC007AEA44E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1529179-BA0E-4AD8-9F89-3EC007AEA44E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1529179-BA0E-4AD8-9F89-3EC007AEA44E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08DC8B4D-9990-49CB-8999-E74D103CBDFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08DC8B4D-9990-49CB-8999-E74D103CBDFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08DC8B4D-9990-49CB-8999-E74D103CBDFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08DC8B4D-9990-49CB-8999-E74D103CBDFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6778443-0808-4607-86CC-C6E5E41893F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6778443-0808-4607-86CC-C6E5E41893F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6778443-0808-4607-86CC-C6E5E41893F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6778443-0808-4607-86CC-C6E5E41893F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{496ACF30-26A9-4779-90FD-8D9A9B2501EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{496ACF30-26A9-4779-90FD-8D9A9B2501EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{496ACF30-26A9-4779-90FD-8D9A9B2501EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{496ACF30-26A9-4779-90FD-8D9A9B2501EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{251E18E9-DD1F-4C19-9195-AB6713F3CB69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{251E18E9-DD1F-4C19-9195-AB6713F3CB69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{251E18E9-DD1F-4C19-9195-AB6713F3CB69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{251E18E9-DD1F-4C19-9195-AB6713F3CB69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6C8B51A-0E70-4BAA-A3E8-2E37BC13DE0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6C8B51A-0E70-4BAA-A3E8-2E37BC13DE0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6C8B51A-0E70-4BAA-A3E8-2E37BC13DE0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6C8B51A-0E70-4BAA-A3E8-2E37BC13DE0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ABDC8E3-8026-4B1F-84AD-7452F838435E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ABDC8E3-8026-4B1F-84AD-7452F838435E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ABDC8E3-8026-4B1F-84AD-7452F838435E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ABDC8E3-8026-4B1F-84AD-7452F838435E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A05F31E5-5018-4357-840B-02E652FE8569}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A05F31E5-5018-4357-840B-02E652FE8569}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A05F31E5-5018-4357-840B-02E652FE8569}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A05F31E5-5018-4357-840B-02E652FE8569}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30F3EBF9-DC2E-4476-9959-024E9583B12F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30F3EBF9-DC2E-4476-9959-024E9583B12F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30F3EBF9-DC2E-4476-9959-024E9583B12F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30F3EBF9-DC2E-4476-9959-024E9583B12F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6ED23EC-7F27-4FB5-8E9F-533FB2BB8A80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6ED23EC-7F27-4FB5-8E9F-533FB2BB8A80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6ED23EC-7F27-4FB5-8E9F-533FB2BB8A80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6ED23EC-7F27-4FB5-8E9F-533FB2BB8A80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ED7E0FE-8497-4E8D-A024-C6FF06B9D282}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ED7E0FE-8497-4E8D-A024-C6FF06B9D282}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ED7E0FE-8497-4E8D-A024-C6FF06B9D282}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ED7E0FE-8497-4E8D-A024-C6FF06B9D282}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C152AAA5-E20F-4A0A-A2C5-6603EE40C0E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C152AAA5-E20F-4A0A-A2C5-6603EE40C0E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C152AAA5-E20F-4A0A-A2C5-6603EE40C0E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C152AAA5-E20F-4A0A-A2C5-6603EE40C0E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FF17C5A-CB64-41D0-927C-52F4E9C1D94C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FF17C5A-CB64-41D0-927C-52F4E9C1D94C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FF17C5A-CB64-41D0-927C-52F4E9C1D94C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FF17C5A-CB64-41D0-927C-52F4E9C1D94C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45BC3854-6095-4A88-B7EC-836C2267C003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45BC3854-6095-4A88-B7EC-836C2267C003}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45BC3854-6095-4A88-B7EC-836C2267C003}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45BC3854-6095-4A88-B7EC-836C2267C003}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5631034-C065-45CA-A670-7C8E99ED0766}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5631034-C065-45CA-A670-7C8E99ED0766}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5631034-C065-45CA-A670-7C8E99ED0766}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5631034-C065-45CA-A670-7C8E99ED0766}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5675D714-11C7-461B-9328-BB6CB588A9ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5675D714-11C7-461B-9328-BB6CB588A9ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5675D714-11C7-461B-9328-BB6CB588A9ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5675D714-11C7-461B-9328-BB6CB588A9ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC09A16D-22AF-4F7F-9765-C8630ACF2E8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC09A16D-22AF-4F7F-9765-C8630ACF2E8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC09A16D-22AF-4F7F-9765-C8630ACF2E8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC09A16D-22AF-4F7F-9765-C8630ACF2E8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BDA8F28-F3E5-4BFB-989D-0FC5B6EBFD9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BDA8F28-F3E5-4BFB-989D-0FC5B6EBFD9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BDA8F28-F3E5-4BFB-989D-0FC5B6EBFD9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BDA8F28-F3E5-4BFB-989D-0FC5B6EBFD9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E9DDEBB-5B92-441D-97CB-1E6F31710205}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E9DDEBB-5B92-441D-97CB-1E6F31710205}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E9DDEBB-5B92-441D-97CB-1E6F31710205}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E9DDEBB-5B92-441D-97CB-1E6F31710205}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCCA26FE-5AF1-409A-B68F-966944284305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCCA26FE-5AF1-409A-B68F-966944284305}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCCA26FE-5AF1-409A-B68F-966944284305}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCCA26FE-5AF1-409A-B68F-966944284305}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5150EC5-C181-45A3-B37B-7DE545EFF5E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5150EC5-C181-45A3-B37B-7DE545EFF5E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5150EC5-C181-45A3-B37B-7DE545EFF5E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5150EC5-C181-45A3-B37B-7DE545EFF5E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{866BC40F-C4B6-47C8-B603-DC4E146957FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{866BC40F-C4B6-47C8-B603-DC4E146957FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{866BC40F-C4B6-47C8-B603-DC4E146957FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{866BC40F-C4B6-47C8-B603-DC4E146957FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{494A3E91-10E0-4F20-A0FC-77F0CE01E576}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{494A3E91-10E0-4F20-A0FC-77F0CE01E576}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{494A3E91-10E0-4F20-A0FC-77F0CE01E576}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{494A3E91-10E0-4F20-A0FC-77F0CE01E576}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4F78FBA-4939-4782-8883-79216AAD99FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4F78FBA-4939-4782-8883-79216AAD99FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4F78FBA-4939-4782-8883-79216AAD99FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{505B0644-89B7-424D-88BE-9949C6D6FF9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{505B0644-89B7-424D-88BE-9949C6D6FF9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{505B0644-89B7-424D-88BE-9949C6D6FF9A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BD41BE34-5D22-458E-B6C3-A9D76FB8A0E4} = {C17E8DCA-DB09-45E4-A678-0BECA48FE893}
+		{F15EB8AE-3211-40CD-A1D9-952AEDA5A592} = {C17E8DCA-DB09-45E4-A678-0BECA48FE893}
+		{2A112440-E40A-4B26-AD18-C38F502AF974} = {C17E8DCA-DB09-45E4-A678-0BECA48FE893}
+		{86840AAB-7711-4D0B-A522-DBC1ED49D9DF} = {C17E8DCA-DB09-45E4-A678-0BECA48FE893}
+		{D7B47C7D-CADE-44F8-9036-9805BC3FD0F1} = {C17E8DCA-DB09-45E4-A678-0BECA48FE893}
+		{67A1D2C0-2F81-4FAB-BE7F-16174CF58680} = {C17E8DCA-DB09-45E4-A678-0BECA48FE893}
+		{0AB14AC7-B356-4697-B9E8-247601F80606} = {C17E8DCA-DB09-45E4-A678-0BECA48FE893}
+		{A1529179-BA0E-4AD8-9F89-3EC007AEA44E} = {C17E8DCA-DB09-45E4-A678-0BECA48FE893}
+		{E0967E4D-EB0C-4415-A37D-7FD9A997AC12} = {CFDD9361-239C-460F-AA49-374B7AB99BDD}
+		{DA0ACA86-056E-4140-9991-E9A33117FC1F} = {CFDD9361-239C-460F-AA49-374B7AB99BDD}
+		{BCD3505C-CA92-4B95-9E52-9B1E3DA83CCF} = {CFDD9361-239C-460F-AA49-374B7AB99BDD}
+		{E8EAF939-AB22-4A59-AF89-44A085D3E4BC} = {CFDD9361-239C-460F-AA49-374B7AB99BDD}
+		{96A1429B-ADB1-4B99-960A-2E2ED1C38FDC} = {CFDD9361-239C-460F-AA49-374B7AB99BDD}
+		{F53B6083-86CA-4E52-B354-AF9AABD490F9} = {CFDD9361-239C-460F-AA49-374B7AB99BDD}
+		{60BFC070-30C5-4FE8-B80E-9206DB3136D7} = {CFDD9361-239C-460F-AA49-374B7AB99BDD}
+		{08DC8B4D-9990-49CB-8999-E74D103CBDFE} = {FDDDCCAA-39BA-46C0-A0A1-3337A234C093}
+		{A6778443-0808-4607-86CC-C6E5E41893F4} = {FDDDCCAA-39BA-46C0-A0A1-3337A234C093}
+		{496ACF30-26A9-4779-90FD-8D9A9B2501EB} = {FDDDCCAA-39BA-46C0-A0A1-3337A234C093}
+		{251E18E9-DD1F-4C19-9195-AB6713F3CB69} = {FDDDCCAA-39BA-46C0-A0A1-3337A234C093}
+		{E6C8B51A-0E70-4BAA-A3E8-2E37BC13DE0D} = {FDDDCCAA-39BA-46C0-A0A1-3337A234C093}
+		{9ABDC8E3-8026-4B1F-84AD-7452F838435E} = {FDDDCCAA-39BA-46C0-A0A1-3337A234C093}
+		{A05F31E5-5018-4357-840B-02E652FE8569} = {FDDDCCAA-39BA-46C0-A0A1-3337A234C093}
+		{30F3EBF9-DC2E-4476-9959-024E9583B12F} = {20D36533-BD04-4649-8D93-1549A343323F}
+		{E6ED23EC-7F27-4FB5-8E9F-533FB2BB8A80} = {20D36533-BD04-4649-8D93-1549A343323F}
+		{20D36533-BD04-4649-8D93-1549A343323F} = {3383CF2F-EB27-42A1-A235-E99297503AE5}
+		{04CC0D9F-8BE6-4D2F-B0E4-60E1A7E83A60} = {3383CF2F-EB27-42A1-A235-E99297503AE5}
+		{FDDDCCAA-39BA-46C0-A0A1-3337A234C093} = {3383CF2F-EB27-42A1-A235-E99297503AE5}
+		{CFDD9361-239C-460F-AA49-374B7AB99BDD} = {3383CF2F-EB27-42A1-A235-E99297503AE5}
+		{5ED7E0FE-8497-4E8D-A024-C6FF06B9D282} = {20D36533-BD04-4649-8D93-1549A343323F}
+		{C152AAA5-E20F-4A0A-A2C5-6603EE40C0E2} = {04CC0D9F-8BE6-4D2F-B0E4-60E1A7E83A60}
+		{3FF17C5A-CB64-41D0-927C-52F4E9C1D94C} = {04CC0D9F-8BE6-4D2F-B0E4-60E1A7E83A60}
+		{45BC3854-6095-4A88-B7EC-836C2267C003} = {04CC0D9F-8BE6-4D2F-B0E4-60E1A7E83A60}
+		{C5631034-C065-45CA-A670-7C8E99ED0766} = {20D36533-BD04-4649-8D93-1549A343323F}
+		{5675D714-11C7-461B-9328-BB6CB588A9ED} = {20D36533-BD04-4649-8D93-1549A343323F}
+		{AC09A16D-22AF-4F7F-9765-C8630ACF2E8C} = {20D36533-BD04-4649-8D93-1549A343323F}
+		{6BDA8F28-F3E5-4BFB-989D-0FC5B6EBFD9A} = {20D36533-BD04-4649-8D93-1549A343323F}
+		{5E9DDEBB-5B92-441D-97CB-1E6F31710205} = {04CC0D9F-8BE6-4D2F-B0E4-60E1A7E83A60}
+		{BCCA26FE-5AF1-409A-B68F-966944284305} = {04CC0D9F-8BE6-4D2F-B0E4-60E1A7E83A60}
+		{F5150EC5-C181-45A3-B37B-7DE545EFF5E0} = {04CC0D9F-8BE6-4D2F-B0E4-60E1A7E83A60}
+		{866BC40F-C4B6-47C8-B603-DC4E146957FB} = {04CC0D9F-8BE6-4D2F-B0E4-60E1A7E83A60}
+		{494A3E91-10E0-4F20-A0FC-77F0CE01E576} = {C17E8DCA-DB09-45E4-A678-0BECA48FE893}
+		{C4F78FBA-4939-4782-8883-79216AAD99FD} = {055F4692-2154-455C-BE1E-50171D8BC5E3}
+		{505B0644-89B7-424D-88BE-9949C6D6FF9A} = {055F4692-2154-455C-BE1E-50171D8BC5E3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {94CA31E8-A28A-4CA9-999F-98CFFA08EFF4}
+	EndGlobalSection
+EndGlobal

@@ -69,7 +69,7 @@ jobs:
 
     - name: restore
       working-directory: .
-      run: msbuild UsbMonitor.sln /m /verbosity:minimal /t:restore /p:configuration="Release" /p:platform="Any CPU"
+      run: msbuild UsbMonitorWO6.sln /m /verbosity:minimal /t:restore /p:configuration="Release" /p:platform="Any CPU"
 
     - name: copy dummy key for signing
       working-directory: .
@@ -87,7 +87,7 @@ jobs:
       working-directory: .
       run: |
            $env:SHFBROOT = "C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\"
-           msbuild UsbMonitor.sln /m /verbosity:minimal /p:configuration="Release" /p:platform="Any CPU"
+           msbuild UsbMonitorWO6.sln /m /verbosity:minimal /p:configuration="Release" /p:platform="Any CPU"
 
 
     - name: Perform CodeQL Analysis
