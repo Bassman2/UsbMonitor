@@ -5,10 +5,6 @@ VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UsbMonitorShare", "UsbMonitor\UsbMonitorShare\UsbMonitorShare.shproj", "{BD41BE34-5D22-458E-B6C3-A9D76FB8A0E4}"
 EndProject
-Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "FormsUsbMonitorDocumentation", "Documentation\FormsUsbMonitorDocumentation\FormsUsbMonitorDocumentation.shfbproj", "{C4F78FBA-4939-4782-8883-79216AAD99FD}"
-EndProject
-Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "WpfUsbMonitorDocumentation", "Documentation\WpfUsbMonitorDocumentation\WpfUsbMonitorDocumentation.shfbproj", "{505B0644-89B7-424D-88BE-9949C6D6FF9A}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{055F4692-2154-455C-BE1E-50171D8BC5E3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UsbMonitor", "UsbMonitor", "{C17E8DCA-DB09-45E4-A678-0BECA48FE893}"
@@ -114,6 +110,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfDeviceCatcherOverrideCore31", "Demo\Demo .NET Core 3.1\WpfDeviceCatcherOverrideCore31\WpfDeviceCatcherOverrideCore31.csproj", "{866BC40F-C4B6-47C8-B603-DC4E146957FB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfUsbMonitorFramework45", "UsbMonitor\WpfUsbMonitorFramework45\WpfUsbMonitorFramework45.csproj", "{494A3E91-10E0-4F20-A0FC-77F0CE01E576}"
+EndProject
+Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "FormsUsbMonitorDocumentation", "Documentation\FormsUsbMonitorDocumentation\FormsUsbMonitorDocumentation.shfbproj", "{C4F78FBA-4939-4782-8883-79216AAD99FD}"
+EndProject
+Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "WpfUsbMonitorDocumentation", "Documentation\WpfUsbMonitorDocumentation\WpfUsbMonitorDocumentation.shfbproj", "{505B0644-89B7-424D-88BE-9949C6D6FF9A}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution

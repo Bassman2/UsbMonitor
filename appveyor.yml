@@ -1,13 +1,9 @@
 version: 1.0.{build}
-image: Visual Studio 2019
+image: Visual Studio 2019 Preview
 
 
 platform:
     - Any CPU
-    #- x86
-    #- x64
-    #- ARM64
-    #- ARM
 
 configuration:
     - Release
@@ -15,9 +11,9 @@ configuration:
 
 install:
     - ps: >-
-        Start-FileDownload 'https://github.com/EWSoftware/SHFB/releases/download/v2019.9.15.0/SHFBInstaller_v2019.9.15.0.zip'
+        Start-FileDownload 'https://github.com/EWSoftware/SHFB/releases/download/v2021.4.9.0/SHFBInstaller_v2021.4.9.0.zip'
 
-        7z x -y SHFBInstaller_v2019.9.15.0.zip | Out-Null
+        7z x -y SHFBInstaller_v2021.4.9.0.zip | Out-Null
 
         Write-Host "Installing MSI..."
 
@@ -25,9 +21,20 @@ install:
 
         Write-Host "Installing VSIX..."
 
-        . "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\VSIXInstaller.exe" /q /a InstallResources\SHFBVisualStudioPackage_VS2015AndLater.vsix
+        . "C:\Program Files (x86)\Microsoft Visual Studio\2019\Preview\Common7\IDE\VSIXInstaller.exe" /q /a InstallResources\SHFBVisualStudioPackage_VS2017AndLater.vsix
 
         Write-Host "Sandcastle installed" -ForegroundColor Green
+
+    - copy /y "%APPVEYOR_BUILD_FOLDER%"\appveyor_dummy.snk "%APPVEYOR_BUILD_FOLDER%"\UsbMonitor\FormsUsbMonitorFramework45\Bassman.snk
+    - copy /y "%APPVEYOR_BUILD_FOLDER%"\appveyor_dummy.snk "%APPVEYOR_BUILD_FOLDER%"\UsbMonitor\WpfUsbMonitorFramework45\Bassman.snk
+    - copy /y "%APPVEYOR_BUILD_FOLDER%"\appveyor_dummy.snk "%APPVEYOR_BUILD_FOLDER%"\UsbMonitor\WpfUsbMonitor60\Bassman.snk
+    - copy /y "%APPVEYOR_BUILD_FOLDER%"\appveyor_dummy.snk "%APPVEYOR_BUILD_FOLDER%"\UsbMonitor\FormsUsbMonitor60\Bassman.snk
+    - copy /y "%APPVEYOR_BUILD_FOLDER%"\appveyor_dummy.snk "%APPVEYOR_BUILD_FOLDER%"\UsbMonitor\WpfUsbMonitorCore31\Bassman.snk
+    - copy /y "%APPVEYOR_BUILD_FOLDER%"\appveyor_dummy.snk "%APPVEYOR_BUILD_FOLDER%"\UsbMonitor\FormsUsbMonitorCore31\Bassman.snk
+    - copy /y "%APPVEYOR_BUILD_FOLDER%"\appveyor_dummy.snk "%APPVEYOR_BUILD_FOLDER%"\UsbMonitor\WpfUsbMonitor50\Bassman.snk
+    - copy /y "%APPVEYOR_BUILD_FOLDER%"\appveyor_dummy.snk "%APPVEYOR_BUILD_FOLDER%"\UsbMonitor\FormsUsbMonitor50\Bassman.snk
+
+
 
 build_script:
     - set SHFBROOT=C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\
@@ -40,27 +47,7 @@ build_script:
 after_build:
      - cd "%APPVEYOR_BUILD_FOLDER%"
      - ps: >-
-        Push-AppveyorArtifact "Nuget\FormsUsbMonitor.2.1.0-beta1.nupkg" -FileName FormsUsbMonitor.2.1.0-beta1.nupkg
+        Push-AppveyorArtifact "Nuget\FormsUsbMonitor.3.0.0.nupkg" -FileName FormsUsbMonitor.3.0.0.nupkg
 
-        Push-AppveyorArtifact "Nuget\WpfUsbMonitor.2.1.0-beta1.nupkg" -FileName WpfUsbMonitor.2.1.0-beta1.nupkg
+        Push-AppveyorArtifact "Nuget\WpfUsbMonitor.3.0.0.nupkg" -FileName WpfUsbMonitor.3.0.0.nupkg
 
-        # if ($($env:APPVEYOR_REPO_TAG) -eq "true" -and $env:CONFIGURATION -eq "Release") {
-            # $ZipFileName = "WpfUsbMonitor_$($env:APPVEYOR_REPO_TAG_NAME).zip"
-            # 7z a $ZipFileName WpfUsbMonitor\bin\$env:CONFIGURATION\WpfUsbMonitor.dll
-        # }
-
-# artifacts:
-  # - path: WpfUsbMonitor_*.zip
-    # name: releases
-
-# deploy:
-    # provider: GitHub
-    # auth_token:
-        # secure: !!TODO, see https://www.appveyor.com/docs/deployment/github/#provider-settings!!
-    # artifact: releases
-    # draft: false
-    # prerelease: false
-    # force_update: true
-    # on:
-        # appveyor_repo_tag: true
-        # configuration: Release
