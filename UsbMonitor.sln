@@ -55,11 +55,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfDeviceCatcherOverride60"
 EndProject
 Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "FormsUsbMonitorDocumentation", "Doc\FormsUsbMonitorDocumentation\FormsUsbMonitorDocumentation.shfbproj", "{C4F78FBA-4939-4782-8883-79216AAD99FD}"
 	ProjectSection(ProjectDependencies) = postProject
-		{66C67C68-15B6-4228-AFBF-40A84D8732C2} = {66C67C68-15B6-4228-AFBF-40A84D8732C2}
-		{930D5DDB-0D20-43A9-9422-78C496E516F2} = {930D5DDB-0D20-43A9-9422-78C496E516F2}
+		{3A014379-7833-42E3-AEEC-CB951A5D9753} = {3A014379-7833-42E3-AEEC-CB951A5D9753}
 	EndProjectSection
 EndProject
 Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "WpfUsbMonitorDocumentation", "Doc\WpfUsbMonitorDocumentation\WpfUsbMonitorDocumentation.shfbproj", "{505B0644-89B7-424D-88BE-9949C6D6FF9A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A8C0719D-C4E8-4155-9ABA-C53FBE96A209} = {A8C0719D-C4E8-4155-9ABA-C53FBE96A209}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormsUsbMonitor70", "Src\FormsUsbMonitor70\FormsUsbMonitor70.csproj", "{930D5DDB-0D20-43A9-9422-78C496E516F2}"
 EndProject
