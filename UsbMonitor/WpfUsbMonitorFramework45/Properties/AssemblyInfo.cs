@@ -10,11 +10,11 @@ using System.Windows;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("WpfUsbMonitor")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("WPF implementation of a USB monitor to signal if a USB device is plugged in or out.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Ralf Beckers")]
 [assembly: AssemblyProduct("WpfUsbMonitor")]
-[assembly: AssemblyCopyright("Copyright ©  2021")]
+[assembly: AssemblyCopyright("Copyright © 2017 - 2021 by Ralf Beckers")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

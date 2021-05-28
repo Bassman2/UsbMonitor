@@ -8,6 +8,13 @@
     <Version>3.0.0</Version>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>Bassman.snk</AssemblyOriginatorKeyFile>
+    <RepositoryType>Github</RepositoryType>
+    <RepositoryUrl>https://github.com/Bassman2/UsbMonitor</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/Bassman2/UsbMonitor</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Copyright>Copyright © 2017 - 2021 by Ralf Beckers</Copyright>
+    <Authors>Ralf Beckers</Authors>
+    <Description>WPF implementation of a USB monitor to signal if a USB device is plugged in or out.</Description>
   </PropertyGroup>
 
   <Import Project="..\UsbMonitorShare\UsbMonitorShare.projitems" Label="Shared" />

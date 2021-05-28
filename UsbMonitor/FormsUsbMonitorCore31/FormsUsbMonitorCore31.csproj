@@ -8,6 +8,13 @@
     <Version>3.0.0</Version>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>Bassman.snk</AssemblyOriginatorKeyFile>
+    <Authors>Ralf Beckers</Authors>
+    <Description>Forms implementation of a USB monitor to signal if a USB device is plugged in or out.</Description>
+    <Copyright>Copyright © 2017 - 2021 by Ralf Beckers</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Bassman2/UsbMonitor</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Bassman2/UsbMonitor</RepositoryUrl>
+    <RepositoryType>Github</RepositoryType>
   </PropertyGroup>
 
   <Import Project="..\FormsUsbMonitorShare\FormsUsbMonitorShare.projitems" Label="Shared" />
