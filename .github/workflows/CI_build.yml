@@ -61,4 +61,15 @@ jobs:
            $env:SHFBROOT = "C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\"
            msbuild UsbMonitor.sln /p:configuration="${{ matrix.build_configuration }}" /verbosity:minimal
 
+    - name: Setup NuGet.exe
+      if: matrix.build_configuration == 'Release'
+      uses: nuget/setup-nuget@v1
+
+    - name: Build NuGet package
+      if: matrix.build_configuration == 'Release'
+      working-directory: .
+      run: |
+           cd .\Nuget
+           nuget pack FormsUsbMonitorWO6.nuspec -properties Configuration=${{ matrix.build_configuration }}
+           nuget pack WpfUsbMonitorWO6.nuspec -properties Configuration=${{ matrix.build_configuration }}
 
