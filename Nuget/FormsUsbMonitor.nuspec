@@ -13,7 +13,7 @@
     <releaseNotes>Creation</releaseNotes>
     <copyright>Copyright © 2017 - 2021 by Ralf Beckers</copyright>
     <tags>Forms USB Monitor</tags>
-	<repository type="Github" url="https://github.com/Bassman2/JenkinsWebApi" />
+	<repository type="Github" url="https://github.com/Bassman2/UsbMonitor" />
     <dependencies>
       <group targetFramework=".NETFramework4.5" />
       <group targetFramework=".NETCoreApp3.1" />
