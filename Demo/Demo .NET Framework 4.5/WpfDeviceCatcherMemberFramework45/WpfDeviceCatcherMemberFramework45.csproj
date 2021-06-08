@@ -76,7 +76,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\UsbMonitor\WpfUsbMonitorFramework45\WpfUsbMonitorFramework45.csproj">
+    <ProjectReference Include="..\..\..\Src\WpfUsbMonitorFramework45\WpfUsbMonitorFramework45.csproj">
       <Project>{494a3e91-10e0-4f20-a0fc-77f0ce01e576}</Project>
       <Name>WpfUsbMonitorFramework45</Name>
     </ProjectReference>

@@ -9,7 +9,7 @@
   <Import Project="..\..\Demo Share\WpfDeviceCatcherMvvmShare\WpfDeviceCatcherMvvmShare.projitems" Label="Shared" />
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\UsbMonitor\WpfUsbMonitor50\WpfUsbMonitor50.csproj" />
+    <ProjectReference Include="..\..\..\Src\WpfUsbMonitor50\WpfUsbMonitor50.csproj" />
   </ItemGroup>
 
 </Project>

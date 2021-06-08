@@ -69,7 +69,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\UsbMonitor\FormsUsbMonitorFramework45\FormsUsbMonitorFramework45.csproj">
+    <ProjectReference Include="..\..\..\Src\FormsUsbMonitorFramework45\FormsUsbMonitorFramework45.csproj">
       <Project>{a1529179-ba0e-4ad8-9f89-3ec007aea44e}</Project>
       <Name>FormsUsbMonitorFramework45</Name>
     </ProjectReference>

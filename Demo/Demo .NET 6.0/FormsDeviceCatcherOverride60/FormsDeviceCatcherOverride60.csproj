@@ -9,7 +9,7 @@
   <Import Project="..\..\Demo Share\FormsDeviceCatcherOverrideShare\FormsDeviceCatcherOverrideShare.projitems" Label="Shared" />
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\UsbMonitor\FormsUsbMonitor60\FormsUsbMonitor60.csproj" />
+    <ProjectReference Include="..\..\..\Src\FormsUsbMonitor60\FormsUsbMonitor60.csproj" />
   </ItemGroup>
 
 </Project>

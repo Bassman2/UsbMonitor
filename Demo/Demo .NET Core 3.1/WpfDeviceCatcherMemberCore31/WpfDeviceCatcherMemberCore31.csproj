@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\UsbMonitor\WpfUsbMonitorCore31\WpfUsbMonitorCore31.csproj" />
+    <ProjectReference Include="..\..\..\Src\WpfUsbMonitorCore31\WpfUsbMonitorCore31.csproj" />
   </ItemGroup>
 
   <Import Project="..\..\Demo Share\WpfDeviceCatcherMemberShare\WpfDeviceCatcherMemberShare.projitems" Label="Shared" />

@@ -1,0 +1,1234 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WpfUsbMonitor</name>
+    </assembly>
+    <members>
+        <member name="T:UsbMonitor.DeviceChangeManager">
+            <summary>
+            Device change manager
+            </summary>
+        </member>
+        <member name="M:UsbMonitor.DeviceChangeManager.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:UsbMonitor.DeviceChangeManager.Register(System.IntPtr)">
+            <summary>
+            Register windows for notification
+            </summary>
+            <param name="windowHandle">Windows handle of the main window</param>
+        </member>
+        <member name="M:UsbMonitor.DeviceChangeManager.Unregister">
+            <summary>
+            Unregister notifications
+            </summary>
+        </member>
+        <member name="M:UsbMonitor.DeviceChangeManager.HwndHandler(UsbMonitor.IUsbMonitor,System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)">
+            <summary>
+            Main windows message handler and dispatcher
+            </summary>
+            <param name="monitor">Monitor class to signal notifications</param>
+            <param name="hwnd">Window handle</param>
+            <param name="msg">Window message</param>
+            <param name="wparam">W parameter</param>
+            <param name="lparam">L parameter</param>
+        </member>
+        <member name="M:UsbMonitor.IUsbMonitorOverrides.OnUsbOem(UsbMonitor.UsbEventOemArgs)">
+            <summary>
+            Override to handle USB interface notification.
+            </summary>
+            <param name="args">Update arguments</param>
+        </member>
+        <member name="M:UsbMonitor.IUsbMonitorOverrides.OnUsbChanged(UsbMonitor.UsbEventArgs)">
+            <summary>
+            Override to handle USB changed notification.
+            </summary>
+        </member>
+        <member name="T:UsbMonitor.UsbDeviceChangeEvent">
+            <summary>
+            Device action
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceChangeEvent.Arrival">
+            <summary>
+            A device or piece of media has been inserted and is now available.
+            </summary>
+            <remarks>DBT_DEVICEARRIVAL</remarks>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceChangeEvent.QueryRemove">
+            <summary>
+            Permission is requested to remove a device or piece of media. Any application can deny this request and cancel the removal.
+            </summary>
+            <remarks>DBT_DEVICEQUERYREMOVE</remarks>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceChangeEvent.QueryRemoveFailed">
+            <summary>
+            A request to remove a device or piece of media has been canceled.
+            </summary>
+            <remarks>DBT_DEVICEQUERYREMOVEFAILED</remarks>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceChangeEvent.RemovePending">
+            <summary>
+            A device or piece of media is about to be removed. Cannot be denied.
+            </summary>
+            <remarks> DBT_DEVICEREMOVEPENDING</remarks>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceChangeEvent.RemoveComplete">
+            <summary>
+            A device or piece of media has been removed.
+            </summary>
+            <remarks>DBT_DEVICEREMOVECOMPLETE</remarks>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceChangeEvent.Changed">
+             <summary>
+             A device has been added to or removed from the system.
+             </summary>
+            <remarks>DBT_DEVNODES_CHANGED</remarks>
+        </member>
+        <member name="T:UsbMonitor.UsbDeviceClass">
+            <summary>
+            USB device class
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceClass.Unknown">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceClass.WPD">
+            <summary>
+            Windows Portable Devices
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceClass.CDROM">
+            <summary>
+            CD/DVD/Blu-ray drives
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceClass.DiskDrive">
+            <summary>
+            Hard drives
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceClass.Display">
+            <summary>
+            Video adapters
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceClass.FDC">
+            <summary>
+            Floppy controllers
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceClass.FloppyDisk">
+            <summary>
+            Floppy drives
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceClass.HDC">
+            <summary>
+            Hard drive controllers
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceClass.HIDClass">
+            <summary>
+            Some USB devices
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceClass.IEEE1394">
+            <summary>
+            IEEE 1394 host controller
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceClass.Image">
+            <summary>
+            Cameras and scanners
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceClass.Keyboard">
+            <summary>
+            Keyboards
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceClass.Modem">
+            <summary>
+            Modems
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceClass.Mouse">
+            <summary>
+            Mice and pointing devices
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceClass.Media">
+            <summary>
+            Audio and video devices
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceClass.Net">
+            <summary>
+            Network adapters
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceClass.Ports">
+            <summary>
+            Serial and parallel ports
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceClass.SCSIAdapter">
+            <summary>
+            SCSI and RAID controllers
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceClass.System">
+            <summary>
+            System buses, bridges, etc.
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceClass.USB">
+            <summary>
+            USB host controllers and hubs
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceClass.Printer">
+            <summary>
+            Printers
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceClass.MTPContactService">
+            <summary>
+            MTP Contact Service
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceClass.MTPCalendarService">
+            <summary>
+            MTP Calendar Service
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceClass.MTPNotesService">
+            <summary>
+            MTP Notes Service
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceClass.MTPTaskService">
+            <summary>
+            MTP Task Service
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceClass.MTPStatusService">
+            <summary>
+            MTP Status Service
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceClass.MTPHintsService">
+            <summary>
+            MTP Hints Service
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceClass.MTPDeviceMetadataService">
+            <summary>
+            MTP Device Metadata Service
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceClass.MTPRingtoneService">
+            <summary>
+            MTP Ringtone Service
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceClass.MTPEnumerationSynchronizationService">
+            <summary>
+            MTP Enumeration Synchronization Service
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceClass.MTPAnchorSynchronizationService">
+            <summary>
+            MTP Anchor Synchronization Service
+            </summary>
+        </member>
+        <member name="T:UsbMonitor.UsbDeviceInterface">
+            <summary>
+            Device interfaces
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Unknown">
+            <summary>
+            Unknown
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Brightness">
+            <summary>
+            Brightness
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.CDChanger">
+            <summary>
+            CD Changer
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.CDROM">
+            <summary>
+            CD ROM
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.COMPort">
+            <summary>
+            COM Port
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Disk">
+            <summary>
+            Disk
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.DisplayAdapter">
+            <summary>
+            Display Adapter
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Floppy">
+            <summary>
+            Floppy
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.HID">
+            <summary>
+            HID
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.I2C">
+            <summary>
+            I2C
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Image">
+            <summary>
+            Image
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Keyboard">
+            <summary>
+            Keyboard
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.MediumChanger">
+            <summary>
+            Medium Changer
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Modem">
+            <summary>
+            Modem
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Monitor">
+            <summary>
+            Monitor
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Mouse">
+            <summary>
+            Mouse
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Net">
+            <summary>
+            Network
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.OPM">
+            <summary>
+            Output Protection Management 
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Parallel">
+            <summary>
+            Parallel Port IEEE 1284
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.ParClass">
+            <summary>
+            Parallel Class
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Partition">
+            <summary>
+            Partition Device
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.SerenumBusEnumerator">
+            <summary>
+            Serial Bus Enumerator
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.SideShow">
+            <summary>
+            Side Show
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.StoragePort">
+            <summary>
+            Storage Port
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Tape">
+            <summary>
+            Tape
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.UsbDevice">
+            <summary>
+            USB Device
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.UsbHostController">
+            <summary>
+            USB Host Controller
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.UsbHub">
+            <summary>
+            USB Hub
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.VideoOutputArrival">
+            <summary>
+            Video Output Arrival
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Volume">
+            <summary>
+            Volume
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.WPD">
+            <summary>
+            Windows Portable Devices
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.WPDPrivate">
+            <summary>
+            Private Windows Portable Devices
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.WriteOnCeDisk">
+            <summary>
+            Write on CE Disk
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.AcousticEchoCancel">
+            <summary>
+            Acoustic Echo Cancel
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Audio">
+            <summary>
+            Audio
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.AudioDevice">
+            <summary>
+            Audio Device
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.AudioGFX">
+            <summary>
+            Audio GFX
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.AudioSplitter">
+            <summary>
+            Audio Splitter
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.BDAIPSink">
+            <summary>
+            Broadcast Driver Architecture sink filter
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.BDANetworkEPG">
+            <summary>
+            Broadcast Driver Architecture for an electronic program guide (EPG) 
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.BDANetworkProvider">
+            <summary>
+            Broadcast Driver Architecture Network Provider
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.BDANetworkTuner">
+            <summary>
+            Broadcast Driver Architecture Network Tuner
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.BDAReceiverComponent">
+            <summary>
+            Broadcast Driver Architecture Receiver Component
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.BDATransportInformation">
+            <summary>
+            Broadcast Driver Architecture Transport Information
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Bridge">
+            <summary>
+            Bridge
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Capture">
+            <summary>
+            Capture WAV and MIDI data
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Clock">
+            <summary>
+            Clock
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.CommunicationsTransform">
+            <summary>
+            Communications Transform
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Crossbar">
+            <summary>
+            Crossbar
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.DataCompressor">
+            <summary>
+            Data Compressor
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.DataDecompressor">
+            <summary>
+            Data Decompressor
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.DataTransform">
+            <summary>
+            Data Transform
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.DRMDescramble">
+            <summary>
+            DRM Descramble
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Encoder">
+            <summary>
+            Encoder
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.EscalantePlatformDriver">
+            <summary>
+            Escalante Platform Driver
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Filesystem">
+            <summary>
+            Filesystem
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.InterfaceTransform">
+            <summary>
+            Interface Transform
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.MediumTransform">
+            <summary>
+            Medium Transform
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.MicrophoneArrayProcessor">
+            <summary>
+            Microphone Array Processor
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Mixer">
+            <summary>
+            Mixer
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Multiplexer">
+            <summary>
+            Multiplexer
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Network">
+            <summary>
+            Network
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.PreferredMidiOutDevice">
+            <summary>
+            Preferred Midi Out Device
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.PreferredWaveInDevice">
+            <summary>
+            Preferred Wave In Device
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.PreferredWaveOutDevice">
+            <summary>
+            Preferred Wave Out Device
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Proxy">
+            <summary>
+            Proxy
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Quality">
+            <summary>
+            Quality
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Realtime">
+            <summary>
+            Realtime
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Render">
+            <summary>
+            Render WAV and MIDI data
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.SensorCamera">
+            <summary>
+            Sensor Camera
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Splitter">
+            <summary>
+            Splitter
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Synthesizer">
+            <summary>
+            Synthesizer
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.SysAudio">
+            <summary>
+            Sys Audio
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Text">
+            <summary>
+            Text
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Topology">
+            <summary>
+            Topology
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.TVAudio">
+            <summary>
+            TV Audio
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.TVTuner">
+            <summary>
+            TV Tuner
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.VBICodec">
+            <summary>
+            VBI Codec
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Video">
+            <summary>
+            Video
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.VideoCamera">
+            <summary>
+            Video Camera
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.Virtual">
+            <summary>
+            Virtual
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.VPMux">
+            <summary>
+            Video Multiplexing
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.WDAudio">
+            <summary>
+            WD Audio
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.WPD2">
+            <summary>
+            Windows Portable Devices 2
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.UMBus">
+            <summary>
+            Microsoft UMBus Root Bus Enumerator generic
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.RenderingControl">
+            <summary>
+            Rendering Control
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.ConnectionManager">
+            <summary>
+            Connection Manager
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.AVTransport">
+            <summary>
+            AV Transport
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceInterface.ContentDirectory">
+            <summary>
+            Content Directory
+            </summary>
+        </member>
+        <member name="T:UsbMonitor.UsbDeviceType">
+            <summary>
+            Device type
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceType.OEM">
+            <summary>
+            OEM- or IHV-defined device type. This structure is a DEV_BROADCAST_OEM structure.
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceType.Volume">
+            <summary>
+            Logical volume. This structure is a DEV_BROADCAST_VOLUME structure.
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceType.Port">
+            <summary>
+            Port device (serial or parallel). This structure is a DEV_BROADCAST_PORT structure.
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceType.DeviceInterface">
+            <summary>
+            Class of devices. This structure is a DEV_BROADCAST_DEVICEINTERFACE structure.
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbDeviceType.Handle">
+            <summary>
+            File system handle. This structure is a DEV_BROADCAST_HANDLE structure.
+            </summary>
+        </member>
+        <member name="T:UsbMonitor.UsbEventArgs">
+            <summary>
+            A class for containing USB event data
+            </summary>
+        </member>
+        <member name="P:UsbMonitor.UsbEventArgs.Action">
+            <summary>
+            Device action
+            </summary>
+        </member>
+        <member name="M:UsbMonitor.UsbEventArgs.ToString">
+            <summary>
+            Override ToString
+            </summary>
+            <returns>Debug string</returns>
+        </member>
+        <member name="T:UsbMonitor.UsbEventDeviceInterfaceArgs">
+            <summary>
+            Interface notification arguments
+            </summary>
+        </member>
+        <member name="M:UsbMonitor.UsbEventDeviceInterfaceArgs.#ctor(UsbMonitor.UsbDeviceChangeEvent,System.Guid,UsbMonitor.UsbDeviceInterface,System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="action"></param>
+            <param name="classGuid"></param>
+            <param name="deviceInterface"></param>
+            <param name="name"></param>
+        </member>
+        <member name="P:UsbMonitor.UsbEventDeviceInterfaceArgs.ClassGuid">
+            <summary>
+            GUID of the interface class
+            </summary>
+        </member>
+        <member name="P:UsbMonitor.UsbEventDeviceInterfaceArgs.DeviceInterface">
+            <summary>
+            Interface type
+            </summary>
+        </member>
+        <member name="P:UsbMonitor.UsbEventDeviceInterfaceArgs.Name">
+            <summary>
+            Name od the interface
+            </summary>
+        </member>
+        <member name="M:UsbMonitor.UsbEventDeviceInterfaceArgs.ToString">
+            <summary>
+            Converts arguments to readable string
+            </summary>
+            <returns>String</returns>
+        </member>
+        <member name="T:UsbMonitor.UsbEventHandleArgs">
+            <summary>
+            Handle notification arguments
+            </summary>
+        </member>
+        <member name="M:UsbMonitor.UsbEventHandleArgs.#ctor(UsbMonitor.UsbDeviceChangeEvent,System.IntPtr,System.IntPtr,System.Guid,System.UInt64,System.Byte[])">
+            <summary>
+            Constructor
+            </summary>
+            <param name="action"></param>
+            <param name="handle"></param>
+            <param name="devNotify"></param>
+            <param name="eventGuid"></param>
+            <param name="nameOffset"></param>
+            <param name="data"></param>
+        </member>
+        <member name="P:UsbMonitor.UsbEventHandleArgs.Handle">
+            <summary>
+            A handle to the device to be checked.
+            </summary>
+        </member>
+        <member name="P:UsbMonitor.UsbEventHandleArgs.DevNotify">
+            <summary>
+            A handle to the device notification.
+            </summary>
+        </member>
+        <member name="P:UsbMonitor.UsbEventHandleArgs.EventGuid">
+            <summary>
+            The GUID for the custom event.
+            </summary>
+        </member>
+        <member name="P:UsbMonitor.UsbEventHandleArgs.NameOffset">
+            <summary>
+            The offset of an optional string buffer. 
+            </summary>
+        </member>
+        <member name="P:UsbMonitor.UsbEventHandleArgs.Data">
+            <summary>
+            Optional binary data.
+            </summary>
+        </member>
+        <member name="M:UsbMonitor.UsbEventHandleArgs.ToString">
+            <summary>
+            Converts arguments to readable string
+            </summary>
+            <returns>String</returns>
+        </member>
+        <member name="T:UsbMonitor.UsbEventOemArgs">
+            <summary>
+            OEM notification arguments
+            </summary>
+        </member>
+        <member name="M:UsbMonitor.UsbEventOemArgs.#ctor(UsbMonitor.UsbDeviceChangeEvent,System.UInt32,System.UInt32)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="action"></param>
+            <param name="identifier"></param>
+            <param name="suppFunc"></param>
+        </member>
+        <member name="P:UsbMonitor.UsbEventOemArgs.Identifier">
+            <summary>
+            The OEM-specific identifier for the device.
+            </summary>
+        </member>
+        <member name="P:UsbMonitor.UsbEventOemArgs.SuppFunc">
+            <summary>
+            The OEM-specific function value. Possible values depend on the device.
+            </summary>
+        </member>
+        <member name="M:UsbMonitor.UsbEventOemArgs.ToString">
+            <summary>
+            Converts arguments to readable string
+            </summary>
+            <returns>String</returns>
+        </member>
+        <member name="T:UsbMonitor.UsbEventPortArgs">
+            <summary>
+            Port notification arguments
+            </summary>
+        </member>
+        <member name="M:UsbMonitor.UsbEventPortArgs.#ctor(UsbMonitor.UsbDeviceChangeEvent,System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="action"></param>
+            <param name="name"></param>
+        </member>
+        <member name="P:UsbMonitor.UsbEventPortArgs.Name">
+            <summary>
+            Specifying the friendly name of the port or the device connected to the port. 
+            Friendly names are intended to help the user quickly and accurately identify the device
+            for example, "COM1" and "Standard 28800 bps Modem" are considered friendly names.
+            </summary>
+        </member>
+        <member name="M:UsbMonitor.UsbEventPortArgs.ToString">
+            <summary>
+            Converts arguments to readable string
+            </summary>
+            <returns>String</returns>
+        </member>
+        <member name="T:UsbMonitor.UsbEventVolumeArgs">
+            <summary>
+            Volume notification arguments
+            </summary>
+        </member>
+        <member name="M:UsbMonitor.UsbEventVolumeArgs.#ctor(UsbMonitor.UsbDeviceChangeEvent,System.UInt32,System.UInt16,System.Char[])">
+            <summary>
+            Constructor
+            </summary>
+            <param name="action"></param>
+            <param name="unitmask"></param>
+            <param name="flags"></param>
+            <param name="drives"></param>
+        </member>
+        <member name="P:UsbMonitor.UsbEventVolumeArgs.UnitMask">
+            <summary>
+            The logical unit mask identifying one or more logical units. 
+            Each bit in the mask corresponds to one logical drive. 
+            Bit 0 represents drive A, bit 1 represents drive B, and so on.
+            </summary>
+        </member>
+        <member name="P:UsbMonitor.UsbEventVolumeArgs.Flags">
+            <summary>
+            This parameter can be one of the following values.
+            Media: Change affects media in drive. If not set, change affects physical device or drive. 
+            Net: Indicated logical volume is a network volume. 
+            </summary>
+        </member>
+        <member name="P:UsbMonitor.UsbEventVolumeArgs.Drives">
+            <summary>
+            Array of drive letters, build from UnitMask.
+            </summary>
+        </member>
+        <member name="M:UsbMonitor.UsbEventVolumeArgs.ToString">
+            <summary>
+            Converts arguments to readable string
+            </summary>
+            <returns>String</returns>
+        </member>
+        <member name="T:UsbMonitor.UsbMonitorManager">
+            <summary>
+            USB Monitor class to notify if the USB content changes
+            </summary>
+            <summary>
+            USB Monitor class to notify if the USB content changes
+            </summary>
+        </member>
+        <member name="E:UsbMonitor.UsbMonitorManager.UsbOem">
+            <summary>
+            Event for USB OEM
+            </summary>
+        </member>
+        <member name="E:UsbMonitor.UsbMonitorManager.UsbVolume">
+            <summary>
+            Event for USB Volume
+            </summary>
+        </member>
+        <member name="E:UsbMonitor.UsbMonitorManager.UsbPort">
+            <summary>
+            Event for USB Port
+            </summary>
+        </member>
+        <member name="E:UsbMonitor.UsbMonitorManager.UsbDeviceInterface">
+            <summary>
+            Event for USB Device Interface
+            </summary>
+        </member>
+        <member name="E:UsbMonitor.UsbMonitorManager.UsbHandle">
+            <summary>
+            Event for USB Handle
+            </summary>
+        </member>
+        <member name="E:UsbMonitor.UsbMonitorManager.UsbChanged">
+            <summary>
+            Event for USB Changed
+            </summary>
+        </member>
+        <member name="M:UsbMonitor.UsbMonitorManager.CallUsbOem(System.Object,UsbMonitor.UsbEventOemArgs)">
+            <summary>
+            Internal call of UsbOem
+            </summary>
+            <param name="sender">Sender</param>
+            <param name="args">Arguments</param>
+        </member>
+        <member name="M:UsbMonitor.UsbMonitorManager.CallUsbVolumem(System.Object,UsbMonitor.UsbEventVolumeArgs)">
+            <summary>
+            Internal call of UsbVolume
+            </summary>
+            <param name="sender">Sender</param>
+            <param name="args">Arguments</param>
+        </member>
+        <member name="M:UsbMonitor.UsbMonitorManager.CallUsbPort(System.Object,UsbMonitor.UsbEventPortArgs)">
+            <summary>
+            Internal call of CallUsbPort
+            </summary>
+            <param name="sender">Sender</param>
+            <param name="args">Arguments</param>
+        </member>
+        <member name="M:UsbMonitor.UsbMonitorManager.CallUsbDeviceInterface(System.Object,UsbMonitor.UsbEventDeviceInterfaceArgs)">
+            <summary>
+            Internal call of UsbDeviceInterface
+            </summary>
+            <param name="sender">Sender</param>
+            <param name="args">Arguments</param>
+        </member>
+        <member name="M:UsbMonitor.UsbMonitorManager.CallUsbHandle(System.Object,UsbMonitor.UsbEventHandleArgs)">
+            <summary>
+            Internal call of UsbHandle
+            </summary>
+            <param name="sender">Sender</param>
+            <param name="args">Arguments</param>
+        </member>
+        <member name="M:UsbMonitor.UsbMonitorManager.CallUsbChanged(System.Object,UsbMonitor.UsbEventArgs)">
+            <summary>
+            Internal call of UsbChanged
+            </summary>
+            <param name="sender">Sender</param>
+            <param name="args">Arguments</param>
+        </member>
+        <member name="M:UsbMonitor.UsbMonitorManager.Start">
+            <summary>
+            Enable USB notification.
+            </summary>
+        </member>
+        <member name="M:UsbMonitor.UsbMonitorManager.Stop">
+            <summary>
+            Disable USB notification.
+            </summary>
+        </member>
+        <member name="M:UsbMonitor.UsbMonitorManager.#ctor(System.Windows.Window,System.Boolean)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="window">Main window of the application.</param>
+            <param name="start">Enable USB notification on startup or not.</param>
+        </member>
+        <member name="T:UsbMonitor.UsbVolumeFlags">
+            <summary>
+            Volume flags
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbVolumeFlags.Media">
+            <summary>
+            Change affects media in drive. If not set, change affects physical device or drive. 
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbVolumeFlags.Net">
+            <summary>
+            Indicated logical volume is a network volume. 
+            </summary>
+        </member>
+        <member name="T:UsbMonitor.UsbMonitorWindow">
+            <summary>
+            USB Monitor window class
+            </summary>
+        </member>
+        <member name="E:UsbMonitor.UsbMonitorWindow.UsbOem">
+            <summary>
+            Event for USB OEM
+            </summary>
+        </member>
+        <member name="E:UsbMonitor.UsbMonitorWindow.UsbVolume">
+            <summary>
+            Event for USB Volume
+            </summary>
+        </member>
+        <member name="E:UsbMonitor.UsbMonitorWindow.UsbPort">
+            <summary>
+            Event for USB Port
+            </summary>
+        </member>
+        <member name="E:UsbMonitor.UsbMonitorWindow.UsbDeviceInterface">
+            <summary>
+            Event for USB Device Interface
+            </summary>
+        </member>
+        <member name="E:UsbMonitor.UsbMonitorWindow.UsbHandle">
+            <summary>
+            Event for USB Handle
+            </summary>
+        </member>
+        <member name="E:UsbMonitor.UsbMonitorWindow.UsbChanged">
+            <summary>
+            Event for USB Changed
+            </summary>
+        </member>
+        <member name="M:UsbMonitor.UsbMonitorWindow.CallUsbOem(System.Object,UsbMonitor.UsbEventOemArgs)">
+            <summary>
+            Internal call of UsbOem
+            </summary>
+            <param name="sender">Sender</param>
+            <param name="args">Arguments</param>
+        </member>
+        <member name="M:UsbMonitor.UsbMonitorWindow.CallUsbVolumem(System.Object,UsbMonitor.UsbEventVolumeArgs)">
+            <summary>
+            Internal call of UsbVolume
+            </summary>
+            <param name="sender">Sender</param>
+            <param name="args">Arguments</param>
+        </member>
+        <member name="M:UsbMonitor.UsbMonitorWindow.CallUsbPort(System.Object,UsbMonitor.UsbEventPortArgs)">
+            <summary>
+            Internal call of CallUsbPort
+            </summary>
+            <param name="sender">Sender</param>
+            <param name="args">Arguments</param>
+        </member>
+        <member name="M:UsbMonitor.UsbMonitorWindow.CallUsbDeviceInterface(System.Object,UsbMonitor.UsbEventDeviceInterfaceArgs)">
+            <summary>
+            Internal call of UsbDeviceInterface
+            </summary>
+            <param name="sender">Sender</param>
+            <param name="args">Arguments</param>
+        </member>
+        <member name="M:UsbMonitor.UsbMonitorWindow.CallUsbHandle(System.Object,UsbMonitor.UsbEventHandleArgs)">
+            <summary>
+            Internal call of UsbHandle
+            </summary>
+            <param name="sender">Sender</param>
+            <param name="args">Arguments</param>
+        </member>
+        <member name="M:UsbMonitor.UsbMonitorWindow.CallUsbChanged(System.Object,UsbMonitor.UsbEventArgs)">
+            <summary>
+            Internal call of UsbChanged
+            </summary>
+            <param name="sender">Sender</param>
+            <param name="args">Arguments</param>
+        </member>
+        <member name="M:UsbMonitor.UsbMonitorWindow.OnUsbOem(UsbMonitor.UsbEventOemArgs)">
+            <summary>
+            Override to handle USB OEM notification.
+            </summary>
+            <param name="args">OEM arguments</param>
+        </member>
+        <member name="M:UsbMonitor.UsbMonitorWindow.OnUsbVolume(UsbMonitor.UsbEventVolumeArgs)">
+            <summary>
+            Override to handle USB Volume notification.
+            </summary>
+            <param name="args">Volume arguments</param>
+        </member>
+        <member name="M:UsbMonitor.UsbMonitorWindow.OnUsbPort(UsbMonitor.UsbEventPortArgs)">
+            <summary>
+            Override to handle USB Port notification.
+            </summary>
+            <param name="args">Port arguments</param>
+        </member>
+        <member name="M:UsbMonitor.UsbMonitorWindow.OnUsbInterface(UsbMonitor.UsbEventDeviceInterfaceArgs)">
+            <summary>
+            Override to handle USB Interface notification.
+            </summary>
+            <param name="args">Interface arguments</param>
+        </member>
+        <member name="M:UsbMonitor.UsbMonitorWindow.OnUsbHandle(UsbMonitor.UsbEventHandleArgs)">
+            <summary>
+            Override to handle USB Handle notification.
+            </summary>
+            <param name="args">Handle arguments</param>
+        </member>
+        <member name="M:UsbMonitor.UsbMonitorWindow.OnUsbChanged(UsbMonitor.UsbEventArgs)">
+            <summary>
+            Override to handle USB changed notification.
+            </summary>
+            <param name="args">Changed arguments</param>
+        </member>
+        <member name="F:UsbMonitor.UsbMonitorWindow.UsbChangedCommandProperty">
+            <summary>
+            USB Changed dependency property
+            </summary>
+        </member>
+        <member name="P:UsbMonitor.UsbMonitorWindow.UsbChangedCommand">
+            <summary>
+            ICommand to be called on USB Changed.
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbMonitorWindow.UsbOemCommandProperty">
+            <summary>
+            USB OEM dependency property
+            </summary>
+        </member>
+        <member name="P:UsbMonitor.UsbMonitorWindow.UsbOemCommand">
+            <summary>
+            ICommand to be called on USB OEM.
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbMonitorWindow.UsbVolumeCommandProperty">
+            <summary>
+            USB Volume dependency property
+            </summary>
+        </member>
+        <member name="P:UsbMonitor.UsbMonitorWindow.UsbVolumeCommand">
+            <summary>
+            ICommand to be called on USB Volume.
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbMonitorWindow.UsbPortCommandProperty">
+            <summary>
+            USB Port dependency property
+            </summary>
+        </member>
+        <member name="P:UsbMonitor.UsbMonitorWindow.UsbPortCommand">
+            <summary>
+            ICommand to be called on USB Port.
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbMonitorWindow.UsbDeviceInterfaceCommandProperty">
+            <summary>
+            USB DeviceInterface dependency property
+            </summary>
+        </member>
+        <member name="P:UsbMonitor.UsbMonitorWindow.UsbDeviceInterfaceCommand">
+            <summary>
+            ICommand to be called on USB DeviceInterface.
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbMonitorWindow.UsbHandleCommandProperty">
+            <summary>
+            USB Handle dependency property
+            </summary>
+        </member>
+        <member name="P:UsbMonitor.UsbMonitorWindow.UsbHandleCommand">
+            <summary>
+            ICommand to be called on USB Handle.
+            </summary>
+        </member>
+        <member name="F:UsbMonitor.UsbMonitorWindow.UsbNotificationProperty">
+            <summary>
+            USB Notification dependency property
+            </summary>
+        </member>
+        <member name="P:UsbMonitor.UsbMonitorWindow.UsbNotification">
+            <summary>
+            Enable USB notification.
+            </summary>
+        </member>
+        <member name="M:UsbMonitor.UsbMonitorWindow.OnInitialized(System.EventArgs)">
+            <summary>
+            Raises the System.Windows.FrameworkElement.Initialized event. This method is
+            invoked whenever System.Windows.FrameworkElement.IsInitialized is set to true internally.
+            </summary>
+            <param name="e">The System.Windows.RoutedEventArgs that contains the event data.</param>
+        </member>
+        <member name="M:UsbMonitor.UsbMonitorWindow.Start">
+            <summary>
+            Enable USB notification.
+            </summary>
+        </member>
+        <member name="M:UsbMonitor.UsbMonitorWindow.Stop">
+            <summary>
+            Disable USB notification.
+            </summary>
+        </member>
+    </members>
+</doc>

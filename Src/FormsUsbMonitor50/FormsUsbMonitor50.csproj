@@ -20,7 +20,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>C:\Projects\UsbMonitor\UsbMonitor\FormsUsbMonitor50\FormsUsbMonitor.xml</DocumentationFile>
+    <DocumentationFile>C:\Projects\UsbMonitor\Src\FormsUsbMonitor50\FormsUsbMonitor.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

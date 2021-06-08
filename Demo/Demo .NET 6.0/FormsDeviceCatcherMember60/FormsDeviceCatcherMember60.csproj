@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\UsbMonitor\FormsUsbMonitor60\FormsUsbMonitor60.csproj" />
+    <ProjectReference Include="..\..\..\Src\FormsUsbMonitor60\FormsUsbMonitor60.csproj" />
   </ItemGroup>
 
   <Import Project="..\..\Demo Share\FormsDeviceCatcherMemberShare\FormsDeviceCatcherMemberShare.projitems" Label="Shared" />
