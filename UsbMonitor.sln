@@ -92,8 +92,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfUsbMonitorFramework45", "Src\WpfUsbMonitorFramework45\WpfUsbMonitorFramework45.csproj", "{494A3E91-10E0-4F20-A0FC-77F0CE01E576}"
 EndProject
 Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "FormsUsbMonitorDocumentation", "Doc\FormsUsbMonitorDocumentation\FormsUsbMonitorDocumentation.shfbproj", "{C4F78FBA-4939-4782-8883-79216AAD99FD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{67A1D2C0-2F81-4FAB-BE7F-16174CF58680} = {67A1D2C0-2F81-4FAB-BE7F-16174CF58680}
+	EndProjectSection
 EndProject
 Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "WpfUsbMonitorDocumentation", "Doc\WpfUsbMonitorDocumentation\WpfUsbMonitorDocumentation.shfbproj", "{505B0644-89B7-424D-88BE-9949C6D6FF9A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{86840AAB-7711-4D0B-A522-DBC1ED49D9DF} = {86840AAB-7711-4D0B-A522-DBC1ED49D9DF}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution

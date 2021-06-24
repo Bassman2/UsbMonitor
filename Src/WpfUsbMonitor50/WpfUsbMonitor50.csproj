@@ -22,7 +22,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>C:\Projects\UsbMonitor\WpfUsbMonitor50\WpfUsbMonitor50.xml</DocumentationFile>
+    <DocumentationFile>WpfUsbMonitor.xml</DocumentationFile>
   </PropertyGroup>
 
   <Import Project="..\UsbMonitorShare\UsbMonitorShare.projitems" Label="Shared" />
