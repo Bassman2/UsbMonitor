@@ -5,7 +5,7 @@ on: [push, pull_request]
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: windows-2019
     strategy:
       max-parallel: 2
       matrix:
@@ -18,6 +18,9 @@ jobs:
 
     - name: Add msbuild to PATH
       uses: microsoft/setup-msbuild@v1
+
+    - name: Setup NuGet.exe
+      uses: nuget/setup-nuget@v1
 
     - name: "Download and install sandcastle"
       run: |
@@ -33,43 +36,29 @@ jobs:
       shell: pwsh
       working-directory: .
 
-    - name: restore
-      working-directory: .
-      run: msbuild UsbMonitor.sln /m /verbosity:minimal /t:restore /p:configuration="${{ matrix.build_configuration }}" /p:platform="${{ matrix.build_platform }}"
-
     - name: copy dummy key for signing
       working-directory: .
       run: |
-           Copy-Item  appveyor_dummy.snk -Destination UsbMonitor\FormsUsbMonitorFramework45\Bassman.snk
-           Copy-Item  appveyor_dummy.snk -Destination UsbMonitor\WpfUsbMonitorFramework45\Bassman.snk
-           Copy-Item  appveyor_dummy.snk -Destination UsbMonitor\WpfUsbMonitor60\Bassman.snk
-           Copy-Item  appveyor_dummy.snk -Destination UsbMonitor\FormsUsbMonitor60\Bassman.snk
-           Copy-Item  appveyor_dummy.snk -Destination UsbMonitor\WpfUsbMonitorCore31\Bassman.snk
-           Copy-Item  appveyor_dummy.snk -Destination UsbMonitor\FormsUsbMonitorCore31\Bassman.snk
-           Copy-Item  appveyor_dummy.snk -Destination UsbMonitor\WpfUsbMonitor50\Bassman.snk
-           Copy-Item  appveyor_dummy.snk -Destination UsbMonitor\FormsUsbMonitor50\Bassman.snk
+           Copy-Item  DummySignKey.snk -Destination Src\FormsUsbMonitor60\Bassman.snk
+           Copy-Item  DummySignKey.snk -Destination Src\FormsUsbMonitor50\Bassman.snk
+           Copy-Item  DummySignKey.snk -Destination Src\FormsUsbMonitorCore31\Bassman.snk
+           Copy-Item  DummySignKey.snk -Destination Src\FormsUsbMonitorFramework45\Bassman.snk
+           Copy-Item  DummySignKey.snk -Destination Src\WpfUsbMonitor60\Bassman.snk
+           Copy-Item  DummySignKey.snk -Destination Src\WpfUsbMonitor50\Bassman.snk
+           Copy-Item  DummySignKey.snk -Destination Src\WpfUsbMonitorCore31\Bassman.snk
+           Copy-Item  DummySignKey.snk -Destination Src\WpfUsbMonitorFramework45\Bassman.snk
 
 
+    - name: restore
+      working-directory: .
+      run: |
+           $env:SHFBROOT="C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\"
+           nuget restore UsbMonitor.sln
 
     - name: MSBuild of solution
       working-directory: .
       run: |
            $env:SHFBROOT = "C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\"
-           msbuild UsbMonitor.sln /m /verbosity:minimal /p:configuration="${{ matrix.build_configuration }}" /p:platform="${{ matrix.build_platform }}"
+           msbuild UsbMonitor.sln /p:configuration="${{ matrix.build_configuration }}" /verbosity:minimal
 
-    - name: Build NuGet package
-      if: matrix.build_configuration == 'Release'
-      working-directory: .
-      run: |
-           cd .\Nuget
-           pack.cmd
-
-    - name: Archive artifacts
-      if: matrix.build_configuration == 'Release'
-      uses: actions/upload-artifact@v2
-      with:
-          name: nupkg packages
-          path: |
-                Nuget\FormsUsbMonitor.3.0.0.nupkg
-                Nuget\WpfUsbMonitor.3.0.0.nupkg
 
