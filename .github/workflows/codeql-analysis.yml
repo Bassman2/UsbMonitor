@@ -40,7 +40,7 @@ jobs:
     #  uses: github/codeql-action/autobuild@v1
 
     # ℹ️ Command-line programs to run using the OS shell.
-    # 📚 https://git.io/JvXDl
+    # �� https://git.io/JvXDl
 
     # ✏️ If the Autobuild fails above, remove it and uncomment the following three lines
     #    and modify them (or add more) to build your code if your project
@@ -49,6 +49,9 @@ jobs:
     #- run: |
     #   make bootstrap
     #   make release
+
+    - name: Add msbuild to PATH
+      uses: microsoft/setup-msbuild@v1
 
     - name: "Download and install sandcastle"
       run: |
@@ -64,30 +67,29 @@ jobs:
       shell: pwsh
       working-directory: .
 
-    - name: Add msbuild to PATH
-      uses: microsoft/setup-msbuild@v1
-
-    - name: restore
-      working-directory: .
-      run: msbuild UsbMonitor.sln /m /verbosity:minimal /t:restore /p:configuration="Release" /p:platform="Any CPU"
-
     - name: copy dummy key for signing
       working-directory: .
       run: |
-           Copy-Item  appveyor_dummy.snk -Destination UsbMonitor\FormsUsbMonitorFramework45\Bassman.snk
-           Copy-Item  appveyor_dummy.snk -Destination UsbMonitor\WpfUsbMonitorFramework45\Bassman.snk
-           Copy-Item  appveyor_dummy.snk -Destination UsbMonitor\WpfUsbMonitor60\Bassman.snk
-           Copy-Item  appveyor_dummy.snk -Destination UsbMonitor\FormsUsbMonitor60\Bassman.snk
-           Copy-Item  appveyor_dummy.snk -Destination UsbMonitor\WpfUsbMonitorCore31\Bassman.snk
-           Copy-Item  appveyor_dummy.snk -Destination UsbMonitor\FormsUsbMonitorCore31\Bassman.snk
-           Copy-Item  appveyor_dummy.snk -Destination UsbMonitor\WpfUsbMonitor50\Bassman.snk
-           Copy-Item  appveyor_dummy.snk -Destination UsbMonitor\FormsUsbMonitor50\Bassman.snk
+           Copy-Item  DummySignKey.snk -Destination Src\FormsUsbMonitor60\Bassman.snk
+           Copy-Item  DummySignKey.snk -Destination Src\FormsUsbMonitor50\Bassman.snk
+           Copy-Item  DummySignKey.snk -Destination Src\FormsUsbMonitorCore31\Bassman.snk
+           Copy-Item  DummySignKey.snk -Destination Src\FormsUsbMonitorFramework45\Bassman.snk
+           Copy-Item  DummySignKey.snk -Destination Src\WpfUsbMonitor60\Bassman.snk
+           Copy-Item  DummySignKey.snk -Destination Src\WpfUsbMonitor50\Bassman.snk
+           Copy-Item  DummySignKey.snk -Destination Src\WpfUsbMonitorCore31\Bassman.snk
+           Copy-Item  DummySignKey.snk -Destination Src\WpfUsbMonitorFramework45\Bassman.snk
+
+    - name: restore
+      working-directory: .
+      run: |
+           $env:SHFBROOT="C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\"
+           nuget restore UsbMonitor.sln
 
     - name: MSBuild of solution
       working-directory: .
       run: |
            $env:SHFBROOT = "C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\"
-           msbuild UsbMonitor.sln /m /verbosity:minimal /p:configuration="Release" /p:platform="Any CPU"
+           msbuild UsbMonitor.sln /p:configuration="Release" /verbosity:minimal
 
 
     - name: Perform CodeQL Analysis
