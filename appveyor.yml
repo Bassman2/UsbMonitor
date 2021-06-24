@@ -10,6 +10,16 @@ configuration:
     #- Debug
 
 install:
+    - copy /y "%APPVEYOR_BUILD_FOLDER%"\DummySignKey.snk "%APPVEYOR_BUILD_FOLDER%"\Src\FormsUsbMonitorFramework45\Bassman.snk
+    - copy /y "%APPVEYOR_BUILD_FOLDER%"\DummySignKey.snk "%APPVEYOR_BUILD_FOLDER%"\Src\WpfUsbMonitorFramework45\Bassman.snk
+    - copy /y "%APPVEYOR_BUILD_FOLDER%"\DummySignKey.snk "%APPVEYOR_BUILD_FOLDER%"\Src\WpfUsbMonitor60\Bassman.snk
+    - copy /y "%APPVEYOR_BUILD_FOLDER%"\DummySignKey.snk "%APPVEYOR_BUILD_FOLDER%"\Src\FormsUsbMonitor60\Bassman.snk
+    - copy /y "%APPVEYOR_BUILD_FOLDER%"\DummySignKey.snk "%APPVEYOR_BUILD_FOLDER%"\Src\WpfUsbMonitorCore31\Bassman.snk
+    - copy /y "%APPVEYOR_BUILD_FOLDER%"\DummySignKey.snk "%APPVEYOR_BUILD_FOLDER%"\Src\FormsUsbMonitorCore31\Bassman.snk
+    - copy /y "%APPVEYOR_BUILD_FOLDER%"\DummySignKey.snk "%APPVEYOR_BUILD_FOLDER%"\Src\WpfUsbMonitor50\Bassman.snk
+    - copy /y "%APPVEYOR_BUILD_FOLDER%"\DummySignKey.snk "%APPVEYOR_BUILD_FOLDER%"\Src\FormsUsbMonitor50\Bassman.snk
+
+
     - ps: >-
         Start-FileDownload 'https://github.com/EWSoftware/SHFB/releases/download/v2021.4.9.0/SHFBInstaller_v2021.4.9.0.zip'
 
@@ -25,22 +35,14 @@ install:
 
         Write-Host "Sandcastle installed" -ForegroundColor Green
 
-    - copy /y "%APPVEYOR_BUILD_FOLDER%"\appveyor_dummy.snk "%APPVEYOR_BUILD_FOLDER%"\UsbMonitor\FormsUsbMonitorFramework45\Bassman.snk
-    - copy /y "%APPVEYOR_BUILD_FOLDER%"\appveyor_dummy.snk "%APPVEYOR_BUILD_FOLDER%"\UsbMonitor\WpfUsbMonitorFramework45\Bassman.snk
-    - copy /y "%APPVEYOR_BUILD_FOLDER%"\appveyor_dummy.snk "%APPVEYOR_BUILD_FOLDER%"\UsbMonitor\WpfUsbMonitor60\Bassman.snk
-    - copy /y "%APPVEYOR_BUILD_FOLDER%"\appveyor_dummy.snk "%APPVEYOR_BUILD_FOLDER%"\UsbMonitor\FormsUsbMonitor60\Bassman.snk
-    - copy /y "%APPVEYOR_BUILD_FOLDER%"\appveyor_dummy.snk "%APPVEYOR_BUILD_FOLDER%"\UsbMonitor\WpfUsbMonitorCore31\Bassman.snk
-    - copy /y "%APPVEYOR_BUILD_FOLDER%"\appveyor_dummy.snk "%APPVEYOR_BUILD_FOLDER%"\UsbMonitor\FormsUsbMonitorCore31\Bassman.snk
-    - copy /y "%APPVEYOR_BUILD_FOLDER%"\appveyor_dummy.snk "%APPVEYOR_BUILD_FOLDER%"\UsbMonitor\WpfUsbMonitor50\Bassman.snk
-    - copy /y "%APPVEYOR_BUILD_FOLDER%"\appveyor_dummy.snk "%APPVEYOR_BUILD_FOLDER%"\UsbMonitor\FormsUsbMonitor50\Bassman.snk
-
-
 
 build_script:
     - set SHFBROOT=C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\
     - cd "%APPVEYOR_BUILD_FOLDER%"
     - msbuild UsbMonitor.sln /m /verbosity:minimal /t:restore /p:configuration="%configuration%" /p:platform="%platform%" /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
     - msbuild UsbMonitor.sln /m /verbosity:minimal  /p:configuration="%configuration%" /p:platform="%platform%" /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
+    - msbuild UsbMonitorPreview.sln /m /verbosity:minimal /t:restore /p:configuration="%configuration%" /p:platform="%platform%" /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
+    - msbuild UsbMonitorPreview.sln /m /verbosity:minimal  /p:configuration="%configuration%" /p:platform="%platform%" /logger:"C:\Program Files\AppVeyor\BuildAgent\Appveyor.MSBuildLogger.dll"
     - cd "%APPVEYOR_BUILD_FOLDER%"\Nuget
     - pack.cmd
 
