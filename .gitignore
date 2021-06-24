@@ -331,3 +331,5 @@ ASALocalRun/
 
 #Sign key files
 *.snk
+
+*.chm
