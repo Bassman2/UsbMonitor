@@ -1,2 +1,2 @@
-nuget pack FormsUsbMonitorPreview.nuspec
-nuget pack WpfUsbMonitorPreview.nuspec
+nuget pack FormsUsbMonitor.nuspec
+nuget pack WpfUsbMonitor.nuspec

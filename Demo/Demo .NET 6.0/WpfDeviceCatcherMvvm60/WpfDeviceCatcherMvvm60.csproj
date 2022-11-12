@@ -4,6 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
+    <Version>3.1.0.0</Version>
   </PropertyGroup>
 
   <Import Project="..\..\Demo Share\WpfDeviceCatcherMvvmShare\WpfDeviceCatcherMvvmShare.projitems" Label="Shared" />

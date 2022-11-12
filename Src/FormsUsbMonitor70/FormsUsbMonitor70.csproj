@@ -1,15 +1,15 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0-windows</TargetFramework>
-    <UseWPF>true</UseWPF>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
     <RootNamespace>UsbMonitor</RootNamespace>
-    <AssemblyName>WpfUsbMonitor</AssemblyName>
+    <AssemblyName>FormsUsbMonitor</AssemblyName>
     <Version>3.1.0.0</Version>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>Bassman.snk</AssemblyOriginatorKeyFile>
     <Authors>Ralf Beckers</Authors>
-    <Description>WPF implementation of a USB monitor to signal if a USB device is plugged in or out.</Description>
+    <Description>Forms implementation of a USB monitor to signal if a USB device is plugged in or out.</Description>
     <Copyright>Copyright © 2017 - 2021 by Ralf Beckers</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/Bassman2/UsbMonitor</PackageProjectUrl>
@@ -17,16 +17,8 @@
     <RepositoryType>Github</RepositoryType>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>WpfUsbMonitor.xml</DocumentationFile>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>WpfUsbMonitor.xml</DocumentationFile>
-  </PropertyGroup>
+  <Import Project="..\FormsUsbMonitorShare\FormsUsbMonitorShare.projitems" Label="Shared" />
 
   <Import Project="..\UsbMonitorShare\UsbMonitorShare.projitems" Label="Shared" />
-
-  <Import Project="..\WpfUsbMonitorShare\WpfUsbMonitorShare.projitems" Label="Shared" />
 
 </Project>
