@@ -17,6 +17,7 @@
     <RepositoryType>Github</RepositoryType>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
 
   <Import Project="..\FormsUsbMonitorShare\FormsUsbMonitorShare.projitems" Label="Shared" />

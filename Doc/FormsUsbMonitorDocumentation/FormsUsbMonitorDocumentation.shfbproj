@@ -36,7 +36,7 @@
     <NamingMethod>Guid</NamingMethod>
     <ContentPlacement>AboveNamespaces</ContentPlacement>
     <DocumentationSources>
-      <DocumentationSource sourceFile="..\..\Src\FormsUsbMonitor50\FormsUsbMonitor50.csproj" />
+      <DocumentationSource sourceFile="..\..\Src\FormsUsbMonitor70\FormsUsbMonitor70.csproj" />
     </DocumentationSources>
     <NamespaceSummaries>
       <NamespaceSummaryItem name="(global)" isDocumented="True" xmlns="" />

@@ -39,7 +39,7 @@
     <ContentPlacement>AboveNamespaces</ContentPlacement>
     <ComponentConfigurations />
     <DocumentationSources>
-      <DocumentationSource sourceFile="..\..\Src\WpfUsbMonitor50\WpfUsbMonitor50.csproj" />
+      <DocumentationSource sourceFile="..\..\Src\WpfUsbMonitor70\WpfUsbMonitor70.csproj" />
     </DocumentationSources>
     <NamespaceSummaries>
       <NamespaceSummaryItem name="(global)" isDocumented="True" />
