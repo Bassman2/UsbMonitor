@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0-windows</TargetFramework>
+    <TargetFramework>net7.0-windows7.0</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <RootNamespace>UsbMonitor</RootNamespace>
     <AssemblyName>FormsUsbMonitor</AssemblyName>
@@ -15,6 +15,8 @@
     <PackageProjectUrl>https://github.com/Bassman2/UsbMonitor</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Bassman2/UsbMonitor</RepositoryUrl>
     <RepositoryType>Github</RepositoryType>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
   </PropertyGroup>
 
   <Import Project="..\FormsUsbMonitorShare\FormsUsbMonitorShare.projitems" Label="Shared" />

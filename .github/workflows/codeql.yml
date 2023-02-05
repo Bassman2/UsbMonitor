@@ -1,0 +1,52 @@
+name: CodeQL
+
+on:
+  push:
+    branches: [master, ]
+  pull_request:
+    branches: [master]
+  schedule:
+    - cron: '0 23 * * 6'
+
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: windows-2022
+    environment: sign
+    env:
+      Solution: UsbMonitor.sln
+      SHFBROOT: C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Add msbuild to PATH
+      uses: microsoft/setup-msbuild@v1.3
+
+    - name: Setup NuGet
+      uses: nuget/setup-nuget@v1    
+
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v2
+
+    - name: Add SignKeys  
+      uses: Bassman2/SignKey@v1
+      with:
+        file: Bassman.snk
+        key: ${{ secrets.SIGNKEY }}
+
+    - name: Install SHFB
+      uses: Bassman2/setup-SHFB@v1
+
+    - name: Nuget restore dependencies
+      run: nuget restore $env:Solution
+
+    - name: Dotnet restore dependencies
+      run: dotnet restore $env:Solution
+
+    - name: MSBuild of solution
+      run: msbuild $env:Solution /p:configuration="Release" /verbosity:minimal      
+
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@v2
