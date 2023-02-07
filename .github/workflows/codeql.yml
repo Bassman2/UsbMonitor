@@ -15,8 +15,7 @@ jobs:
     environment: sign
     env:
       Solution: UsbMonitor.sln
-      SHFBROOT: C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\
-
+ 
     steps:
     - name: Checkout
       uses: actions/checkout@v3

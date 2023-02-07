@@ -15,7 +15,6 @@ jobs:
       Solution: UsbMonitor.sln
       NugetWpf: WpfUseMonitor.nuspec
       NugetFrm: FormsUsbMonitor.nuspec
-      SHFBROOT: C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\
     strategy:
       max-parallel: 2
       matrix:
