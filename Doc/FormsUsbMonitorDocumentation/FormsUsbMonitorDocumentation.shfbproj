@@ -27,7 +27,7 @@
       <Argument Key="maxVersionParts" Value="" xmlns="" />
     </TransformComponentArguments>
     <HelpTitle>Forms USB Monitor Documentation</HelpTitle>
-    <HelpFileVersion>3.1.0.0</HelpFileVersion>
+    <HelpFileVersion>3.2.0.0</HelpFileVersion>
     <RootNamespaceContainer>False</RootNamespaceContainer>
     <NamespaceGrouping>False</NamespaceGrouping>
     <MaximumGroupParts>2</MaximumGroupParts>

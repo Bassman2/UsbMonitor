@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Version>3.2.0.0</Version>
+  </PropertyGroup>
+
+  <Import Project="..\..\Demo Share\WpfDeviceCatcherOverrideShare\WpfDeviceCatcherOverrideShare.projitems" Label="Shared" />
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Src\WpfUsbMonitor80\WpfUsbMonitor80.csproj" />
+  </ItemGroup>
+
+</Project>

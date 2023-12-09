@@ -1,16 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0-windows</TargetFramework>
+    <TargetFramework>net7.0-windows7.0</TargetFramework>
     <UseWPF>true</UseWPF>
     <RootNamespace>UsbMonitor</RootNamespace>
     <AssemblyName>WpfUsbMonitor</AssemblyName>
-    <Version>3.1.0.0</Version>
+    <Version>3.2.0.0</Version>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>Bassman.snk</AssemblyOriginatorKeyFile>
     <Authors>Ralf Beckers</Authors>
     <Description>WPF implementation of a USB monitor to signal if a USB device is plugged in or out.</Description>
-    <Copyright>Copyright © 2017 - 2021 by Ralf Beckers</Copyright>
+    <Copyright>Copyright © 2017 - 2023 by Ralf Beckers</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/Bassman2/UsbMonitor</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Bassman2/UsbMonitor</RepositoryUrl>
