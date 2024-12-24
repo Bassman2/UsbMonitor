@@ -5,7 +5,7 @@
     <UseWindowsForms>true</UseWindowsForms>
     <RootNamespace>UsbMonitor</RootNamespace>
     <AssemblyName>FormsUsbMonitor</AssemblyName>
-    <Version>3.2.0.0</Version>
+    <Version>3.3.0.0</Version>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>Bassman.snk</AssemblyOriginatorKeyFile>
     <Authors>Ralf Beckers</Authors>
