@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows7.0</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Version>3.2.0.0</Version>
+  </PropertyGroup>
+
+  <Import Project="..\..\Demo Share\FormsDeviceCatcherEventShare\FormsDeviceCatcherEventShare.projitems" Label="Shared" />
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Src\FormsUsbMonitor90\FormsUsbMonitor90.csproj" />
+  </ItemGroup>
+
+
+</Project>
