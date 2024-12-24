@@ -6,6 +6,17 @@
 		</introduction>
 
 		<section>
+			<title>Version 3.3 was released on Dec. 24th, 2024.</title>
+			<content>
+				<list class="bullet">
+					<listItem>
+						<para>Support for .NET 9.0</para>
+					</listItem>
+				</list>
+			</content>
+		</section>
+		
+		<section>
 			<title>Version 3.2 was released on Dec. 9th, 2023.</title>
 			<content>
 				<list class="bullet">

@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>FormsUsbMonitor</id>
-    <version>3.2.1</version>
+    <version>3.3.0</version>
     <title>FormsUsbMonitor</title>
     <authors>Ralf Beckers</authors>
     <owners>Ralf Beckers</owners>
@@ -11,19 +11,23 @@
     <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
     <projectUrl>https://github.com/Bassman2/UsbMonitor</projectUrl>
     <description>Forms implementation of a USB monitor to signal if a USB device is plugged in or out. Documentation included.</description>
-    <releaseNotes>.NET 8 added</releaseNotes>
-    <copyright>Copyright © 2017 - 2023 by Ralf Beckers</copyright>
+    <releaseNotes>.NET 9 added</releaseNotes>
+    <copyright>Copyright © 2017 - 2024 by Ralf Beckers</copyright>
     <repository type="git" url="https://github.com/Bassman2/UsbMonitor" />
     <tags>Forms USB Monitor</tags>
     <readme>docs\README.md</readme>
     <dependencies>
+      <group targetFramework="net9.0-windows7.0" />
       <group targetFramework="net8.0-windows7.0" />
       <group targetFramework="net7.0-windows7.0" />
       <group targetFramework="net6.0-windows7.0" />
       <group targetFramework=".NETFramework4.8" />
     </dependencies>
     <frameworkReferences>
-      <group targetFramework="net8.0-windows7.0">
+      <group targetFramework="net9.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+     <group targetFramework="net8.0-windows7.0">
         <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
       </group>
       <group targetFramework="net7.0-windows7.0">
@@ -35,6 +39,7 @@
     </frameworkReferences>
   </metadata>
   <files>
+    <file src="..\Src\FormsUsbMonitor90\bin\Release\net9.0-windows7.0\**" target="lib/net9.0-windows7.0" />
     <file src="..\Src\FormsUsbMonitor80\bin\Release\net8.0-windows7.0\**" target="lib/net8.0-windows7.0" />
     <file src="..\Src\FormsUsbMonitor70\bin\Release\net7.0-windows7.0\**" target="lib/net7.0-windows7.0" />
     <file src="..\Src\FormsUsbMonitor60\bin\Release\net6.0-windows7.0\**" target="lib/net6.0-windows7.0" />

@@ -27,7 +27,7 @@
       <Argument Key="maxVersionParts" Value="" xmlns="" />
     </TransformComponentArguments>
     <HelpTitle>Forms USB Monitor Documentation</HelpTitle>
-    <HelpFileVersion>3.2.0.0</HelpFileVersion>
+    <HelpFileVersion>3.3.0.0</HelpFileVersion>
     <RootNamespaceContainer>False</RootNamespaceContainer>
     <NamespaceGrouping>False</NamespaceGrouping>
     <MaximumGroupParts>2</MaximumGroupParts>
@@ -36,7 +36,7 @@
     <NamingMethod>Guid</NamingMethod>
     <ContentPlacement>AboveNamespaces</ContentPlacement>
     <DocumentationSources>
-      <DocumentationSource sourceFile="..\..\Src\FormsUsbMonitor70\FormsUsbMonitor70.csproj" />
+      <DocumentationSource sourceFile="..\..\Src\FormsUsbMonitor90\FormsUsbMonitor90.csproj" />
     </DocumentationSources>
     <NamespaceSummaries>
       <NamespaceSummaryItem name="(global)" isDocumented="True" xmlns="" />
