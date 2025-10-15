@@ -1,0 +1,91 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="ARM" />
+    <Platform Name="ARM64" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Demo/" />
+  <Folder Name="/Demo/Demo .NET 4.8/">
+    <Project Path="Demo/Demo .NET 4.8/FormsDeviceCatcherEvent48/FormsDeviceCatcherEventk48.csproj" Id="08dc8b4d-9990-49cb-8999-e74d103cbdfe" />
+    <Project Path="Demo/Demo .NET 4.8/FormsDeviceCatcherMember48/FormsDeviceCatcherMember48.csproj" Id="a6778443-0808-4607-86cc-c6e5e41893f4" />
+    <Project Path="Demo/Demo .NET 4.8/FormsDeviceCatcherOverride48/FormsDeviceCatcherOverride48.csproj" Id="496acf30-26a9-4779-90fd-8d9a9b2501eb" />
+    <Project Path="Demo/Demo .NET 4.8/WpfDeviceCatcherEvent48/WpfDeviceCatcherEvent48.csproj" Id="251e18e9-dd1f-4c19-9195-ab6713f3cb69" />
+    <Project Path="Demo/Demo .NET 4.8/WpfDeviceCatcherMember48/WpfDeviceCatcherMember48.csproj" Id="e6c8b51a-0e70-4baa-a3e8-2e37bc13de0d" />
+    <Project Path="Demo/Demo .NET 4.8/WpfDeviceCatcherMvvm48/WpfDeviceCatcherMvvm48.csproj" Id="9abdc8e3-8026-4b1f-84ad-7452f838435e" />
+    <Project Path="Demo/Demo .NET 4.8/WpfDeviceCatcherOverride48/WpfDeviceCatcherOverride48.csproj" Id="a05f31e5-5018-4357-840b-02e652fe8569" />
+  </Folder>
+  <Folder Name="/Demo/Demo .NET 6.0/">
+    <Project Path="Demo/Demo .NET 6.0/FormsDeviceCatcherEvent60/FormsDeviceCatcherEvent60.csproj" />
+    <Project Path="Demo/Demo .NET 6.0/FormsDeviceCatcherMember60/FormsDeviceCatcherMember60.csproj" />
+    <Project Path="Demo/Demo .NET 6.0/FormsDeviceCatcherOverride60/FormsDeviceCatcherOverride60.csproj" />
+    <Project Path="Demo/Demo .NET 6.0/WpfDeviceCatcherEvent60/WpfDeviceCatcherEvent60.csproj" />
+    <Project Path="Demo/Demo .NET 6.0/WpfDeviceCatcherMember60/WpfDeviceCatcherMember60.csproj" />
+    <Project Path="Demo/Demo .NET 6.0/WpfDeviceCatcherMvvm60/WpfDeviceCatcherMvvm60.csproj" />
+    <Project Path="Demo/Demo .NET 6.0/WpfDeviceCatcherOverride60/WpfDeviceCatcherOverride60.csproj" />
+  </Folder>
+  <Folder Name="/Demo/Demo .NET 7.0/">
+    <Project Path="Demo/Demo .NET 7.0/FormsDeviceCatcherEvent70/FormsDeviceCatcherEvent70.csproj" />
+    <Project Path="Demo/Demo .NET 7.0/FormsDeviceCatcherMember70/FormsDeviceCatcherMember70.csproj" />
+    <Project Path="Demo/Demo .NET 7.0/FormsDeviceCatcherOverride70/FormsDeviceCatcherOverride70.csproj" />
+    <Project Path="Demo/Demo .NET 7.0/WpfDeviceCatcherEvent70/WpfDeviceCatcherEvent70.csproj" />
+    <Project Path="Demo/Demo .NET 7.0/WpfDeviceCatcherMember70/WpfDeviceCatcherMember70.csproj" />
+    <Project Path="Demo/Demo .NET 7.0/WpfDeviceCatcherMvvm70/WpfDeviceCatcherMvvm70.csproj" />
+    <Project Path="Demo/Demo .NET 7.0/WpfDeviceCatcherOverride70/WpfDeviceCatcherOverride70.csproj" />
+  </Folder>
+  <Folder Name="/Demo/Demo .NET 8.0/">
+    <Project Path="Demo/Demo .NET 8.0/FormsDeviceCatcherEvent80/FormsDeviceCatcherEvent80.csproj" />
+    <Project Path="Demo/Demo .NET 8.0/FormsDeviceCatcherMember80/FormsDeviceCatcherMember80.csproj" />
+    <Project Path="Demo/Demo .NET 8.0/FormsDeviceCatcherOverride80/FormsDeviceCatcherOverride80.csproj" />
+    <Project Path="Demo/Demo .NET 8.0/WpfDeviceCatcherEvent80/WpfDeviceCatcherEvent80.csproj" />
+    <Project Path="Demo/Demo .NET 8.0/WpfDeviceCatcherMember80/WpfDeviceCatcherMember80.csproj" />
+    <Project Path="Demo/Demo .NET 8.0/WpfDeviceCatcherMvvm80/WpfDeviceCatcherMvvm80.csproj" />
+    <Project Path="Demo/Demo .NET 8.0/WpfDeviceCatcherOverride80/WpfDeviceCatcherOverride80.csproj" />
+  </Folder>
+  <Folder Name="/Demo/Demo .NET 9.0/">
+    <Project Path="Demo/Demo .NET 9.0/FormsDeviceCatcherEvent90/FormsDeviceCatcherEvent90.csproj" />
+    <Project Path="Demo/Demo .NET 9.0/FormsDeviceCatcherMember90/FormsDeviceCatcherMember90.csproj" />
+    <Project Path="Demo/Demo .NET 9.0/FormsDeviceCatcherOverride90/FormsDeviceCatcherOverride90.csproj" />
+    <Project Path="Demo/Demo .NET 9.0/WpfDeviceCatcherEvent90/WpfDeviceCatcherEvent90.csproj" />
+    <Project Path="Demo/Demo .NET 9.0/WpfDeviceCatcherMember90/WpfDeviceCatcherMember90.csproj" />
+    <Project Path="Demo/Demo .NET 9.0/WpfDeviceCatcherMvvm90/WpfDeviceCatcherMvvm90.csproj" />
+    <Project Path="Demo/Demo .NET 9.0/WpfDeviceCatcherOverride90/WpfDeviceCatcherOverride90.csproj" />
+  </Folder>
+  <Folder Name="/Demo/Demo Share/">
+    <Project Path="Demo/Demo Share/FormsDeviceCatcherEventShare/FormsDeviceCatcherEventShare.shproj" />
+    <Project Path="Demo/Demo Share/FormsDeviceCatcherMemberShare/FormsDeviceCatcherMemberShare.shproj" />
+    <Project Path="Demo/Demo Share/FormsDeviceCatcherOverrideShare/FormsDeviceCatcherOverrideShare.shproj" />
+    <Project Path="Demo/Demo Share/WpfDeviceCatcherEventShare/WpfDeviceCatcherEventShare.shproj" />
+    <Project Path="Demo/Demo Share/WpfDeviceCatcherMemberShare/WpfDeviceCatcherMemberShare.shproj" />
+    <Project Path="Demo/Demo Share/WpfDeviceCatcherMvvmShare/WpfDeviceCatcherMvvmShare.shproj" />
+    <Project Path="Demo/Demo Share/WpfDeviceCatcherOverrideShare/WpfDeviceCatcherOverrideShare.shproj" />
+  </Folder>
+  <Folder Name="/Doc/">
+    <Project Path="Doc/FormsUsbMonitorDocumentation/FormsUsbMonitorDocumentation.shfbproj" Type="7cf6df6d-3b04-46f8-a40b-537d21bca0b4" Id="c4f78fba-4939-4782-8883-79216aad99fd">
+      <BuildDependency Project="Src/FormsUsbMonitor70/FormsUsbMonitor70.csproj" />
+      <BuildDependency Project="Src/WpfUsbMonitor70/WpfUsbMonitor70.csproj" />
+      <Platform Project="AnyCPU" />
+      <Build Solution="Debug|Any CPU" Project="false" />
+    </Project>
+    <Project Path="Doc/WpfUsbMonitorDocumentation/WpfUsbMonitorDocumentation.shfbproj" Type="7cf6df6d-3b04-46f8-a40b-537d21bca0b4" Id="505b0644-89b7-424d-88be-9949c6d6ff9a">
+      <Platform Project="AnyCPU" />
+      <Build Solution="Debug|Any CPU" Project="false" />
+    </Project>
+  </Folder>
+  <Folder Name="/Src/">
+    <Project Path="Src/FormsUsbMonitor48/FormsUsbMonitor48.csproj" Id="a1529179-ba0e-4ad8-9f89-3ec007aea44e" />
+    <Project Path="Src/FormsUsbMonitor60/FormsUsbMonitor60.csproj" />
+    <Project Path="Src/FormsUsbMonitor70/FormsUsbMonitor70.csproj" />
+    <Project Path="Src/FormsUsbMonitor80/FormsUsbMonitor80.csproj" />
+    <Project Path="Src/FormsUsbMonitor90/FormsUsbMonitor90.csproj" />
+    <Project Path="Src/FormsUsbMonitorShare/FormsUsbMonitorShare.shproj" />
+    <Project Path="Src/UsbMonitorShare/UsbMonitorShare.shproj" />
+    <Project Path="Src/WpfUsbMonitor48/WpfUsbMonitor48.csproj" Id="494a3e91-10e0-4f20-a0fc-77f0ce01e576" />
+    <Project Path="Src/WpfUsbMonitor60/WpfUsbMonitor60.csproj" />
+    <Project Path="Src/WpfUsbMonitor70/WpfUsbMonitor70.csproj" />
+    <Project Path="Src/WpfUsbMonitor80/WpfUsbMonitor80.csproj" />
+    <Project Path="Src/WpfUsbMonitor90/WpfUsbMonitor90.csproj" />
+    <Project Path="Src/WpfUsbMonitorShare/WpfUsbMonitorShare.shproj" />
+  </Folder>
+</Solution>
