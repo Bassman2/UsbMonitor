@@ -12,7 +12,7 @@ To get started, add the UsbMonitor package to your project.
 
 ### Examples
 
-# [Forma](#tab/forms)
+# [Forms](#tab/forms)
 
 Content for Forms
 

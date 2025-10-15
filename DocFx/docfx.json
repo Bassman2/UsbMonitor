@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
   "metadata": [
     {
-      "forms": [
+      "src": [
         {
           "src": "../Src/FormsUsbMonitor90",
           "files": [ "**/*.csproj" ]
@@ -11,7 +11,7 @@
       "dest": "forms"
     },
 	{
-      "wpf": [
+      "src": [
 		{
           "src": "../Src/WpfUsbMonitor90",
           "files": [ "**/*.csproj" ]
