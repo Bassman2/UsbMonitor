@@ -12,7 +12,7 @@ jobs:
     runs-on: windows-2022
     environment: sign
     env:
-      Solution: UsbMonitor.sln
+      Solution: UsbMonitor.slnx
       NugetWpf: WpfUsbMonitor.nuspec
       NugetFrm: FormsUsbMonitor.nuspec
     strategy:
