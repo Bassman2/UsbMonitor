@@ -6,18 +6,13 @@
         {
           "src": "../Src/FormsUsbMonitor90",
           "files": [ "**/*.csproj" ]
-        }
-      ],
-      "dest": "forms"
-    },
-	{
-      "src": [
+        },
 		{
           "src": "../Src/WpfUsbMonitor90",
           "files": [ "**/*.csproj" ]
         }
       ],
-      "dest": "wpf"
+      "dest": "forms"
     }
   ],
   "build": {
