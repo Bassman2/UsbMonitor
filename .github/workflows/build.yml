@@ -13,16 +13,16 @@ jobs:
     environment: sign
     env:
       Solution: UsbMonitor.sln
-      NugetWpf: WpfUseMonitor.nuspec
+      NugetWpf: WpfUsbMonitor.nuspec
       NugetFrm: FormsUsbMonitor.nuspec
     strategy:
-      max-parallel: 2
+      fail-fast: false
       matrix:
         build_configuration: [Release, Debug]
-        
+
     steps:
     - name: Checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
 
     - name: Add msbuild to PATH
       uses: microsoft/setup-msbuild@v2
@@ -46,7 +46,7 @@ jobs:
       run: dotnet restore $env:Solution
 
     - name: MSBuild of solution
-      run: msbuild $env:Solution /p:configuration="${{ matrix.build_configuration }}" /verbosity:minimal   
+      run: msbuild $env:Solution /p:configuration="${{ matrix.build_configuration }}" /m /verbosity:minimal
 
     - name: Nuget pack nuspec
       if: matrix.build_configuration == 'Release'
