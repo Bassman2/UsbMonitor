@@ -53,7 +53,6 @@
     <file src="..\Src\WpfUsbMonitor70\bin\Release\net7.0-windows7.0\**" target="lib/net7.0-windows7.0" />
     <file src="..\Src\WpfUsbMonitor60\bin\Release\net6.0-windows7.0\**" target="lib/net6.0-windows7.0" />
     <file src="..\Src\WpfUsbMonitor48\bin\Release\**" target="lib/net48" />
-    <file src="..\Doc\WpfUsbMonitorDocumentation\Help\WpfUsbMonitor.chm" target="content\" />
     <file src="..\README.md" target="docs\" />
     <file src="..\LICENSE*" target="content/" />
   </files>

@@ -44,7 +44,6 @@
     <file src="..\Src\FormsUsbMonitor70\bin\Release\net7.0-windows7.0\**" target="lib/net7.0-windows7.0" />
     <file src="..\Src\FormsUsbMonitor60\bin\Release\net6.0-windows7.0\**" target="lib/net6.0-windows7.0" />
     <file src="..\Src\FormsUsbMonitor48\bin\Release\**" target="lib/net48" />
-    <file src="..\Doc\FormsUsbMonitorDocumentation\Help\FormsUsbMonitor.chm" target="content\" />
     <file src="..\README.md" target="docs\" />
     <file src="..\LICENSE*" target="content/" />
   </files>
