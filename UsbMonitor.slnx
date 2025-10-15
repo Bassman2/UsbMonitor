@@ -61,18 +61,6 @@
     <Project Path="Demo/Demo Share/WpfDeviceCatcherMvvmShare/WpfDeviceCatcherMvvmShare.shproj" />
     <Project Path="Demo/Demo Share/WpfDeviceCatcherOverrideShare/WpfDeviceCatcherOverrideShare.shproj" />
   </Folder>
-  <Folder Name="/Doc/">
-    <Project Path="Doc/FormsUsbMonitorDocumentation/FormsUsbMonitorDocumentation.shfbproj" Type="7cf6df6d-3b04-46f8-a40b-537d21bca0b4" Id="c4f78fba-4939-4782-8883-79216aad99fd">
-      <BuildDependency Project="Src/FormsUsbMonitor70/FormsUsbMonitor70.csproj" />
-      <BuildDependency Project="Src/WpfUsbMonitor70/WpfUsbMonitor70.csproj" />
-      <Platform Project="AnyCPU" />
-      <Build Solution="Debug|Any CPU" Project="false" />
-    </Project>
-    <Project Path="Doc/WpfUsbMonitorDocumentation/WpfUsbMonitorDocumentation.shfbproj" Type="7cf6df6d-3b04-46f8-a40b-537d21bca0b4" Id="505b0644-89b7-424d-88be-9949c6d6ff9a">
-      <Platform Project="AnyCPU" />
-      <Build Solution="Debug|Any CPU" Project="false" />
-    </Project>
-  </Folder>
   <Folder Name="/Src/">
     <Project Path="Src/FormsUsbMonitor48/FormsUsbMonitor48.csproj" Id="a1529179-ba0e-4ad8-9f89-3ec007aea44e" />
     <Project Path="Src/FormsUsbMonitor60/FormsUsbMonitor60.csproj" />

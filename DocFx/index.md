@@ -12,7 +12,15 @@ To get started, add the UsbMonitor package to your project.
 
 ### Examples
 
+# [Forma](#tab/forms)
 
+Content for Forms
+
+# [WPF](#tab/wpf)
+
+Content for WPF
+
+---
 
 ## Donate
 
