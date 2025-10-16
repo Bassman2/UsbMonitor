@@ -7,6 +7,9 @@ WPF USB Monitor to detect if a USB device is plugged in or out
 # FormsUsbMonitor
 Forms USB Monitor to detect if a USB device is plugged in or out
 
+# Documentation
+[Pages](https://bassman2.github.io/UsbMonitor/)
+
 ## Donate
 
 You are welcome to support this project. 
