@@ -6,13 +6,20 @@
         {
           "src": "../Src/FormsUsbMonitor90",
           "files": [ "**/*.csproj" ]
-        },
-		{
+        }
+      ],
+      "dest": "forms",
+	  "globalNamespaceId": "Forms"
+    },
+	{
+      "src": [
+        {
           "src": "../Src/WpfUsbMonitor90",
           "files": [ "**/*.csproj" ]
         }
       ],
-      "dest": "forms"
+      "dest": "wpf",
+	  "globalNamespaceId": "Wpf"
     }
   ],
   "build": {
