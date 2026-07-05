@@ -1,0 +1,102 @@
+### YamlMime:ManagedReference
+items:
+- uid: UsbMonitor.UsbVolumeFlags
+  commentId: T:UsbMonitor.UsbVolumeFlags
+  id: UsbVolumeFlags
+  parent: UsbMonitor
+  children:
+  - UsbMonitor.UsbVolumeFlags.Media
+  - UsbMonitor.UsbVolumeFlags.Net
+  langs:
+  - csharp
+  - vb
+  name: UsbVolumeFlags
+  nameWithType: UsbVolumeFlags
+  fullName: UsbMonitor.UsbVolumeFlags
+  type: Enum
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbVolumeFlags.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: UsbVolumeFlags
+    path: ../Src/UsbMonitorShare/UsbVolumeFlags.cs
+    startLine: 5
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Volume flags
+  example: []
+  syntax:
+    content: 'public enum UsbVolumeFlags : ushort'
+    content.vb: Public Enum UsbVolumeFlags As UShort
+- uid: UsbMonitor.UsbVolumeFlags.Media
+  commentId: F:UsbMonitor.UsbVolumeFlags.Media
+  id: Media
+  parent: UsbMonitor.UsbVolumeFlags
+  langs:
+  - csharp
+  - vb
+  name: Media
+  nameWithType: UsbVolumeFlags.Media
+  fullName: UsbMonitor.UsbVolumeFlags.Media
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbVolumeFlags.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Media
+    path: ../Src/UsbMonitorShare/UsbVolumeFlags.cs
+    startLine: 10
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Change affects media in drive. If not set, change affects physical device or drive.
+  example: []
+  syntax:
+    content: Media = 1
+    return:
+      type: UsbMonitor.UsbVolumeFlags
+- uid: UsbMonitor.UsbVolumeFlags.Net
+  commentId: F:UsbMonitor.UsbVolumeFlags.Net
+  id: Net
+  parent: UsbMonitor.UsbVolumeFlags
+  langs:
+  - csharp
+  - vb
+  name: Net
+  nameWithType: UsbVolumeFlags.Net
+  fullName: UsbMonitor.UsbVolumeFlags.Net
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbVolumeFlags.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Net
+    path: ../Src/UsbMonitorShare/UsbVolumeFlags.cs
+    startLine: 15
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Indicated logical volume is a network volume.
+  example: []
+  syntax:
+    content: Net = 2
+    return:
+      type: UsbMonitor.UsbVolumeFlags
+references:
+- uid: UsbMonitor
+  commentId: N:UsbMonitor
+  href: UsbMonitor.html
+  name: UsbMonitor
+  nameWithType: UsbMonitor
+  fullName: UsbMonitor
+- uid: UsbMonitor.UsbVolumeFlags
+  commentId: T:UsbMonitor.UsbVolumeFlags
+  parent: UsbMonitor
+  href: UsbMonitor.UsbVolumeFlags.html
+  name: UsbVolumeFlags
+  nameWithType: UsbVolumeFlags
+  fullName: UsbMonitor.UsbVolumeFlags

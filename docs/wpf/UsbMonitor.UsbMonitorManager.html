@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UsbMonitorManager | UsbMonitor </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UsbMonitorManager | UsbMonitor ">
+      
+      <meta name="description" content="USB Monitor class to notify if the USB content changes">
+      <link rel="icon" href="../images/bassman.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Bassman2/UsbMonitor/new/main/apiSpec/new?filename=UsbMonitor_UsbMonitorManager.md&amp;value=---%0Auid%3A%20UsbMonitor.UsbMonitorManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../images/bassman.svg" alt="UsbMonitor">
+            UsbMonitor
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UsbMonitor.UsbMonitorManager">
+
+
+
+  <h1 id="UsbMonitor_UsbMonitorManager" data-uid="UsbMonitor.UsbMonitorManager" class="text-break">
+Class UsbMonitorManager  <a class="header-action link-secondary" title="View source" href="https://github.com/Bassman2/UsbMonitor/blob/main/Src/WpfUsbMonitorShare/UsbMonitorManager.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="../forms/UsbMonitor.html">UsbMonitor</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>WpfUsbMonitor.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>USB Monitor class to notify if the USB content changes</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UsbMonitorManager : DeviceChangeManager</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="../forms/UsbMonitor.DeviceChangeManager.html">DeviceChangeManager</a></div>
+      <div><span class="xref">UsbMonitorManager</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="../forms/UsbMonitor.DeviceChangeManager.html#UsbMonitor_DeviceChangeManager_Register_System_IntPtr_">DeviceChangeManager.Register(nint)</a>
+    </div>
+    <div>
+      <a class="xref" href="../forms/UsbMonitor.DeviceChangeManager.html#UsbMonitor_DeviceChangeManager_Unregister">DeviceChangeManager.Unregister()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="UsbMonitor_UsbMonitorManager__ctor_" data-uid="UsbMonitor.UsbMonitorManager.#ctor*"></a>
+
+  <h3 id="UsbMonitor_UsbMonitorManager__ctor_System_Windows_Window_System_Boolean_" data-uid="UsbMonitor.UsbMonitorManager.#ctor(System.Windows.Window,System.Boolean)">
+  UsbMonitorManager(Window, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Bassman2/UsbMonitor/blob/main/Src/WpfUsbMonitorShare/UsbMonitorManager.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UsbMonitorManager(Window window, bool start = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>window</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.window">Window</a></dt>
+    <dd><p>Main window of the application.</p>
+</dd>
+    <dt><code>start</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Enable USB notification on startup or not.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UsbMonitor_UsbMonitorManager_CallUsbChanged_" data-uid="UsbMonitor.UsbMonitorManager.CallUsbChanged*"></a>
+
+  <h3 id="UsbMonitor_UsbMonitorManager_CallUsbChanged_System_Object_UsbMonitor_UsbEventArgs_" data-uid="UsbMonitor.UsbMonitorManager.CallUsbChanged(System.Object,UsbMonitor.UsbEventArgs)">
+  CallUsbChanged(object, UsbEventArgs)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Bassman2/UsbMonitor/blob/main/Src/UsbMonitorShare/UsbMonitorManager.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Internal call of UsbChanged</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CallUsbChanged(object sender, UsbEventArgs args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Sender</p>
+</dd>
+    <dt><code>args</code> <a class="xref" href="../forms/UsbMonitor.UsbEventArgs.html">UsbEventArgs</a></dt>
+    <dd><p>Arguments</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UsbMonitor_UsbMonitorManager_CallUsbDeviceInterface_" data-uid="UsbMonitor.UsbMonitorManager.CallUsbDeviceInterface*"></a>
+
+  <h3 id="UsbMonitor_UsbMonitorManager_CallUsbDeviceInterface_System_Object_UsbMonitor_UsbEventDeviceInterfaceArgs_" data-uid="UsbMonitor.UsbMonitorManager.CallUsbDeviceInterface(System.Object,UsbMonitor.UsbEventDeviceInterfaceArgs)">
+  CallUsbDeviceInterface(object, UsbEventDeviceInterfaceArgs)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Bassman2/UsbMonitor/blob/main/Src/UsbMonitorShare/UsbMonitorManager.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Internal call of UsbDeviceInterface</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CallUsbDeviceInterface(object sender, UsbEventDeviceInterfaceArgs args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Sender</p>
+</dd>
+    <dt><code>args</code> <a class="xref" href="../forms/UsbMonitor.UsbEventDeviceInterfaceArgs.html">UsbEventDeviceInterfaceArgs</a></dt>
+    <dd><p>Arguments</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UsbMonitor_UsbMonitorManager_CallUsbHandle_" data-uid="UsbMonitor.UsbMonitorManager.CallUsbHandle*"></a>
+
+  <h3 id="UsbMonitor_UsbMonitorManager_CallUsbHandle_System_Object_UsbMonitor_UsbEventHandleArgs_" data-uid="UsbMonitor.UsbMonitorManager.CallUsbHandle(System.Object,UsbMonitor.UsbEventHandleArgs)">
+  CallUsbHandle(object, UsbEventHandleArgs)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Bassman2/UsbMonitor/blob/main/Src/UsbMonitorShare/UsbMonitorManager.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Internal call of UsbHandle</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CallUsbHandle(object sender, UsbEventHandleArgs args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Sender</p>
+</dd>
+    <dt><code>args</code> <a class="xref" href="../forms/UsbMonitor.UsbEventHandleArgs.html">UsbEventHandleArgs</a></dt>
+    <dd><p>Arguments</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UsbMonitor_UsbMonitorManager_CallUsbOem_" data-uid="UsbMonitor.UsbMonitorManager.CallUsbOem*"></a>
+
+  <h3 id="UsbMonitor_UsbMonitorManager_CallUsbOem_System_Object_UsbMonitor_UsbEventOemArgs_" data-uid="UsbMonitor.UsbMonitorManager.CallUsbOem(System.Object,UsbMonitor.UsbEventOemArgs)">
+  CallUsbOem(object, UsbEventOemArgs)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Bassman2/UsbMonitor/blob/main/Src/UsbMonitorShare/UsbMonitorManager.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Internal call of UsbOem</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CallUsbOem(object sender, UsbEventOemArgs args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Sender</p>
+</dd>
+    <dt><code>args</code> <a class="xref" href="../forms/UsbMonitor.UsbEventOemArgs.html">UsbEventOemArgs</a></dt>
+    <dd><p>Arguments</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UsbMonitor_UsbMonitorManager_CallUsbPort_" data-uid="UsbMonitor.UsbMonitorManager.CallUsbPort*"></a>
+
+  <h3 id="UsbMonitor_UsbMonitorManager_CallUsbPort_System_Object_UsbMonitor_UsbEventPortArgs_" data-uid="UsbMonitor.UsbMonitorManager.CallUsbPort(System.Object,UsbMonitor.UsbEventPortArgs)">
+  CallUsbPort(object, UsbEventPortArgs)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Bassman2/UsbMonitor/blob/main/Src/UsbMonitorShare/UsbMonitorManager.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Internal call of CallUsbPort</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CallUsbPort(object sender, UsbEventPortArgs args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Sender</p>
+</dd>
+    <dt><code>args</code> <a class="xref" href="../forms/UsbMonitor.UsbEventPortArgs.html">UsbEventPortArgs</a></dt>
+    <dd><p>Arguments</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UsbMonitor_UsbMonitorManager_CallUsbVolumem_" data-uid="UsbMonitor.UsbMonitorManager.CallUsbVolumem*"></a>
+
+  <h3 id="UsbMonitor_UsbMonitorManager_CallUsbVolumem_System_Object_UsbMonitor_UsbEventVolumeArgs_" data-uid="UsbMonitor.UsbMonitorManager.CallUsbVolumem(System.Object,UsbMonitor.UsbEventVolumeArgs)">
+  CallUsbVolumem(object, UsbEventVolumeArgs)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Bassman2/UsbMonitor/blob/main/Src/UsbMonitorShare/UsbMonitorManager.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Internal call of UsbVolume</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CallUsbVolumem(object sender, UsbEventVolumeArgs args)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sender</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Sender</p>
+</dd>
+    <dt><code>args</code> <a class="xref" href="../forms/UsbMonitor.UsbEventVolumeArgs.html">UsbEventVolumeArgs</a></dt>
+    <dd><p>Arguments</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UsbMonitor_UsbMonitorManager_Start_" data-uid="UsbMonitor.UsbMonitorManager.Start*"></a>
+
+  <h3 id="UsbMonitor_UsbMonitorManager_Start" data-uid="UsbMonitor.UsbMonitorManager.Start">
+  Start()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Bassman2/UsbMonitor/blob/main/Src/UsbMonitorShare/UsbMonitorManager.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enable USB notification.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Start()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UsbMonitor_UsbMonitorManager_Stop_" data-uid="UsbMonitor.UsbMonitorManager.Stop*"></a>
+
+  <h3 id="UsbMonitor_UsbMonitorManager_Stop" data-uid="UsbMonitor.UsbMonitorManager.Stop">
+  Stop()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Bassman2/UsbMonitor/blob/main/Src/UsbMonitorShare/UsbMonitorManager.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Disable USB notification.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Stop()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="UsbMonitor_UsbMonitorManager_UsbChanged" data-uid="UsbMonitor.UsbMonitorManager.UsbChanged">
+  UsbChanged
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Bassman2/UsbMonitor/blob/main/Src/UsbMonitorShare/UsbMonitorManager.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Event for USB Changed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;UsbEventArgs&gt; UsbChanged</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="UsbMonitor.UsbEventArgs.html">UsbEventArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="UsbMonitor_UsbMonitorManager_UsbDeviceInterface" data-uid="UsbMonitor.UsbMonitorManager.UsbDeviceInterface">
+  UsbDeviceInterface
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Bassman2/UsbMonitor/blob/main/Src/UsbMonitorShare/UsbMonitorManager.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Event for USB Device Interface</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;UsbEventDeviceInterfaceArgs&gt; UsbDeviceInterface</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="UsbMonitor.UsbEventDeviceInterfaceArgs.html">UsbEventDeviceInterfaceArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="UsbMonitor_UsbMonitorManager_UsbHandle" data-uid="UsbMonitor.UsbMonitorManager.UsbHandle">
+  UsbHandle
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Bassman2/UsbMonitor/blob/main/Src/UsbMonitorShare/UsbMonitorManager.cs/#L37"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Event for USB Handle</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;UsbEventHandleArgs&gt; UsbHandle</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="UsbMonitor.UsbEventHandleArgs.html">UsbEventHandleArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="UsbMonitor_UsbMonitorManager_UsbOem" data-uid="UsbMonitor.UsbMonitorManager.UsbOem">
+  UsbOem
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Bassman2/UsbMonitor/blob/main/Src/UsbMonitorShare/UsbMonitorManager.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Event for USB OEM</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;UsbEventOemArgs&gt; UsbOem</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="UsbMonitor.UsbEventOemArgs.html">UsbEventOemArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="UsbMonitor_UsbMonitorManager_UsbPort" data-uid="UsbMonitor.UsbMonitorManager.UsbPort">
+  UsbPort
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Bassman2/UsbMonitor/blob/main/Src/UsbMonitorShare/UsbMonitorManager.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Event for USB Port</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;UsbEventPortArgs&gt; UsbPort</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="UsbMonitor.UsbEventPortArgs.html">UsbEventPortArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="UsbMonitor_UsbMonitorManager_UsbVolume" data-uid="UsbMonitor.UsbMonitorManager.UsbVolume">
+  UsbVolume
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Bassman2/UsbMonitor/blob/main/Src/UsbMonitorShare/UsbMonitorManager.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Event for USB Volume</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler&lt;UsbEventVolumeArgs&gt; UsbVolume</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="UsbMonitor.UsbEventVolumeArgs.html">UsbEventVolumeArgs</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Bassman2/UsbMonitor/blob/main/Src/WpfUsbMonitorShare/UsbMonitorManager.cs/#L10" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          Copyright 2025 © by Ralf Beckers
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

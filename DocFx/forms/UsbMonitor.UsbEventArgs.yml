@@ -1,0 +1,402 @@
+### YamlMime:ManagedReference
+items:
+- uid: UsbMonitor.UsbEventArgs
+  commentId: T:UsbMonitor.UsbEventArgs
+  id: UsbEventArgs
+  parent: UsbMonitor
+  children:
+  - UsbMonitor.UsbEventArgs.Action
+  - UsbMonitor.UsbEventArgs.ToString
+  langs:
+  - csharp
+  - vb
+  name: UsbEventArgs
+  nameWithType: UsbEventArgs
+  fullName: UsbMonitor.UsbEventArgs
+  type: Class
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbEventArgs.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: UsbEventArgs
+    path: ../Src/UsbMonitorShare/UsbEventArgs.cs
+    startLine: 7
+  assemblies:
+  - FormsUsbMonitor
+  namespace: UsbMonitor
+  summary: A class for containing USB event data
+  example: []
+  syntax:
+    content: 'public class UsbEventArgs : EventArgs'
+    content.vb: Public Class UsbEventArgs Inherits EventArgs
+  inheritance:
+  - System.Object
+  - System.EventArgs
+  derivedClasses:
+  - UsbMonitor.UsbEventDeviceInterfaceArgs
+  - UsbMonitor.UsbEventHandleArgs
+  - UsbMonitor.UsbEventOemArgs
+  - UsbMonitor.UsbEventPortArgs
+  - UsbMonitor.UsbEventVolumeArgs
+  inheritedMembers:
+  - System.EventArgs.Empty
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: UsbMonitor.UsbEventArgs.Action
+  commentId: P:UsbMonitor.UsbEventArgs.Action
+  id: Action
+  parent: UsbMonitor.UsbEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Action
+  nameWithType: UsbEventArgs.Action
+  fullName: UsbMonitor.UsbEventArgs.Action
+  type: Property
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbEventArgs.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Action
+    path: ../Src/UsbMonitorShare/UsbEventArgs.cs
+    startLine: 17
+  assemblies:
+  - FormsUsbMonitor
+  namespace: UsbMonitor
+  summary: Device action
+  example: []
+  syntax:
+    content: public UsbDeviceChangeEvent Action { get; }
+    parameters: []
+    return:
+      type: UsbMonitor.UsbDeviceChangeEvent
+    content.vb: Public Property Action As UsbDeviceChangeEvent
+  overload: UsbMonitor.UsbEventArgs.Action*
+- uid: UsbMonitor.UsbEventArgs.ToString
+  commentId: M:UsbMonitor.UsbEventArgs.ToString
+  id: ToString
+  parent: UsbMonitor.UsbEventArgs
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: UsbEventArgs.ToString()
+  fullName: UsbMonitor.UsbEventArgs.ToString()
+  type: Method
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbEventArgs.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: ToString
+    path: ../Src/UsbMonitorShare/UsbEventArgs.cs
+    startLine: 23
+  assemblies:
+  - FormsUsbMonitor
+  namespace: UsbMonitor
+  summary: Override ToString
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: Debug string
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: UsbMonitor.UsbEventArgs.ToString*
+references:
+- uid: UsbMonitor
+  commentId: N:UsbMonitor
+  href: UsbMonitor.html
+  name: UsbMonitor
+  nameWithType: UsbMonitor
+  fullName: UsbMonitor
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.EventArgs
+  commentId: T:System.EventArgs
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventargs
+  name: EventArgs
+  nameWithType: EventArgs
+  fullName: System.EventArgs
+- uid: System.EventArgs.Empty
+  commentId: F:System.EventArgs.Empty
+  parent: System.EventArgs
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventargs.empty
+  name: Empty
+  nameWithType: EventArgs.Empty
+  fullName: System.EventArgs.Empty
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UsbMonitor.UsbEventArgs.Action*
+  commentId: Overload:UsbMonitor.UsbEventArgs.Action
+  href: UsbMonitor.UsbEventArgs.html#UsbMonitor_UsbEventArgs_Action
+  name: Action
+  nameWithType: UsbEventArgs.Action
+  fullName: UsbMonitor.UsbEventArgs.Action
+- uid: UsbMonitor.UsbDeviceChangeEvent
+  commentId: T:UsbMonitor.UsbDeviceChangeEvent
+  parent: UsbMonitor
+  href: UsbMonitor.UsbDeviceChangeEvent.html
+  name: UsbDeviceChangeEvent
+  nameWithType: UsbDeviceChangeEvent
+  fullName: UsbMonitor.UsbDeviceChangeEvent
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: UsbMonitor.UsbEventArgs.ToString*
+  commentId: Overload:UsbMonitor.UsbEventArgs.ToString
+  href: UsbMonitor.UsbEventArgs.html#UsbMonitor_UsbEventArgs_ToString
+  name: ToString
+  nameWithType: UsbEventArgs.ToString
+  fullName: UsbMonitor.UsbEventArgs.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

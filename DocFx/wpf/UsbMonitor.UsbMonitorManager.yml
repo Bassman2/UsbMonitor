@@ -1,0 +1,1226 @@
+### YamlMime:ManagedReference
+items:
+- uid: UsbMonitor.UsbMonitorManager
+  commentId: T:UsbMonitor.UsbMonitorManager
+  id: UsbMonitorManager
+  parent: UsbMonitor
+  children:
+  - UsbMonitor.UsbMonitorManager.#ctor(System.Windows.Window,System.Boolean)
+  - UsbMonitor.UsbMonitorManager.CallUsbChanged(System.Object,UsbMonitor.UsbEventArgs)
+  - UsbMonitor.UsbMonitorManager.CallUsbDeviceInterface(System.Object,UsbMonitor.UsbEventDeviceInterfaceArgs)
+  - UsbMonitor.UsbMonitorManager.CallUsbHandle(System.Object,UsbMonitor.UsbEventHandleArgs)
+  - UsbMonitor.UsbMonitorManager.CallUsbOem(System.Object,UsbMonitor.UsbEventOemArgs)
+  - UsbMonitor.UsbMonitorManager.CallUsbPort(System.Object,UsbMonitor.UsbEventPortArgs)
+  - UsbMonitor.UsbMonitorManager.CallUsbVolumem(System.Object,UsbMonitor.UsbEventVolumeArgs)
+  - UsbMonitor.UsbMonitorManager.Start
+  - UsbMonitor.UsbMonitorManager.Stop
+  - UsbMonitor.UsbMonitorManager.UsbChanged
+  - UsbMonitor.UsbMonitorManager.UsbDeviceInterface
+  - UsbMonitor.UsbMonitorManager.UsbHandle
+  - UsbMonitor.UsbMonitorManager.UsbOem
+  - UsbMonitor.UsbMonitorManager.UsbPort
+  - UsbMonitor.UsbMonitorManager.UsbVolume
+  langs:
+  - csharp
+  - vb
+  name: UsbMonitorManager
+  nameWithType: UsbMonitorManager
+  fullName: UsbMonitor.UsbMonitorManager
+  type: Class
+  source:
+    remote:
+      path: Src/WpfUsbMonitorShare/UsbMonitorManager.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: UsbMonitorManager
+    path: ../Src/WpfUsbMonitorShare/UsbMonitorManager.cs
+    startLine: 9
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: USB Monitor class to notify if the USB content changes
+  example: []
+  syntax:
+    content: 'public class UsbMonitorManager : DeviceChangeManager'
+    content.vb: Public Class UsbMonitorManager Inherits DeviceChangeManager
+  inheritance:
+  - System.Object
+  - UsbMonitor.DeviceChangeManager
+  inheritedMembers:
+  - UsbMonitor.DeviceChangeManager.Register(System.IntPtr)
+  - UsbMonitor.DeviceChangeManager.Unregister
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UsbMonitor.UsbMonitorManager.UsbOem
+  commentId: E:UsbMonitor.UsbMonitorManager.UsbOem
+  id: UsbOem
+  parent: UsbMonitor.UsbMonitorManager
+  langs:
+  - csharp
+  - vb
+  name: UsbOem
+  nameWithType: UsbMonitorManager.UsbOem
+  fullName: UsbMonitor.UsbMonitorManager.UsbOem
+  type: Event
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbMonitorManager.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: UsbOem
+    path: ../Src/UsbMonitorShare/UsbMonitorManager.cs
+    startLine: 16
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Event for USB OEM
+  example: []
+  syntax:
+    content: public event EventHandler<UsbEventOemArgs> UsbOem
+    return:
+      type: System.EventHandler{UsbMonitor.UsbEventOemArgs}
+    content.vb: Public Event UsbOem As EventHandler(Of UsbEventOemArgs)
+- uid: UsbMonitor.UsbMonitorManager.UsbVolume
+  commentId: E:UsbMonitor.UsbMonitorManager.UsbVolume
+  id: UsbVolume
+  parent: UsbMonitor.UsbMonitorManager
+  langs:
+  - csharp
+  - vb
+  name: UsbVolume
+  nameWithType: UsbMonitorManager.UsbVolume
+  fullName: UsbMonitor.UsbMonitorManager.UsbVolume
+  type: Event
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbMonitorManager.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: UsbVolume
+    path: ../Src/UsbMonitorShare/UsbMonitorManager.cs
+    startLine: 21
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Event for USB Volume
+  example: []
+  syntax:
+    content: public event EventHandler<UsbEventVolumeArgs> UsbVolume
+    return:
+      type: System.EventHandler{UsbMonitor.UsbEventVolumeArgs}
+    content.vb: Public Event UsbVolume As EventHandler(Of UsbEventVolumeArgs)
+- uid: UsbMonitor.UsbMonitorManager.UsbPort
+  commentId: E:UsbMonitor.UsbMonitorManager.UsbPort
+  id: UsbPort
+  parent: UsbMonitor.UsbMonitorManager
+  langs:
+  - csharp
+  - vb
+  name: UsbPort
+  nameWithType: UsbMonitorManager.UsbPort
+  fullName: UsbMonitor.UsbMonitorManager.UsbPort
+  type: Event
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbMonitorManager.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: UsbPort
+    path: ../Src/UsbMonitorShare/UsbMonitorManager.cs
+    startLine: 26
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Event for USB Port
+  example: []
+  syntax:
+    content: public event EventHandler<UsbEventPortArgs> UsbPort
+    return:
+      type: System.EventHandler{UsbMonitor.UsbEventPortArgs}
+    content.vb: Public Event UsbPort As EventHandler(Of UsbEventPortArgs)
+- uid: UsbMonitor.UsbMonitorManager.UsbDeviceInterface
+  commentId: E:UsbMonitor.UsbMonitorManager.UsbDeviceInterface
+  id: UsbDeviceInterface
+  parent: UsbMonitor.UsbMonitorManager
+  langs:
+  - csharp
+  - vb
+  name: UsbDeviceInterface
+  nameWithType: UsbMonitorManager.UsbDeviceInterface
+  fullName: UsbMonitor.UsbMonitorManager.UsbDeviceInterface
+  type: Event
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbMonitorManager.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: UsbDeviceInterface
+    path: ../Src/UsbMonitorShare/UsbMonitorManager.cs
+    startLine: 31
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Event for USB Device Interface
+  example: []
+  syntax:
+    content: public event EventHandler<UsbEventDeviceInterfaceArgs> UsbDeviceInterface
+    return:
+      type: System.EventHandler{UsbMonitor.UsbEventDeviceInterfaceArgs}
+    content.vb: Public Event UsbDeviceInterface As EventHandler(Of UsbEventDeviceInterfaceArgs)
+- uid: UsbMonitor.UsbMonitorManager.UsbHandle
+  commentId: E:UsbMonitor.UsbMonitorManager.UsbHandle
+  id: UsbHandle
+  parent: UsbMonitor.UsbMonitorManager
+  langs:
+  - csharp
+  - vb
+  name: UsbHandle
+  nameWithType: UsbMonitorManager.UsbHandle
+  fullName: UsbMonitor.UsbMonitorManager.UsbHandle
+  type: Event
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbMonitorManager.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: UsbHandle
+    path: ../Src/UsbMonitorShare/UsbMonitorManager.cs
+    startLine: 36
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Event for USB Handle
+  example: []
+  syntax:
+    content: public event EventHandler<UsbEventHandleArgs> UsbHandle
+    return:
+      type: System.EventHandler{UsbMonitor.UsbEventHandleArgs}
+    content.vb: Public Event UsbHandle As EventHandler(Of UsbEventHandleArgs)
+- uid: UsbMonitor.UsbMonitorManager.UsbChanged
+  commentId: E:UsbMonitor.UsbMonitorManager.UsbChanged
+  id: UsbChanged
+  parent: UsbMonitor.UsbMonitorManager
+  langs:
+  - csharp
+  - vb
+  name: UsbChanged
+  nameWithType: UsbMonitorManager.UsbChanged
+  fullName: UsbMonitor.UsbMonitorManager.UsbChanged
+  type: Event
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbMonitorManager.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: UsbChanged
+    path: ../Src/UsbMonitorShare/UsbMonitorManager.cs
+    startLine: 41
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Event for USB Changed
+  example: []
+  syntax:
+    content: public event EventHandler<UsbEventArgs> UsbChanged
+    return:
+      type: System.EventHandler{UsbMonitor.UsbEventArgs}
+    content.vb: Public Event UsbChanged As EventHandler(Of UsbEventArgs)
+- uid: UsbMonitor.UsbMonitorManager.CallUsbOem(System.Object,UsbMonitor.UsbEventOemArgs)
+  commentId: M:UsbMonitor.UsbMonitorManager.CallUsbOem(System.Object,UsbMonitor.UsbEventOemArgs)
+  id: CallUsbOem(System.Object,UsbMonitor.UsbEventOemArgs)
+  parent: UsbMonitor.UsbMonitorManager
+  langs:
+  - csharp
+  - vb
+  name: CallUsbOem(object, UsbEventOemArgs)
+  nameWithType: UsbMonitorManager.CallUsbOem(object, UsbEventOemArgs)
+  fullName: UsbMonitor.UsbMonitorManager.CallUsbOem(object, UsbMonitor.UsbEventOemArgs)
+  type: Method
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbMonitorManager.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: CallUsbOem
+    path: ../Src/UsbMonitorShare/UsbMonitorManager.cs
+    startLine: 48
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Internal call of UsbOem
+  example: []
+  syntax:
+    content: public void CallUsbOem(object sender, UsbEventOemArgs args)
+    parameters:
+    - id: sender
+      type: System.Object
+      description: Sender
+    - id: args
+      type: UsbMonitor.UsbEventOemArgs
+      description: Arguments
+    content.vb: Public Sub CallUsbOem(sender As Object, args As UsbEventOemArgs)
+  overload: UsbMonitor.UsbMonitorManager.CallUsbOem*
+  nameWithType.vb: UsbMonitorManager.CallUsbOem(Object, UsbEventOemArgs)
+  fullName.vb: UsbMonitor.UsbMonitorManager.CallUsbOem(Object, UsbMonitor.UsbEventOemArgs)
+  name.vb: CallUsbOem(Object, UsbEventOemArgs)
+- uid: UsbMonitor.UsbMonitorManager.CallUsbVolumem(System.Object,UsbMonitor.UsbEventVolumeArgs)
+  commentId: M:UsbMonitor.UsbMonitorManager.CallUsbVolumem(System.Object,UsbMonitor.UsbEventVolumeArgs)
+  id: CallUsbVolumem(System.Object,UsbMonitor.UsbEventVolumeArgs)
+  parent: UsbMonitor.UsbMonitorManager
+  langs:
+  - csharp
+  - vb
+  name: CallUsbVolumem(object, UsbEventVolumeArgs)
+  nameWithType: UsbMonitorManager.CallUsbVolumem(object, UsbEventVolumeArgs)
+  fullName: UsbMonitor.UsbMonitorManager.CallUsbVolumem(object, UsbMonitor.UsbEventVolumeArgs)
+  type: Method
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbMonitorManager.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: CallUsbVolumem
+    path: ../Src/UsbMonitorShare/UsbMonitorManager.cs
+    startLine: 58
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Internal call of UsbVolume
+  example: []
+  syntax:
+    content: public void CallUsbVolumem(object sender, UsbEventVolumeArgs args)
+    parameters:
+    - id: sender
+      type: System.Object
+      description: Sender
+    - id: args
+      type: UsbMonitor.UsbEventVolumeArgs
+      description: Arguments
+    content.vb: Public Sub CallUsbVolumem(sender As Object, args As UsbEventVolumeArgs)
+  overload: UsbMonitor.UsbMonitorManager.CallUsbVolumem*
+  nameWithType.vb: UsbMonitorManager.CallUsbVolumem(Object, UsbEventVolumeArgs)
+  fullName.vb: UsbMonitor.UsbMonitorManager.CallUsbVolumem(Object, UsbMonitor.UsbEventVolumeArgs)
+  name.vb: CallUsbVolumem(Object, UsbEventVolumeArgs)
+- uid: UsbMonitor.UsbMonitorManager.CallUsbPort(System.Object,UsbMonitor.UsbEventPortArgs)
+  commentId: M:UsbMonitor.UsbMonitorManager.CallUsbPort(System.Object,UsbMonitor.UsbEventPortArgs)
+  id: CallUsbPort(System.Object,UsbMonitor.UsbEventPortArgs)
+  parent: UsbMonitor.UsbMonitorManager
+  langs:
+  - csharp
+  - vb
+  name: CallUsbPort(object, UsbEventPortArgs)
+  nameWithType: UsbMonitorManager.CallUsbPort(object, UsbEventPortArgs)
+  fullName: UsbMonitor.UsbMonitorManager.CallUsbPort(object, UsbMonitor.UsbEventPortArgs)
+  type: Method
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbMonitorManager.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: CallUsbPort
+    path: ../Src/UsbMonitorShare/UsbMonitorManager.cs
+    startLine: 68
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Internal call of CallUsbPort
+  example: []
+  syntax:
+    content: public void CallUsbPort(object sender, UsbEventPortArgs args)
+    parameters:
+    - id: sender
+      type: System.Object
+      description: Sender
+    - id: args
+      type: UsbMonitor.UsbEventPortArgs
+      description: Arguments
+    content.vb: Public Sub CallUsbPort(sender As Object, args As UsbEventPortArgs)
+  overload: UsbMonitor.UsbMonitorManager.CallUsbPort*
+  nameWithType.vb: UsbMonitorManager.CallUsbPort(Object, UsbEventPortArgs)
+  fullName.vb: UsbMonitor.UsbMonitorManager.CallUsbPort(Object, UsbMonitor.UsbEventPortArgs)
+  name.vb: CallUsbPort(Object, UsbEventPortArgs)
+- uid: UsbMonitor.UsbMonitorManager.CallUsbDeviceInterface(System.Object,UsbMonitor.UsbEventDeviceInterfaceArgs)
+  commentId: M:UsbMonitor.UsbMonitorManager.CallUsbDeviceInterface(System.Object,UsbMonitor.UsbEventDeviceInterfaceArgs)
+  id: CallUsbDeviceInterface(System.Object,UsbMonitor.UsbEventDeviceInterfaceArgs)
+  parent: UsbMonitor.UsbMonitorManager
+  langs:
+  - csharp
+  - vb
+  name: CallUsbDeviceInterface(object, UsbEventDeviceInterfaceArgs)
+  nameWithType: UsbMonitorManager.CallUsbDeviceInterface(object, UsbEventDeviceInterfaceArgs)
+  fullName: UsbMonitor.UsbMonitorManager.CallUsbDeviceInterface(object, UsbMonitor.UsbEventDeviceInterfaceArgs)
+  type: Method
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbMonitorManager.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: CallUsbDeviceInterface
+    path: ../Src/UsbMonitorShare/UsbMonitorManager.cs
+    startLine: 78
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Internal call of UsbDeviceInterface
+  example: []
+  syntax:
+    content: public void CallUsbDeviceInterface(object sender, UsbEventDeviceInterfaceArgs args)
+    parameters:
+    - id: sender
+      type: System.Object
+      description: Sender
+    - id: args
+      type: UsbMonitor.UsbEventDeviceInterfaceArgs
+      description: Arguments
+    content.vb: Public Sub CallUsbDeviceInterface(sender As Object, args As UsbEventDeviceInterfaceArgs)
+  overload: UsbMonitor.UsbMonitorManager.CallUsbDeviceInterface*
+  nameWithType.vb: UsbMonitorManager.CallUsbDeviceInterface(Object, UsbEventDeviceInterfaceArgs)
+  fullName.vb: UsbMonitor.UsbMonitorManager.CallUsbDeviceInterface(Object, UsbMonitor.UsbEventDeviceInterfaceArgs)
+  name.vb: CallUsbDeviceInterface(Object, UsbEventDeviceInterfaceArgs)
+- uid: UsbMonitor.UsbMonitorManager.CallUsbHandle(System.Object,UsbMonitor.UsbEventHandleArgs)
+  commentId: M:UsbMonitor.UsbMonitorManager.CallUsbHandle(System.Object,UsbMonitor.UsbEventHandleArgs)
+  id: CallUsbHandle(System.Object,UsbMonitor.UsbEventHandleArgs)
+  parent: UsbMonitor.UsbMonitorManager
+  langs:
+  - csharp
+  - vb
+  name: CallUsbHandle(object, UsbEventHandleArgs)
+  nameWithType: UsbMonitorManager.CallUsbHandle(object, UsbEventHandleArgs)
+  fullName: UsbMonitor.UsbMonitorManager.CallUsbHandle(object, UsbMonitor.UsbEventHandleArgs)
+  type: Method
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbMonitorManager.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: CallUsbHandle
+    path: ../Src/UsbMonitorShare/UsbMonitorManager.cs
+    startLine: 88
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Internal call of UsbHandle
+  example: []
+  syntax:
+    content: public void CallUsbHandle(object sender, UsbEventHandleArgs args)
+    parameters:
+    - id: sender
+      type: System.Object
+      description: Sender
+    - id: args
+      type: UsbMonitor.UsbEventHandleArgs
+      description: Arguments
+    content.vb: Public Sub CallUsbHandle(sender As Object, args As UsbEventHandleArgs)
+  overload: UsbMonitor.UsbMonitorManager.CallUsbHandle*
+  nameWithType.vb: UsbMonitorManager.CallUsbHandle(Object, UsbEventHandleArgs)
+  fullName.vb: UsbMonitor.UsbMonitorManager.CallUsbHandle(Object, UsbMonitor.UsbEventHandleArgs)
+  name.vb: CallUsbHandle(Object, UsbEventHandleArgs)
+- uid: UsbMonitor.UsbMonitorManager.CallUsbChanged(System.Object,UsbMonitor.UsbEventArgs)
+  commentId: M:UsbMonitor.UsbMonitorManager.CallUsbChanged(System.Object,UsbMonitor.UsbEventArgs)
+  id: CallUsbChanged(System.Object,UsbMonitor.UsbEventArgs)
+  parent: UsbMonitor.UsbMonitorManager
+  langs:
+  - csharp
+  - vb
+  name: CallUsbChanged(object, UsbEventArgs)
+  nameWithType: UsbMonitorManager.CallUsbChanged(object, UsbEventArgs)
+  fullName: UsbMonitor.UsbMonitorManager.CallUsbChanged(object, UsbMonitor.UsbEventArgs)
+  type: Method
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbMonitorManager.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: CallUsbChanged
+    path: ../Src/UsbMonitorShare/UsbMonitorManager.cs
+    startLine: 98
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Internal call of UsbChanged
+  example: []
+  syntax:
+    content: public void CallUsbChanged(object sender, UsbEventArgs args)
+    parameters:
+    - id: sender
+      type: System.Object
+      description: Sender
+    - id: args
+      type: UsbMonitor.UsbEventArgs
+      description: Arguments
+    content.vb: Public Sub CallUsbChanged(sender As Object, args As UsbEventArgs)
+  overload: UsbMonitor.UsbMonitorManager.CallUsbChanged*
+  nameWithType.vb: UsbMonitorManager.CallUsbChanged(Object, UsbEventArgs)
+  fullName.vb: UsbMonitor.UsbMonitorManager.CallUsbChanged(Object, UsbMonitor.UsbEventArgs)
+  name.vb: CallUsbChanged(Object, UsbEventArgs)
+- uid: UsbMonitor.UsbMonitorManager.Start
+  commentId: M:UsbMonitor.UsbMonitorManager.Start
+  id: Start
+  parent: UsbMonitor.UsbMonitorManager
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: UsbMonitorManager.Start()
+  fullName: UsbMonitor.UsbMonitorManager.Start()
+  type: Method
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbMonitorManager.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Start
+    path: ../Src/UsbMonitorShare/UsbMonitorManager.cs
+    startLine: 108
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Enable USB notification.
+  example: []
+  syntax:
+    content: public void Start()
+    content.vb: Public Sub Start()
+  overload: UsbMonitor.UsbMonitorManager.Start*
+- uid: UsbMonitor.UsbMonitorManager.Stop
+  commentId: M:UsbMonitor.UsbMonitorManager.Stop
+  id: Stop
+  parent: UsbMonitor.UsbMonitorManager
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: UsbMonitorManager.Stop()
+  fullName: UsbMonitor.UsbMonitorManager.Stop()
+  type: Method
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbMonitorManager.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Stop
+    path: ../Src/UsbMonitorShare/UsbMonitorManager.cs
+    startLine: 116
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Disable USB notification.
+  example: []
+  syntax:
+    content: public void Stop()
+    content.vb: Public Sub [Stop]()
+  overload: UsbMonitor.UsbMonitorManager.Stop*
+- uid: UsbMonitor.UsbMonitorManager.#ctor(System.Windows.Window,System.Boolean)
+  commentId: M:UsbMonitor.UsbMonitorManager.#ctor(System.Windows.Window,System.Boolean)
+  id: '#ctor(System.Windows.Window,System.Boolean)'
+  parent: UsbMonitor.UsbMonitorManager
+  langs:
+  - csharp
+  - vb
+  name: UsbMonitorManager(Window, bool)
+  nameWithType: UsbMonitorManager.UsbMonitorManager(Window, bool)
+  fullName: UsbMonitor.UsbMonitorManager.UsbMonitorManager(System.Windows.Window, bool)
+  type: Constructor
+  source:
+    remote:
+      path: Src/WpfUsbMonitorShare/UsbMonitorManager.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: .ctor
+    path: ../Src/WpfUsbMonitorShare/UsbMonitorManager.cs
+    startLine: 17
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Constructor
+  example: []
+  syntax:
+    content: public UsbMonitorManager(Window window, bool start = true)
+    parameters:
+    - id: window
+      type: System.Windows.Window
+      description: Main window of the application.
+    - id: start
+      type: System.Boolean
+      description: Enable USB notification on startup or not.
+    content.vb: Public Sub New(window As Window, start As Boolean = True)
+  overload: UsbMonitor.UsbMonitorManager.#ctor*
+  nameWithType.vb: UsbMonitorManager.New(Window, Boolean)
+  fullName.vb: UsbMonitor.UsbMonitorManager.New(System.Windows.Window, Boolean)
+  name.vb: New(Window, Boolean)
+references:
+- uid: UsbMonitor
+  commentId: N:UsbMonitor
+  href: UsbMonitor.html
+  name: UsbMonitor
+  nameWithType: UsbMonitor
+  fullName: UsbMonitor
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UsbMonitor.DeviceChangeManager
+  commentId: T:UsbMonitor.DeviceChangeManager
+  parent: UsbMonitor
+  href: UsbMonitor.DeviceChangeManager.html
+  name: DeviceChangeManager
+  nameWithType: DeviceChangeManager
+  fullName: UsbMonitor.DeviceChangeManager
+- uid: UsbMonitor.DeviceChangeManager.Register(System.IntPtr)
+  commentId: M:UsbMonitor.DeviceChangeManager.Register(System.IntPtr)
+  parent: UsbMonitor.DeviceChangeManager
+  isExternal: true
+  href: UsbMonitor.DeviceChangeManager.html#UsbMonitor_DeviceChangeManager_Register_System_IntPtr_
+  name: Register(nint)
+  nameWithType: DeviceChangeManager.Register(nint)
+  fullName: UsbMonitor.DeviceChangeManager.Register(nint)
+  nameWithType.vb: DeviceChangeManager.Register(IntPtr)
+  fullName.vb: UsbMonitor.DeviceChangeManager.Register(System.IntPtr)
+  name.vb: Register(IntPtr)
+  spec.csharp:
+  - uid: UsbMonitor.DeviceChangeManager.Register(System.IntPtr)
+    name: Register
+    href: UsbMonitor.DeviceChangeManager.html#UsbMonitor_DeviceChangeManager_Register_System_IntPtr_
+  - name: (
+  - uid: System.IntPtr
+    name: nint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: )
+  spec.vb:
+  - uid: UsbMonitor.DeviceChangeManager.Register(System.IntPtr)
+    name: Register
+    href: UsbMonitor.DeviceChangeManager.html#UsbMonitor_DeviceChangeManager_Register_System_IntPtr_
+  - name: (
+  - uid: System.IntPtr
+    name: IntPtr
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: )
+- uid: UsbMonitor.DeviceChangeManager.Unregister
+  commentId: M:UsbMonitor.DeviceChangeManager.Unregister
+  parent: UsbMonitor.DeviceChangeManager
+  href: UsbMonitor.DeviceChangeManager.html#UsbMonitor_DeviceChangeManager_Unregister
+  name: Unregister()
+  nameWithType: DeviceChangeManager.Unregister()
+  fullName: UsbMonitor.DeviceChangeManager.Unregister()
+  spec.csharp:
+  - uid: UsbMonitor.DeviceChangeManager.Unregister
+    name: Unregister
+    href: UsbMonitor.DeviceChangeManager.html#UsbMonitor_DeviceChangeManager_Unregister
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UsbMonitor.DeviceChangeManager.Unregister
+    name: Unregister
+    href: UsbMonitor.DeviceChangeManager.html#UsbMonitor_DeviceChangeManager_Unregister
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.EventHandler{UsbMonitor.UsbEventOemArgs}
+  commentId: T:System.EventHandler{UsbMonitor.UsbEventOemArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<UsbEventOemArgs>
+  nameWithType: EventHandler<UsbEventOemArgs>
+  fullName: System.EventHandler<UsbMonitor.UsbEventOemArgs>
+  nameWithType.vb: EventHandler(Of UsbEventOemArgs)
+  fullName.vb: System.EventHandler(Of UsbMonitor.UsbEventOemArgs)
+  name.vb: EventHandler(Of UsbEventOemArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: UsbMonitor.UsbEventOemArgs
+    name: UsbEventOemArgs
+    href: UsbMonitor.UsbEventOemArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UsbMonitor.UsbEventOemArgs
+    name: UsbEventOemArgs
+    href: UsbMonitor.UsbEventOemArgs.html
+  - name: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - name: TEventArgs
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventArgs
+  - name: )
+- uid: System.EventHandler{UsbMonitor.UsbEventVolumeArgs}
+  commentId: T:System.EventHandler{UsbMonitor.UsbEventVolumeArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<UsbEventVolumeArgs>
+  nameWithType: EventHandler<UsbEventVolumeArgs>
+  fullName: System.EventHandler<UsbMonitor.UsbEventVolumeArgs>
+  nameWithType.vb: EventHandler(Of UsbEventVolumeArgs)
+  fullName.vb: System.EventHandler(Of UsbMonitor.UsbEventVolumeArgs)
+  name.vb: EventHandler(Of UsbEventVolumeArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: UsbMonitor.UsbEventVolumeArgs
+    name: UsbEventVolumeArgs
+    href: UsbMonitor.UsbEventVolumeArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UsbMonitor.UsbEventVolumeArgs
+    name: UsbEventVolumeArgs
+    href: UsbMonitor.UsbEventVolumeArgs.html
+  - name: )
+- uid: System.EventHandler{UsbMonitor.UsbEventPortArgs}
+  commentId: T:System.EventHandler{UsbMonitor.UsbEventPortArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<UsbEventPortArgs>
+  nameWithType: EventHandler<UsbEventPortArgs>
+  fullName: System.EventHandler<UsbMonitor.UsbEventPortArgs>
+  nameWithType.vb: EventHandler(Of UsbEventPortArgs)
+  fullName.vb: System.EventHandler(Of UsbMonitor.UsbEventPortArgs)
+  name.vb: EventHandler(Of UsbEventPortArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: UsbMonitor.UsbEventPortArgs
+    name: UsbEventPortArgs
+    href: UsbMonitor.UsbEventPortArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UsbMonitor.UsbEventPortArgs
+    name: UsbEventPortArgs
+    href: UsbMonitor.UsbEventPortArgs.html
+  - name: )
+- uid: System.EventHandler{UsbMonitor.UsbEventDeviceInterfaceArgs}
+  commentId: T:System.EventHandler{UsbMonitor.UsbEventDeviceInterfaceArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<UsbEventDeviceInterfaceArgs>
+  nameWithType: EventHandler<UsbEventDeviceInterfaceArgs>
+  fullName: System.EventHandler<UsbMonitor.UsbEventDeviceInterfaceArgs>
+  nameWithType.vb: EventHandler(Of UsbEventDeviceInterfaceArgs)
+  fullName.vb: System.EventHandler(Of UsbMonitor.UsbEventDeviceInterfaceArgs)
+  name.vb: EventHandler(Of UsbEventDeviceInterfaceArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: UsbMonitor.UsbEventDeviceInterfaceArgs
+    name: UsbEventDeviceInterfaceArgs
+    href: UsbMonitor.UsbEventDeviceInterfaceArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UsbMonitor.UsbEventDeviceInterfaceArgs
+    name: UsbEventDeviceInterfaceArgs
+    href: UsbMonitor.UsbEventDeviceInterfaceArgs.html
+  - name: )
+- uid: System.EventHandler{UsbMonitor.UsbEventHandleArgs}
+  commentId: T:System.EventHandler{UsbMonitor.UsbEventHandleArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<UsbEventHandleArgs>
+  nameWithType: EventHandler<UsbEventHandleArgs>
+  fullName: System.EventHandler<UsbMonitor.UsbEventHandleArgs>
+  nameWithType.vb: EventHandler(Of UsbEventHandleArgs)
+  fullName.vb: System.EventHandler(Of UsbMonitor.UsbEventHandleArgs)
+  name.vb: EventHandler(Of UsbEventHandleArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: UsbMonitor.UsbEventHandleArgs
+    name: UsbEventHandleArgs
+    href: UsbMonitor.UsbEventHandleArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UsbMonitor.UsbEventHandleArgs
+    name: UsbEventHandleArgs
+    href: UsbMonitor.UsbEventHandleArgs.html
+  - name: )
+- uid: System.EventHandler{UsbMonitor.UsbEventArgs}
+  commentId: T:System.EventHandler{UsbMonitor.UsbEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<UsbEventArgs>
+  nameWithType: EventHandler<UsbEventArgs>
+  fullName: System.EventHandler<UsbMonitor.UsbEventArgs>
+  nameWithType.vb: EventHandler(Of UsbEventArgs)
+  fullName.vb: System.EventHandler(Of UsbMonitor.UsbEventArgs)
+  name.vb: EventHandler(Of UsbEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: UsbMonitor.UsbEventArgs
+    name: UsbEventArgs
+    href: UsbMonitor.UsbEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UsbMonitor.UsbEventArgs
+    name: UsbEventArgs
+    href: UsbMonitor.UsbEventArgs.html
+  - name: )
+- uid: UsbMonitor.UsbMonitorManager.CallUsbOem*
+  commentId: Overload:UsbMonitor.UsbMonitorManager.CallUsbOem
+  href: UsbMonitor.UsbMonitorManager.html#UsbMonitor_UsbMonitorManager_CallUsbOem_System_Object_UsbMonitor_UsbEventOemArgs_
+  name: CallUsbOem
+  nameWithType: UsbMonitorManager.CallUsbOem
+  fullName: UsbMonitor.UsbMonitorManager.CallUsbOem
+- uid: UsbMonitor.UsbEventOemArgs
+  commentId: T:UsbMonitor.UsbEventOemArgs
+  parent: UsbMonitor
+  href: UsbMonitor.UsbEventOemArgs.html
+  name: UsbEventOemArgs
+  nameWithType: UsbEventOemArgs
+  fullName: UsbMonitor.UsbEventOemArgs
+- uid: UsbMonitor.UsbMonitorManager.CallUsbVolumem*
+  commentId: Overload:UsbMonitor.UsbMonitorManager.CallUsbVolumem
+  href: UsbMonitor.UsbMonitorManager.html#UsbMonitor_UsbMonitorManager_CallUsbVolumem_System_Object_UsbMonitor_UsbEventVolumeArgs_
+  name: CallUsbVolumem
+  nameWithType: UsbMonitorManager.CallUsbVolumem
+  fullName: UsbMonitor.UsbMonitorManager.CallUsbVolumem
+- uid: UsbMonitor.UsbEventVolumeArgs
+  commentId: T:UsbMonitor.UsbEventVolumeArgs
+  parent: UsbMonitor
+  href: UsbMonitor.UsbEventVolumeArgs.html
+  name: UsbEventVolumeArgs
+  nameWithType: UsbEventVolumeArgs
+  fullName: UsbMonitor.UsbEventVolumeArgs
+- uid: UsbMonitor.UsbMonitorManager.CallUsbPort*
+  commentId: Overload:UsbMonitor.UsbMonitorManager.CallUsbPort
+  href: UsbMonitor.UsbMonitorManager.html#UsbMonitor_UsbMonitorManager_CallUsbPort_System_Object_UsbMonitor_UsbEventPortArgs_
+  name: CallUsbPort
+  nameWithType: UsbMonitorManager.CallUsbPort
+  fullName: UsbMonitor.UsbMonitorManager.CallUsbPort
+- uid: UsbMonitor.UsbEventPortArgs
+  commentId: T:UsbMonitor.UsbEventPortArgs
+  parent: UsbMonitor
+  href: UsbMonitor.UsbEventPortArgs.html
+  name: UsbEventPortArgs
+  nameWithType: UsbEventPortArgs
+  fullName: UsbMonitor.UsbEventPortArgs
+- uid: UsbMonitor.UsbMonitorManager.CallUsbDeviceInterface*
+  commentId: Overload:UsbMonitor.UsbMonitorManager.CallUsbDeviceInterface
+  href: UsbMonitor.UsbMonitorManager.html#UsbMonitor_UsbMonitorManager_CallUsbDeviceInterface_System_Object_UsbMonitor_UsbEventDeviceInterfaceArgs_
+  name: CallUsbDeviceInterface
+  nameWithType: UsbMonitorManager.CallUsbDeviceInterface
+  fullName: UsbMonitor.UsbMonitorManager.CallUsbDeviceInterface
+- uid: UsbMonitor.UsbEventDeviceInterfaceArgs
+  commentId: T:UsbMonitor.UsbEventDeviceInterfaceArgs
+  parent: UsbMonitor
+  href: UsbMonitor.UsbEventDeviceInterfaceArgs.html
+  name: UsbEventDeviceInterfaceArgs
+  nameWithType: UsbEventDeviceInterfaceArgs
+  fullName: UsbMonitor.UsbEventDeviceInterfaceArgs
+- uid: UsbMonitor.UsbMonitorManager.CallUsbHandle*
+  commentId: Overload:UsbMonitor.UsbMonitorManager.CallUsbHandle
+  href: UsbMonitor.UsbMonitorManager.html#UsbMonitor_UsbMonitorManager_CallUsbHandle_System_Object_UsbMonitor_UsbEventHandleArgs_
+  name: CallUsbHandle
+  nameWithType: UsbMonitorManager.CallUsbHandle
+  fullName: UsbMonitor.UsbMonitorManager.CallUsbHandle
+- uid: UsbMonitor.UsbEventHandleArgs
+  commentId: T:UsbMonitor.UsbEventHandleArgs
+  parent: UsbMonitor
+  href: UsbMonitor.UsbEventHandleArgs.html
+  name: UsbEventHandleArgs
+  nameWithType: UsbEventHandleArgs
+  fullName: UsbMonitor.UsbEventHandleArgs
+- uid: UsbMonitor.UsbMonitorManager.CallUsbChanged*
+  commentId: Overload:UsbMonitor.UsbMonitorManager.CallUsbChanged
+  href: UsbMonitor.UsbMonitorManager.html#UsbMonitor_UsbMonitorManager_CallUsbChanged_System_Object_UsbMonitor_UsbEventArgs_
+  name: CallUsbChanged
+  nameWithType: UsbMonitorManager.CallUsbChanged
+  fullName: UsbMonitor.UsbMonitorManager.CallUsbChanged
+- uid: UsbMonitor.UsbEventArgs
+  commentId: T:UsbMonitor.UsbEventArgs
+  parent: UsbMonitor
+  href: UsbMonitor.UsbEventArgs.html
+  name: UsbEventArgs
+  nameWithType: UsbEventArgs
+  fullName: UsbMonitor.UsbEventArgs
+- uid: UsbMonitor.UsbMonitorManager.Start*
+  commentId: Overload:UsbMonitor.UsbMonitorManager.Start
+  href: UsbMonitor.UsbMonitorManager.html#UsbMonitor_UsbMonitorManager_Start
+  name: Start
+  nameWithType: UsbMonitorManager.Start
+  fullName: UsbMonitor.UsbMonitorManager.Start
+- uid: UsbMonitor.UsbMonitorManager.Stop*
+  commentId: Overload:UsbMonitor.UsbMonitorManager.Stop
+  href: UsbMonitor.UsbMonitorManager.html#UsbMonitor_UsbMonitorManager_Stop
+  name: Stop
+  nameWithType: UsbMonitorManager.Stop
+  fullName: UsbMonitor.UsbMonitorManager.Stop
+- uid: UsbMonitor.UsbMonitorManager.#ctor*
+  commentId: Overload:UsbMonitor.UsbMonitorManager.#ctor
+  href: UsbMonitor.UsbMonitorManager.html#UsbMonitor_UsbMonitorManager__ctor_System_Windows_Window_System_Boolean_
+  name: UsbMonitorManager
+  nameWithType: UsbMonitorManager.UsbMonitorManager
+  fullName: UsbMonitor.UsbMonitorManager.UsbMonitorManager
+  nameWithType.vb: UsbMonitorManager.New
+  fullName.vb: UsbMonitor.UsbMonitorManager.New
+  name.vb: New
+- uid: System.Windows.Window
+  commentId: T:System.Windows.Window
+  parent: System.Windows
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.window
+  name: Window
+  nameWithType: Window
+  fullName: System.Windows.Window
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Windows
+  commentId: N:System.Windows
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows
+  nameWithType: System.Windows
+  fullName: System.Windows
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows

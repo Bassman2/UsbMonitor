@@ -1,0 +1,518 @@
+{
+  "source_base_path": "D:/Libraries/UsbMonitor/DocFx",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "forms/UsbMonitor.DeviceChangeManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "forms/UsbMonitor.DeviceChangeManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "UsbMonitor.DeviceChangeManager",
+      "Summary": "<p sourcefile=\"forms/UsbMonitor.DeviceChangeManager.yml\" sourcestartlinenumber=\"1\">Device change manager</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "forms/UsbMonitor.UsbDeviceChangeEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "forms/UsbMonitor.UsbDeviceChangeEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "UsbMonitor.UsbDeviceChangeEvent",
+      "Summary": "<p sourcefile=\"forms/UsbMonitor.UsbDeviceChangeEvent.yml\" sourcestartlinenumber=\"1\">Device action</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "forms/UsbMonitor.UsbDeviceClass.yml",
+      "output": {
+        ".html": {
+          "relative_path": "forms/UsbMonitor.UsbDeviceClass.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "UsbMonitor.UsbDeviceClass",
+      "Summary": "<p sourcefile=\"forms/UsbMonitor.UsbDeviceClass.yml\" sourcestartlinenumber=\"1\">USB device class</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "forms/UsbMonitor.UsbDeviceInterface.yml",
+      "output": {
+        ".html": {
+          "relative_path": "forms/UsbMonitor.UsbDeviceInterface.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "UsbMonitor.UsbDeviceInterface",
+      "Summary": "<p sourcefile=\"forms/UsbMonitor.UsbDeviceInterface.yml\" sourcestartlinenumber=\"1\">Device interfaces</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "forms/UsbMonitor.UsbDeviceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "forms/UsbMonitor.UsbDeviceType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "UsbMonitor.UsbDeviceType",
+      "Summary": "<p sourcefile=\"forms/UsbMonitor.UsbDeviceType.yml\" sourcestartlinenumber=\"1\">Device type</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "forms/UsbMonitor.UsbEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "forms/UsbMonitor.UsbEventArgs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "UsbMonitor.UsbEventArgs",
+      "Summary": "<p sourcefile=\"forms/UsbMonitor.UsbEventArgs.yml\" sourcestartlinenumber=\"1\">A class for containing USB event data</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "forms/UsbMonitor.UsbEventDeviceInterfaceArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "forms/UsbMonitor.UsbEventDeviceInterfaceArgs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "UsbMonitor.UsbEventDeviceInterfaceArgs",
+      "Summary": "<p sourcefile=\"forms/UsbMonitor.UsbEventDeviceInterfaceArgs.yml\" sourcestartlinenumber=\"1\">Interface notification arguments</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "forms/UsbMonitor.UsbEventHandleArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "forms/UsbMonitor.UsbEventHandleArgs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "UsbMonitor.UsbEventHandleArgs",
+      "Summary": "<p sourcefile=\"forms/UsbMonitor.UsbEventHandleArgs.yml\" sourcestartlinenumber=\"1\">Handle notification arguments</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "forms/UsbMonitor.UsbEventOemArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "forms/UsbMonitor.UsbEventOemArgs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "UsbMonitor.UsbEventOemArgs",
+      "Summary": "<p sourcefile=\"forms/UsbMonitor.UsbEventOemArgs.yml\" sourcestartlinenumber=\"1\">OEM notification arguments</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "forms/UsbMonitor.UsbEventPortArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "forms/UsbMonitor.UsbEventPortArgs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "UsbMonitor.UsbEventPortArgs",
+      "Summary": "<p sourcefile=\"forms/UsbMonitor.UsbEventPortArgs.yml\" sourcestartlinenumber=\"1\">Port notification arguments</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "forms/UsbMonitor.UsbEventVolumeArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "forms/UsbMonitor.UsbEventVolumeArgs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "UsbMonitor.UsbEventVolumeArgs",
+      "Summary": "<p sourcefile=\"forms/UsbMonitor.UsbEventVolumeArgs.yml\" sourcestartlinenumber=\"1\">Volume notification arguments</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "forms/UsbMonitor.UsbMonitorForm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "forms/UsbMonitor.UsbMonitorForm.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "UsbMonitor.UsbMonitorForm",
+      "Summary": "<p sourcefile=\"forms/UsbMonitor.UsbMonitorForm.yml\" sourcestartlinenumber=\"1\">Base class for main form</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "forms/UsbMonitor.UsbMonitorManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "forms/UsbMonitor.UsbMonitorManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "UsbMonitor.UsbMonitorManager",
+      "Summary": "<p sourcefile=\"forms/UsbMonitor.UsbMonitorManager.yml\" sourcestartlinenumber=\"1\">USB Monitor class to notify if the USB content changes</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "forms/UsbMonitor.UsbVolumeFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "forms/UsbMonitor.UsbVolumeFlags.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "UsbMonitor.UsbVolumeFlags",
+      "Summary": "<p sourcefile=\"forms/UsbMonitor.UsbVolumeFlags.yml\" sourcestartlinenumber=\"1\">Volume flags</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "forms/UsbMonitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "forms/UsbMonitor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "UsbMonitor",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "forms/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "forms/toc.html"
+        },
+        ".json": {
+          "relative_path": "forms/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "history/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "history/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/bassman.ico",
+      "output": {
+        "resource": {
+          "relative_path": "images/bassman.ico"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/bassman.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/bassman.svg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "wpf/UsbMonitor.DeviceChangeManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "wpf/UsbMonitor.DeviceChangeManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "UsbMonitor.DeviceChangeManager",
+      "Summary": "<p sourcefile=\"wpf/UsbMonitor.DeviceChangeManager.yml\" sourcestartlinenumber=\"1\">Device change manager</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "wpf/UsbMonitor.UsbDeviceChangeEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "wpf/UsbMonitor.UsbDeviceChangeEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "UsbMonitor.UsbDeviceChangeEvent",
+      "Summary": "<p sourcefile=\"wpf/UsbMonitor.UsbDeviceChangeEvent.yml\" sourcestartlinenumber=\"1\">Device action</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "wpf/UsbMonitor.UsbDeviceClass.yml",
+      "output": {
+        ".html": {
+          "relative_path": "wpf/UsbMonitor.UsbDeviceClass.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "UsbMonitor.UsbDeviceClass",
+      "Summary": "<p sourcefile=\"wpf/UsbMonitor.UsbDeviceClass.yml\" sourcestartlinenumber=\"1\">USB device class</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "wpf/UsbMonitor.UsbDeviceInterface.yml",
+      "output": {
+        ".html": {
+          "relative_path": "wpf/UsbMonitor.UsbDeviceInterface.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "UsbMonitor.UsbDeviceInterface",
+      "Summary": "<p sourcefile=\"wpf/UsbMonitor.UsbDeviceInterface.yml\" sourcestartlinenumber=\"1\">Device interfaces</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "wpf/UsbMonitor.UsbDeviceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "wpf/UsbMonitor.UsbDeviceType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "UsbMonitor.UsbDeviceType",
+      "Summary": "<p sourcefile=\"wpf/UsbMonitor.UsbDeviceType.yml\" sourcestartlinenumber=\"1\">Device type</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "wpf/UsbMonitor.UsbEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "wpf/UsbMonitor.UsbEventArgs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "UsbMonitor.UsbEventArgs",
+      "Summary": "<p sourcefile=\"wpf/UsbMonitor.UsbEventArgs.yml\" sourcestartlinenumber=\"1\">A class for containing USB event data</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "wpf/UsbMonitor.UsbEventDeviceInterfaceArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "wpf/UsbMonitor.UsbEventDeviceInterfaceArgs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "UsbMonitor.UsbEventDeviceInterfaceArgs",
+      "Summary": "<p sourcefile=\"wpf/UsbMonitor.UsbEventDeviceInterfaceArgs.yml\" sourcestartlinenumber=\"1\">Interface notification arguments</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "wpf/UsbMonitor.UsbEventHandleArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "wpf/UsbMonitor.UsbEventHandleArgs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "UsbMonitor.UsbEventHandleArgs",
+      "Summary": "<p sourcefile=\"wpf/UsbMonitor.UsbEventHandleArgs.yml\" sourcestartlinenumber=\"1\">Handle notification arguments</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "wpf/UsbMonitor.UsbEventOemArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "wpf/UsbMonitor.UsbEventOemArgs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "UsbMonitor.UsbEventOemArgs",
+      "Summary": "<p sourcefile=\"wpf/UsbMonitor.UsbEventOemArgs.yml\" sourcestartlinenumber=\"1\">OEM notification arguments</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "wpf/UsbMonitor.UsbEventPortArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "wpf/UsbMonitor.UsbEventPortArgs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "UsbMonitor.UsbEventPortArgs",
+      "Summary": "<p sourcefile=\"wpf/UsbMonitor.UsbEventPortArgs.yml\" sourcestartlinenumber=\"1\">Port notification arguments</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "wpf/UsbMonitor.UsbEventVolumeArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "wpf/UsbMonitor.UsbEventVolumeArgs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "UsbMonitor.UsbEventVolumeArgs",
+      "Summary": "<p sourcefile=\"wpf/UsbMonitor.UsbEventVolumeArgs.yml\" sourcestartlinenumber=\"1\">Volume notification arguments</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "wpf/UsbMonitor.UsbMonitorManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "wpf/UsbMonitor.UsbMonitorManager.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "UsbMonitor.UsbMonitorManager",
+      "Summary": "<p sourcefile=\"wpf/UsbMonitor.UsbMonitorManager.yml\" sourcestartlinenumber=\"1\">USB Monitor class to notify if the USB content changes</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "wpf/UsbMonitor.UsbMonitorWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "wpf/UsbMonitor.UsbMonitorWindow.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "UsbMonitor.UsbMonitorWindow",
+      "Summary": "<p sourcefile=\"wpf/UsbMonitor.UsbMonitorWindow.yml\" sourcestartlinenumber=\"1\">USB Monitor window class</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "wpf/UsbMonitor.UsbVolumeFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "wpf/UsbMonitor.UsbVolumeFlags.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "UsbMonitor.UsbVolumeFlags",
+      "Summary": "<p sourcefile=\"wpf/UsbMonitor.UsbVolumeFlags.yml\" sourcestartlinenumber=\"1\">Volume flags</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "wpf/UsbMonitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "wpf/UsbMonitor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "UsbMonitor",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "wpf/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "wpf/toc.html"
+        },
+        ".json": {
+          "relative_path": "wpf/toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

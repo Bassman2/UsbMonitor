@@ -1,0 +1,189 @@
+### YamlMime:ManagedReference
+items:
+- uid: UsbMonitor.UsbDeviceType
+  commentId: T:UsbMonitor.UsbDeviceType
+  id: UsbDeviceType
+  parent: UsbMonitor
+  children:
+  - UsbMonitor.UsbDeviceType.DeviceInterface
+  - UsbMonitor.UsbDeviceType.Handle
+  - UsbMonitor.UsbDeviceType.OEM
+  - UsbMonitor.UsbDeviceType.Port
+  - UsbMonitor.UsbDeviceType.Volume
+  langs:
+  - csharp
+  - vb
+  name: UsbDeviceType
+  nameWithType: UsbDeviceType
+  fullName: UsbMonitor.UsbDeviceType
+  type: Enum
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceType.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: UsbDeviceType
+    path: ../Src/UsbMonitorShare/UsbDeviceType.cs
+    startLine: 5
+  assemblies:
+  - FormsUsbMonitor
+  namespace: UsbMonitor
+  summary: Device type
+  example: []
+  syntax:
+    content: 'public enum UsbDeviceType : uint'
+    content.vb: Public Enum UsbDeviceType As UInteger
+- uid: UsbMonitor.UsbDeviceType.OEM
+  commentId: F:UsbMonitor.UsbDeviceType.OEM
+  id: OEM
+  parent: UsbMonitor.UsbDeviceType
+  langs:
+  - csharp
+  - vb
+  name: OEM
+  nameWithType: UsbDeviceType.OEM
+  fullName: UsbMonitor.UsbDeviceType.OEM
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceType.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: OEM
+    path: ../Src/UsbMonitorShare/UsbDeviceType.cs
+    startLine: 10
+  assemblies:
+  - FormsUsbMonitor
+  namespace: UsbMonitor
+  summary: OEM- or IHV-defined device type. This structure is a DEV_BROADCAST_OEM structure.
+  example: []
+  syntax:
+    content: OEM = 0
+    return:
+      type: UsbMonitor.UsbDeviceType
+- uid: UsbMonitor.UsbDeviceType.Volume
+  commentId: F:UsbMonitor.UsbDeviceType.Volume
+  id: Volume
+  parent: UsbMonitor.UsbDeviceType
+  langs:
+  - csharp
+  - vb
+  name: Volume
+  nameWithType: UsbDeviceType.Volume
+  fullName: UsbMonitor.UsbDeviceType.Volume
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceType.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Volume
+    path: ../Src/UsbMonitorShare/UsbDeviceType.cs
+    startLine: 15
+  assemblies:
+  - FormsUsbMonitor
+  namespace: UsbMonitor
+  summary: Logical volume. This structure is a DEV_BROADCAST_VOLUME structure.
+  example: []
+  syntax:
+    content: Volume = 2
+    return:
+      type: UsbMonitor.UsbDeviceType
+- uid: UsbMonitor.UsbDeviceType.Port
+  commentId: F:UsbMonitor.UsbDeviceType.Port
+  id: Port
+  parent: UsbMonitor.UsbDeviceType
+  langs:
+  - csharp
+  - vb
+  name: Port
+  nameWithType: UsbDeviceType.Port
+  fullName: UsbMonitor.UsbDeviceType.Port
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceType.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Port
+    path: ../Src/UsbMonitorShare/UsbDeviceType.cs
+    startLine: 20
+  assemblies:
+  - FormsUsbMonitor
+  namespace: UsbMonitor
+  summary: Port device (serial or parallel). This structure is a DEV_BROADCAST_PORT structure.
+  example: []
+  syntax:
+    content: Port = 3
+    return:
+      type: UsbMonitor.UsbDeviceType
+- uid: UsbMonitor.UsbDeviceType.DeviceInterface
+  commentId: F:UsbMonitor.UsbDeviceType.DeviceInterface
+  id: DeviceInterface
+  parent: UsbMonitor.UsbDeviceType
+  langs:
+  - csharp
+  - vb
+  name: DeviceInterface
+  nameWithType: UsbDeviceType.DeviceInterface
+  fullName: UsbMonitor.UsbDeviceType.DeviceInterface
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceType.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: DeviceInterface
+    path: ../Src/UsbMonitorShare/UsbDeviceType.cs
+    startLine: 25
+  assemblies:
+  - FormsUsbMonitor
+  namespace: UsbMonitor
+  summary: Class of devices. This structure is a DEV_BROADCAST_DEVICEINTERFACE structure.
+  example: []
+  syntax:
+    content: DeviceInterface = 5
+    return:
+      type: UsbMonitor.UsbDeviceType
+- uid: UsbMonitor.UsbDeviceType.Handle
+  commentId: F:UsbMonitor.UsbDeviceType.Handle
+  id: Handle
+  parent: UsbMonitor.UsbDeviceType
+  langs:
+  - csharp
+  - vb
+  name: Handle
+  nameWithType: UsbDeviceType.Handle
+  fullName: UsbMonitor.UsbDeviceType.Handle
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceType.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Handle
+    path: ../Src/UsbMonitorShare/UsbDeviceType.cs
+    startLine: 30
+  assemblies:
+  - FormsUsbMonitor
+  namespace: UsbMonitor
+  summary: File system handle. This structure is a DEV_BROADCAST_HANDLE structure.
+  example: []
+  syntax:
+    content: Handle = 6
+    return:
+      type: UsbMonitor.UsbDeviceType
+references:
+- uid: UsbMonitor
+  commentId: N:UsbMonitor
+  href: UsbMonitor.html
+  name: UsbMonitor
+  nameWithType: UsbMonitor
+  fullName: UsbMonitor
+- uid: UsbMonitor.UsbDeviceType
+  commentId: T:UsbMonitor.UsbDeviceType
+  parent: UsbMonitor
+  href: UsbMonitor.UsbDeviceType.html
+  name: UsbDeviceType
+  nameWithType: UsbDeviceType
+  fullName: UsbMonitor.UsbDeviceType

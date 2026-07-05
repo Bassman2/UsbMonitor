@@ -1,0 +1,49 @@
+### YamlMime:TableOfContent
+items:
+- uid: UsbMonitor
+  name: UsbMonitor
+  type: Namespace
+  items:
+  - uid: UsbMonitor.DeviceChangeManager
+    name: DeviceChangeManager
+    type: Class
+  - uid: UsbMonitor.UsbDeviceChangeEvent
+    name: UsbDeviceChangeEvent
+    type: Enum
+  - uid: UsbMonitor.UsbDeviceClass
+    name: UsbDeviceClass
+    type: Enum
+  - uid: UsbMonitor.UsbDeviceInterface
+    name: UsbDeviceInterface
+    type: Enum
+  - uid: UsbMonitor.UsbDeviceType
+    name: UsbDeviceType
+    type: Enum
+  - uid: UsbMonitor.UsbEventArgs
+    name: UsbEventArgs
+    type: Class
+  - uid: UsbMonitor.UsbEventDeviceInterfaceArgs
+    name: UsbEventDeviceInterfaceArgs
+    type: Class
+  - uid: UsbMonitor.UsbEventHandleArgs
+    name: UsbEventHandleArgs
+    type: Class
+  - uid: UsbMonitor.UsbEventOemArgs
+    name: UsbEventOemArgs
+    type: Class
+  - uid: UsbMonitor.UsbEventPortArgs
+    name: UsbEventPortArgs
+    type: Class
+  - uid: UsbMonitor.UsbEventVolumeArgs
+    name: UsbEventVolumeArgs
+    type: Class
+  - uid: UsbMonitor.UsbMonitorManager
+    name: UsbMonitorManager
+    type: Class
+  - uid: UsbMonitor.UsbMonitorWindow
+    name: UsbMonitorWindow
+    type: Class
+  - uid: UsbMonitor.UsbVolumeFlags
+    name: UsbVolumeFlags
+    type: Enum
+memberLayout: SamePage

@@ -1,0 +1,2625 @@
+### YamlMime:ManagedReference
+items:
+- uid: UsbMonitor.UsbDeviceInterface
+  commentId: T:UsbMonitor.UsbDeviceInterface
+  id: UsbDeviceInterface
+  parent: UsbMonitor
+  children:
+  - UsbMonitor.UsbDeviceInterface.AVTransport
+  - UsbMonitor.UsbDeviceInterface.AcousticEchoCancel
+  - UsbMonitor.UsbDeviceInterface.Audio
+  - UsbMonitor.UsbDeviceInterface.AudioDevice
+  - UsbMonitor.UsbDeviceInterface.AudioGFX
+  - UsbMonitor.UsbDeviceInterface.AudioSplitter
+  - UsbMonitor.UsbDeviceInterface.BDAIPSink
+  - UsbMonitor.UsbDeviceInterface.BDANetworkEPG
+  - UsbMonitor.UsbDeviceInterface.BDANetworkProvider
+  - UsbMonitor.UsbDeviceInterface.BDANetworkTuner
+  - UsbMonitor.UsbDeviceInterface.BDAReceiverComponent
+  - UsbMonitor.UsbDeviceInterface.BDATransportInformation
+  - UsbMonitor.UsbDeviceInterface.Bridge
+  - UsbMonitor.UsbDeviceInterface.Brightness
+  - UsbMonitor.UsbDeviceInterface.CDChanger
+  - UsbMonitor.UsbDeviceInterface.CDROM
+  - UsbMonitor.UsbDeviceInterface.COMPort
+  - UsbMonitor.UsbDeviceInterface.Capture
+  - UsbMonitor.UsbDeviceInterface.Clock
+  - UsbMonitor.UsbDeviceInterface.CommunicationsTransform
+  - UsbMonitor.UsbDeviceInterface.ConnectionManager
+  - UsbMonitor.UsbDeviceInterface.ContentDirectory
+  - UsbMonitor.UsbDeviceInterface.Crossbar
+  - UsbMonitor.UsbDeviceInterface.DRMDescramble
+  - UsbMonitor.UsbDeviceInterface.DataCompressor
+  - UsbMonitor.UsbDeviceInterface.DataDecompressor
+  - UsbMonitor.UsbDeviceInterface.DataTransform
+  - UsbMonitor.UsbDeviceInterface.Disk
+  - UsbMonitor.UsbDeviceInterface.DisplayAdapter
+  - UsbMonitor.UsbDeviceInterface.Encoder
+  - UsbMonitor.UsbDeviceInterface.EscalantePlatformDriver
+  - UsbMonitor.UsbDeviceInterface.Filesystem
+  - UsbMonitor.UsbDeviceInterface.Floppy
+  - UsbMonitor.UsbDeviceInterface.HID
+  - UsbMonitor.UsbDeviceInterface.I2C
+  - UsbMonitor.UsbDeviceInterface.Image
+  - UsbMonitor.UsbDeviceInterface.InterfaceTransform
+  - UsbMonitor.UsbDeviceInterface.Keyboard
+  - UsbMonitor.UsbDeviceInterface.MediumChanger
+  - UsbMonitor.UsbDeviceInterface.MediumTransform
+  - UsbMonitor.UsbDeviceInterface.MicrophoneArrayProcessor
+  - UsbMonitor.UsbDeviceInterface.Mixer
+  - UsbMonitor.UsbDeviceInterface.Modem
+  - UsbMonitor.UsbDeviceInterface.Monitor
+  - UsbMonitor.UsbDeviceInterface.Mouse
+  - UsbMonitor.UsbDeviceInterface.Multiplexer
+  - UsbMonitor.UsbDeviceInterface.Net
+  - UsbMonitor.UsbDeviceInterface.Network
+  - UsbMonitor.UsbDeviceInterface.OPM
+  - UsbMonitor.UsbDeviceInterface.ParClass
+  - UsbMonitor.UsbDeviceInterface.Parallel
+  - UsbMonitor.UsbDeviceInterface.Partition
+  - UsbMonitor.UsbDeviceInterface.PreferredMidiOutDevice
+  - UsbMonitor.UsbDeviceInterface.PreferredWaveInDevice
+  - UsbMonitor.UsbDeviceInterface.PreferredWaveOutDevice
+  - UsbMonitor.UsbDeviceInterface.Proxy
+  - UsbMonitor.UsbDeviceInterface.Quality
+  - UsbMonitor.UsbDeviceInterface.Realtime
+  - UsbMonitor.UsbDeviceInterface.Render
+  - UsbMonitor.UsbDeviceInterface.RenderingControl
+  - UsbMonitor.UsbDeviceInterface.SensorCamera
+  - UsbMonitor.UsbDeviceInterface.SerenumBusEnumerator
+  - UsbMonitor.UsbDeviceInterface.SideShow
+  - UsbMonitor.UsbDeviceInterface.Splitter
+  - UsbMonitor.UsbDeviceInterface.StoragePort
+  - UsbMonitor.UsbDeviceInterface.Synthesizer
+  - UsbMonitor.UsbDeviceInterface.SysAudio
+  - UsbMonitor.UsbDeviceInterface.TVAudio
+  - UsbMonitor.UsbDeviceInterface.TVTuner
+  - UsbMonitor.UsbDeviceInterface.Tape
+  - UsbMonitor.UsbDeviceInterface.Text
+  - UsbMonitor.UsbDeviceInterface.Topology
+  - UsbMonitor.UsbDeviceInterface.UMBus
+  - UsbMonitor.UsbDeviceInterface.Unknown
+  - UsbMonitor.UsbDeviceInterface.UsbDevice
+  - UsbMonitor.UsbDeviceInterface.UsbHostController
+  - UsbMonitor.UsbDeviceInterface.UsbHub
+  - UsbMonitor.UsbDeviceInterface.VBICodec
+  - UsbMonitor.UsbDeviceInterface.VPMux
+  - UsbMonitor.UsbDeviceInterface.Video
+  - UsbMonitor.UsbDeviceInterface.VideoCamera
+  - UsbMonitor.UsbDeviceInterface.VideoOutputArrival
+  - UsbMonitor.UsbDeviceInterface.Virtual
+  - UsbMonitor.UsbDeviceInterface.Volume
+  - UsbMonitor.UsbDeviceInterface.WDAudio
+  - UsbMonitor.UsbDeviceInterface.WPD
+  - UsbMonitor.UsbDeviceInterface.WPD2
+  - UsbMonitor.UsbDeviceInterface.WPDPrivate
+  - UsbMonitor.UsbDeviceInterface.WriteOnCeDisk
+  langs:
+  - csharp
+  - vb
+  name: UsbDeviceInterface
+  nameWithType: UsbDeviceInterface
+  fullName: UsbMonitor.UsbDeviceInterface
+  type: Enum
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: UsbDeviceInterface
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 7
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Device interfaces
+  example: []
+  syntax:
+    content: public enum UsbDeviceInterface
+    content.vb: Public Enum UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Unknown
+  commentId: F:UsbMonitor.UsbDeviceInterface.Unknown
+  id: Unknown
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: UsbDeviceInterface.Unknown
+  fullName: UsbMonitor.UsbDeviceInterface.Unknown
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Unknown
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 12
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Unknown
+  example: []
+  syntax:
+    content: Unknown = 0
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Brightness
+  commentId: F:UsbMonitor.UsbDeviceInterface.Brightness
+  id: Brightness
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Brightness
+  nameWithType: UsbDeviceInterface.Brightness
+  fullName: UsbMonitor.UsbDeviceInterface.Brightness
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Brightness
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 21
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Brightness
+  example: []
+  syntax:
+    content: Brightness = 1
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.CDChanger
+  commentId: F:UsbMonitor.UsbDeviceInterface.CDChanger
+  id: CDChanger
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: CDChanger
+  nameWithType: UsbDeviceInterface.CDChanger
+  fullName: UsbMonitor.UsbDeviceInterface.CDChanger
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: CDChanger
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 28
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: CD Changer
+  example: []
+  syntax:
+    content: CDChanger = 2
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.CDROM
+  commentId: F:UsbMonitor.UsbDeviceInterface.CDROM
+  id: CDROM
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: CDROM
+  nameWithType: UsbDeviceInterface.CDROM
+  fullName: UsbMonitor.UsbDeviceInterface.CDROM
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: CDROM
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 35
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: CD ROM
+  example: []
+  syntax:
+    content: CDROM = 3
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.COMPort
+  commentId: F:UsbMonitor.UsbDeviceInterface.COMPort
+  id: COMPort
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: COMPort
+  nameWithType: UsbDeviceInterface.COMPort
+  fullName: UsbMonitor.UsbDeviceInterface.COMPort
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: COMPort
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 42
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: COM Port
+  example: []
+  syntax:
+    content: COMPort = 4
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Disk
+  commentId: F:UsbMonitor.UsbDeviceInterface.Disk
+  id: Disk
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Disk
+  nameWithType: UsbDeviceInterface.Disk
+  fullName: UsbMonitor.UsbDeviceInterface.Disk
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Disk
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 49
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Disk
+  example: []
+  syntax:
+    content: Disk = 5
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.DisplayAdapter
+  commentId: F:UsbMonitor.UsbDeviceInterface.DisplayAdapter
+  id: DisplayAdapter
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: DisplayAdapter
+  nameWithType: UsbDeviceInterface.DisplayAdapter
+  fullName: UsbMonitor.UsbDeviceInterface.DisplayAdapter
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: DisplayAdapter
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 56
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Display Adapter
+  example: []
+  syntax:
+    content: DisplayAdapter = 6
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Floppy
+  commentId: F:UsbMonitor.UsbDeviceInterface.Floppy
+  id: Floppy
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Floppy
+  nameWithType: UsbDeviceInterface.Floppy
+  fullName: UsbMonitor.UsbDeviceInterface.Floppy
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Floppy
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 63
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Floppy
+  example: []
+  syntax:
+    content: Floppy = 7
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.HID
+  commentId: F:UsbMonitor.UsbDeviceInterface.HID
+  id: HID
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: HID
+  nameWithType: UsbDeviceInterface.HID
+  fullName: UsbMonitor.UsbDeviceInterface.HID
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: HID
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 70
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: HID
+  example: []
+  syntax:
+    content: HID = 8
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.I2C
+  commentId: F:UsbMonitor.UsbDeviceInterface.I2C
+  id: I2C
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: I2C
+  nameWithType: UsbDeviceInterface.I2C
+  fullName: UsbMonitor.UsbDeviceInterface.I2C
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: I2C
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 77
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: I2C
+  example: []
+  syntax:
+    content: I2C = 9
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Image
+  commentId: F:UsbMonitor.UsbDeviceInterface.Image
+  id: Image
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Image
+  nameWithType: UsbDeviceInterface.Image
+  fullName: UsbMonitor.UsbDeviceInterface.Image
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Image
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 84
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Image
+  example: []
+  syntax:
+    content: Image = 10
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Keyboard
+  commentId: F:UsbMonitor.UsbDeviceInterface.Keyboard
+  id: Keyboard
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Keyboard
+  nameWithType: UsbDeviceInterface.Keyboard
+  fullName: UsbMonitor.UsbDeviceInterface.Keyboard
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Keyboard
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 91
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Keyboard
+  example: []
+  syntax:
+    content: Keyboard = 11
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.MediumChanger
+  commentId: F:UsbMonitor.UsbDeviceInterface.MediumChanger
+  id: MediumChanger
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: MediumChanger
+  nameWithType: UsbDeviceInterface.MediumChanger
+  fullName: UsbMonitor.UsbDeviceInterface.MediumChanger
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: MediumChanger
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 98
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Medium Changer
+  example: []
+  syntax:
+    content: MediumChanger = 12
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Modem
+  commentId: F:UsbMonitor.UsbDeviceInterface.Modem
+  id: Modem
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Modem
+  nameWithType: UsbDeviceInterface.Modem
+  fullName: UsbMonitor.UsbDeviceInterface.Modem
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Modem
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 105
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Modem
+  example: []
+  syntax:
+    content: Modem = 13
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Monitor
+  commentId: F:UsbMonitor.UsbDeviceInterface.Monitor
+  id: Monitor
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Monitor
+  nameWithType: UsbDeviceInterface.Monitor
+  fullName: UsbMonitor.UsbDeviceInterface.Monitor
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Monitor
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 112
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Monitor
+  example: []
+  syntax:
+    content: Monitor = 14
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Mouse
+  commentId: F:UsbMonitor.UsbDeviceInterface.Mouse
+  id: Mouse
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Mouse
+  nameWithType: UsbDeviceInterface.Mouse
+  fullName: UsbMonitor.UsbDeviceInterface.Mouse
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Mouse
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 119
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Mouse
+  example: []
+  syntax:
+    content: Mouse = 15
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Net
+  commentId: F:UsbMonitor.UsbDeviceInterface.Net
+  id: Net
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Net
+  nameWithType: UsbDeviceInterface.Net
+  fullName: UsbMonitor.UsbDeviceInterface.Net
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Net
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 126
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Network
+  example: []
+  syntax:
+    content: Net = 16
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.OPM
+  commentId: F:UsbMonitor.UsbDeviceInterface.OPM
+  id: OPM
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: OPM
+  nameWithType: UsbDeviceInterface.OPM
+  fullName: UsbMonitor.UsbDeviceInterface.OPM
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: OPM
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 133
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Output Protection Management
+  example: []
+  syntax:
+    content: OPM = 17
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Parallel
+  commentId: F:UsbMonitor.UsbDeviceInterface.Parallel
+  id: Parallel
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Parallel
+  nameWithType: UsbDeviceInterface.Parallel
+  fullName: UsbMonitor.UsbDeviceInterface.Parallel
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Parallel
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 140
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Parallel Port IEEE 1284
+  example: []
+  syntax:
+    content: Parallel = 18
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.ParClass
+  commentId: F:UsbMonitor.UsbDeviceInterface.ParClass
+  id: ParClass
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: ParClass
+  nameWithType: UsbDeviceInterface.ParClass
+  fullName: UsbMonitor.UsbDeviceInterface.ParClass
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: ParClass
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 147
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Parallel Class
+  example: []
+  syntax:
+    content: ParClass = 19
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Partition
+  commentId: F:UsbMonitor.UsbDeviceInterface.Partition
+  id: Partition
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Partition
+  nameWithType: UsbDeviceInterface.Partition
+  fullName: UsbMonitor.UsbDeviceInterface.Partition
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Partition
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 154
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Partition Device
+  example: []
+  syntax:
+    content: Partition = 20
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.SerenumBusEnumerator
+  commentId: F:UsbMonitor.UsbDeviceInterface.SerenumBusEnumerator
+  id: SerenumBusEnumerator
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: SerenumBusEnumerator
+  nameWithType: UsbDeviceInterface.SerenumBusEnumerator
+  fullName: UsbMonitor.UsbDeviceInterface.SerenumBusEnumerator
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: SerenumBusEnumerator
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 161
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Serial Bus Enumerator
+  example: []
+  syntax:
+    content: SerenumBusEnumerator = 21
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.SideShow
+  commentId: F:UsbMonitor.UsbDeviceInterface.SideShow
+  id: SideShow
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: SideShow
+  nameWithType: UsbDeviceInterface.SideShow
+  fullName: UsbMonitor.UsbDeviceInterface.SideShow
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: SideShow
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 168
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Side Show
+  example: []
+  syntax:
+    content: SideShow = 22
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.StoragePort
+  commentId: F:UsbMonitor.UsbDeviceInterface.StoragePort
+  id: StoragePort
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: StoragePort
+  nameWithType: UsbDeviceInterface.StoragePort
+  fullName: UsbMonitor.UsbDeviceInterface.StoragePort
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: StoragePort
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 175
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Storage Port
+  example: []
+  syntax:
+    content: StoragePort = 23
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Tape
+  commentId: F:UsbMonitor.UsbDeviceInterface.Tape
+  id: Tape
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Tape
+  nameWithType: UsbDeviceInterface.Tape
+  fullName: UsbMonitor.UsbDeviceInterface.Tape
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Tape
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 182
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Tape
+  example: []
+  syntax:
+    content: Tape = 24
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.UsbDevice
+  commentId: F:UsbMonitor.UsbDeviceInterface.UsbDevice
+  id: UsbDevice
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: UsbDevice
+  nameWithType: UsbDeviceInterface.UsbDevice
+  fullName: UsbMonitor.UsbDeviceInterface.UsbDevice
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: UsbDevice
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 189
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: USB Device
+  example: []
+  syntax:
+    content: UsbDevice = 25
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.UsbHostController
+  commentId: F:UsbMonitor.UsbDeviceInterface.UsbHostController
+  id: UsbHostController
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: UsbHostController
+  nameWithType: UsbDeviceInterface.UsbHostController
+  fullName: UsbMonitor.UsbDeviceInterface.UsbHostController
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: UsbHostController
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 196
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: USB Host Controller
+  example: []
+  syntax:
+    content: UsbHostController = 26
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.UsbHub
+  commentId: F:UsbMonitor.UsbDeviceInterface.UsbHub
+  id: UsbHub
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: UsbHub
+  nameWithType: UsbDeviceInterface.UsbHub
+  fullName: UsbMonitor.UsbDeviceInterface.UsbHub
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: UsbHub
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 203
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: USB Hub
+  example: []
+  syntax:
+    content: UsbHub = 27
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.VideoOutputArrival
+  commentId: F:UsbMonitor.UsbDeviceInterface.VideoOutputArrival
+  id: VideoOutputArrival
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: VideoOutputArrival
+  nameWithType: UsbDeviceInterface.VideoOutputArrival
+  fullName: UsbMonitor.UsbDeviceInterface.VideoOutputArrival
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: VideoOutputArrival
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 210
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Video Output Arrival
+  example: []
+  syntax:
+    content: VideoOutputArrival = 28
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Volume
+  commentId: F:UsbMonitor.UsbDeviceInterface.Volume
+  id: Volume
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Volume
+  nameWithType: UsbDeviceInterface.Volume
+  fullName: UsbMonitor.UsbDeviceInterface.Volume
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Volume
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 217
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Volume
+  example: []
+  syntax:
+    content: Volume = 29
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.WPD
+  commentId: F:UsbMonitor.UsbDeviceInterface.WPD
+  id: WPD
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: WPD
+  nameWithType: UsbDeviceInterface.WPD
+  fullName: UsbMonitor.UsbDeviceInterface.WPD
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: WPD
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 224
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Windows Portable Devices
+  example: []
+  syntax:
+    content: WPD = 30
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.WPDPrivate
+  commentId: F:UsbMonitor.UsbDeviceInterface.WPDPrivate
+  id: WPDPrivate
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: WPDPrivate
+  nameWithType: UsbDeviceInterface.WPDPrivate
+  fullName: UsbMonitor.UsbDeviceInterface.WPDPrivate
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: WPDPrivate
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 231
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Private Windows Portable Devices
+  example: []
+  syntax:
+    content: WPDPrivate = 31
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.WriteOnCeDisk
+  commentId: F:UsbMonitor.UsbDeviceInterface.WriteOnCeDisk
+  id: WriteOnCeDisk
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: WriteOnCeDisk
+  nameWithType: UsbDeviceInterface.WriteOnCeDisk
+  fullName: UsbMonitor.UsbDeviceInterface.WriteOnCeDisk
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: WriteOnCeDisk
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 238
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Write on CE Disk
+  example: []
+  syntax:
+    content: WriteOnCeDisk = 32
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.AcousticEchoCancel
+  commentId: F:UsbMonitor.UsbDeviceInterface.AcousticEchoCancel
+  id: AcousticEchoCancel
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: AcousticEchoCancel
+  nameWithType: UsbDeviceInterface.AcousticEchoCancel
+  fullName: UsbMonitor.UsbDeviceInterface.AcousticEchoCancel
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: AcousticEchoCancel
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 251
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Acoustic Echo Cancel
+  example: []
+  syntax:
+    content: AcousticEchoCancel = 33
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Audio
+  commentId: F:UsbMonitor.UsbDeviceInterface.Audio
+  id: Audio
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Audio
+  nameWithType: UsbDeviceInterface.Audio
+  fullName: UsbMonitor.UsbDeviceInterface.Audio
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Audio
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 258
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Audio
+  example: []
+  syntax:
+    content: Audio = 34
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.AudioDevice
+  commentId: F:UsbMonitor.UsbDeviceInterface.AudioDevice
+  id: AudioDevice
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: AudioDevice
+  nameWithType: UsbDeviceInterface.AudioDevice
+  fullName: UsbMonitor.UsbDeviceInterface.AudioDevice
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: AudioDevice
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 265
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Audio Device
+  example: []
+  syntax:
+    content: AudioDevice = 35
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.AudioGFX
+  commentId: F:UsbMonitor.UsbDeviceInterface.AudioGFX
+  id: AudioGFX
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: AudioGFX
+  nameWithType: UsbDeviceInterface.AudioGFX
+  fullName: UsbMonitor.UsbDeviceInterface.AudioGFX
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: AudioGFX
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 272
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Audio GFX
+  example: []
+  syntax:
+    content: AudioGFX = 36
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.AudioSplitter
+  commentId: F:UsbMonitor.UsbDeviceInterface.AudioSplitter
+  id: AudioSplitter
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: AudioSplitter
+  nameWithType: UsbDeviceInterface.AudioSplitter
+  fullName: UsbMonitor.UsbDeviceInterface.AudioSplitter
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: AudioSplitter
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 279
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Audio Splitter
+  example: []
+  syntax:
+    content: AudioSplitter = 37
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.BDAIPSink
+  commentId: F:UsbMonitor.UsbDeviceInterface.BDAIPSink
+  id: BDAIPSink
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: BDAIPSink
+  nameWithType: UsbDeviceInterface.BDAIPSink
+  fullName: UsbMonitor.UsbDeviceInterface.BDAIPSink
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: BDAIPSink
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 286
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Broadcast Driver Architecture sink filter
+  example: []
+  syntax:
+    content: BDAIPSink = 38
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.BDANetworkEPG
+  commentId: F:UsbMonitor.UsbDeviceInterface.BDANetworkEPG
+  id: BDANetworkEPG
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: BDANetworkEPG
+  nameWithType: UsbDeviceInterface.BDANetworkEPG
+  fullName: UsbMonitor.UsbDeviceInterface.BDANetworkEPG
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: BDANetworkEPG
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 293
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Broadcast Driver Architecture for an electronic program guide (EPG)
+  example: []
+  syntax:
+    content: BDANetworkEPG = 39
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.BDANetworkProvider
+  commentId: F:UsbMonitor.UsbDeviceInterface.BDANetworkProvider
+  id: BDANetworkProvider
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: BDANetworkProvider
+  nameWithType: UsbDeviceInterface.BDANetworkProvider
+  fullName: UsbMonitor.UsbDeviceInterface.BDANetworkProvider
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: BDANetworkProvider
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 300
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Broadcast Driver Architecture Network Provider
+  example: []
+  syntax:
+    content: BDANetworkProvider = 40
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.BDANetworkTuner
+  commentId: F:UsbMonitor.UsbDeviceInterface.BDANetworkTuner
+  id: BDANetworkTuner
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: BDANetworkTuner
+  nameWithType: UsbDeviceInterface.BDANetworkTuner
+  fullName: UsbMonitor.UsbDeviceInterface.BDANetworkTuner
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: BDANetworkTuner
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 307
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Broadcast Driver Architecture Network Tuner
+  example: []
+  syntax:
+    content: BDANetworkTuner = 41
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.BDAReceiverComponent
+  commentId: F:UsbMonitor.UsbDeviceInterface.BDAReceiverComponent
+  id: BDAReceiverComponent
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: BDAReceiverComponent
+  nameWithType: UsbDeviceInterface.BDAReceiverComponent
+  fullName: UsbMonitor.UsbDeviceInterface.BDAReceiverComponent
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: BDAReceiverComponent
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 314
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Broadcast Driver Architecture Receiver Component
+  example: []
+  syntax:
+    content: BDAReceiverComponent = 42
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.BDATransportInformation
+  commentId: F:UsbMonitor.UsbDeviceInterface.BDATransportInformation
+  id: BDATransportInformation
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: BDATransportInformation
+  nameWithType: UsbDeviceInterface.BDATransportInformation
+  fullName: UsbMonitor.UsbDeviceInterface.BDATransportInformation
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: BDATransportInformation
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 321
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Broadcast Driver Architecture Transport Information
+  example: []
+  syntax:
+    content: BDATransportInformation = 43
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Bridge
+  commentId: F:UsbMonitor.UsbDeviceInterface.Bridge
+  id: Bridge
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Bridge
+  nameWithType: UsbDeviceInterface.Bridge
+  fullName: UsbMonitor.UsbDeviceInterface.Bridge
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Bridge
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 328
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Bridge
+  example: []
+  syntax:
+    content: Bridge = 44
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Capture
+  commentId: F:UsbMonitor.UsbDeviceInterface.Capture
+  id: Capture
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Capture
+  nameWithType: UsbDeviceInterface.Capture
+  fullName: UsbMonitor.UsbDeviceInterface.Capture
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Capture
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 335
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Capture WAV and MIDI data
+  example: []
+  syntax:
+    content: Capture = 45
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Clock
+  commentId: F:UsbMonitor.UsbDeviceInterface.Clock
+  id: Clock
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Clock
+  nameWithType: UsbDeviceInterface.Clock
+  fullName: UsbMonitor.UsbDeviceInterface.Clock
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Clock
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 342
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Clock
+  example: []
+  syntax:
+    content: Clock = 46
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.CommunicationsTransform
+  commentId: F:UsbMonitor.UsbDeviceInterface.CommunicationsTransform
+  id: CommunicationsTransform
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: CommunicationsTransform
+  nameWithType: UsbDeviceInterface.CommunicationsTransform
+  fullName: UsbMonitor.UsbDeviceInterface.CommunicationsTransform
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: CommunicationsTransform
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 349
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Communications Transform
+  example: []
+  syntax:
+    content: CommunicationsTransform = 47
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Crossbar
+  commentId: F:UsbMonitor.UsbDeviceInterface.Crossbar
+  id: Crossbar
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Crossbar
+  nameWithType: UsbDeviceInterface.Crossbar
+  fullName: UsbMonitor.UsbDeviceInterface.Crossbar
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Crossbar
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 356
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Crossbar
+  example: []
+  syntax:
+    content: Crossbar = 48
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.DataCompressor
+  commentId: F:UsbMonitor.UsbDeviceInterface.DataCompressor
+  id: DataCompressor
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: DataCompressor
+  nameWithType: UsbDeviceInterface.DataCompressor
+  fullName: UsbMonitor.UsbDeviceInterface.DataCompressor
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: DataCompressor
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 363
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Data Compressor
+  example: []
+  syntax:
+    content: DataCompressor = 49
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.DataDecompressor
+  commentId: F:UsbMonitor.UsbDeviceInterface.DataDecompressor
+  id: DataDecompressor
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: DataDecompressor
+  nameWithType: UsbDeviceInterface.DataDecompressor
+  fullName: UsbMonitor.UsbDeviceInterface.DataDecompressor
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: DataDecompressor
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 370
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Data Decompressor
+  example: []
+  syntax:
+    content: DataDecompressor = 50
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.DataTransform
+  commentId: F:UsbMonitor.UsbDeviceInterface.DataTransform
+  id: DataTransform
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: DataTransform
+  nameWithType: UsbDeviceInterface.DataTransform
+  fullName: UsbMonitor.UsbDeviceInterface.DataTransform
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: DataTransform
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 377
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Data Transform
+  example: []
+  syntax:
+    content: DataTransform = 51
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.DRMDescramble
+  commentId: F:UsbMonitor.UsbDeviceInterface.DRMDescramble
+  id: DRMDescramble
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: DRMDescramble
+  nameWithType: UsbDeviceInterface.DRMDescramble
+  fullName: UsbMonitor.UsbDeviceInterface.DRMDescramble
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: DRMDescramble
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 384
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: DRM Descramble
+  example: []
+  syntax:
+    content: DRMDescramble = 52
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Encoder
+  commentId: F:UsbMonitor.UsbDeviceInterface.Encoder
+  id: Encoder
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Encoder
+  nameWithType: UsbDeviceInterface.Encoder
+  fullName: UsbMonitor.UsbDeviceInterface.Encoder
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Encoder
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 391
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Encoder
+  example: []
+  syntax:
+    content: Encoder = 53
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.EscalantePlatformDriver
+  commentId: F:UsbMonitor.UsbDeviceInterface.EscalantePlatformDriver
+  id: EscalantePlatformDriver
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: EscalantePlatformDriver
+  nameWithType: UsbDeviceInterface.EscalantePlatformDriver
+  fullName: UsbMonitor.UsbDeviceInterface.EscalantePlatformDriver
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: EscalantePlatformDriver
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 398
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Escalante Platform Driver
+  example: []
+  syntax:
+    content: EscalantePlatformDriver = 54
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Filesystem
+  commentId: F:UsbMonitor.UsbDeviceInterface.Filesystem
+  id: Filesystem
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Filesystem
+  nameWithType: UsbDeviceInterface.Filesystem
+  fullName: UsbMonitor.UsbDeviceInterface.Filesystem
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Filesystem
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 405
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Filesystem
+  example: []
+  syntax:
+    content: Filesystem = 55
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.InterfaceTransform
+  commentId: F:UsbMonitor.UsbDeviceInterface.InterfaceTransform
+  id: InterfaceTransform
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: InterfaceTransform
+  nameWithType: UsbDeviceInterface.InterfaceTransform
+  fullName: UsbMonitor.UsbDeviceInterface.InterfaceTransform
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: InterfaceTransform
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 412
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Interface Transform
+  example: []
+  syntax:
+    content: InterfaceTransform = 56
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.MediumTransform
+  commentId: F:UsbMonitor.UsbDeviceInterface.MediumTransform
+  id: MediumTransform
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: MediumTransform
+  nameWithType: UsbDeviceInterface.MediumTransform
+  fullName: UsbMonitor.UsbDeviceInterface.MediumTransform
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: MediumTransform
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 419
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Medium Transform
+  example: []
+  syntax:
+    content: MediumTransform = 57
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.MicrophoneArrayProcessor
+  commentId: F:UsbMonitor.UsbDeviceInterface.MicrophoneArrayProcessor
+  id: MicrophoneArrayProcessor
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: MicrophoneArrayProcessor
+  nameWithType: UsbDeviceInterface.MicrophoneArrayProcessor
+  fullName: UsbMonitor.UsbDeviceInterface.MicrophoneArrayProcessor
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: MicrophoneArrayProcessor
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 426
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Microphone Array Processor
+  example: []
+  syntax:
+    content: MicrophoneArrayProcessor = 58
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Mixer
+  commentId: F:UsbMonitor.UsbDeviceInterface.Mixer
+  id: Mixer
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Mixer
+  nameWithType: UsbDeviceInterface.Mixer
+  fullName: UsbMonitor.UsbDeviceInterface.Mixer
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Mixer
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 433
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Mixer
+  example: []
+  syntax:
+    content: Mixer = 59
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Multiplexer
+  commentId: F:UsbMonitor.UsbDeviceInterface.Multiplexer
+  id: Multiplexer
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Multiplexer
+  nameWithType: UsbDeviceInterface.Multiplexer
+  fullName: UsbMonitor.UsbDeviceInterface.Multiplexer
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Multiplexer
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 440
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Multiplexer
+  example: []
+  syntax:
+    content: Multiplexer = 60
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Network
+  commentId: F:UsbMonitor.UsbDeviceInterface.Network
+  id: Network
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Network
+  nameWithType: UsbDeviceInterface.Network
+  fullName: UsbMonitor.UsbDeviceInterface.Network
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Network
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 447
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Network
+  example: []
+  syntax:
+    content: Network = 61
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.PreferredMidiOutDevice
+  commentId: F:UsbMonitor.UsbDeviceInterface.PreferredMidiOutDevice
+  id: PreferredMidiOutDevice
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: PreferredMidiOutDevice
+  nameWithType: UsbDeviceInterface.PreferredMidiOutDevice
+  fullName: UsbMonitor.UsbDeviceInterface.PreferredMidiOutDevice
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: PreferredMidiOutDevice
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 454
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Preferred Midi Out Device
+  example: []
+  syntax:
+    content: PreferredMidiOutDevice = 62
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.PreferredWaveInDevice
+  commentId: F:UsbMonitor.UsbDeviceInterface.PreferredWaveInDevice
+  id: PreferredWaveInDevice
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: PreferredWaveInDevice
+  nameWithType: UsbDeviceInterface.PreferredWaveInDevice
+  fullName: UsbMonitor.UsbDeviceInterface.PreferredWaveInDevice
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: PreferredWaveInDevice
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 461
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Preferred Wave In Device
+  example: []
+  syntax:
+    content: PreferredWaveInDevice = 63
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.PreferredWaveOutDevice
+  commentId: F:UsbMonitor.UsbDeviceInterface.PreferredWaveOutDevice
+  id: PreferredWaveOutDevice
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: PreferredWaveOutDevice
+  nameWithType: UsbDeviceInterface.PreferredWaveOutDevice
+  fullName: UsbMonitor.UsbDeviceInterface.PreferredWaveOutDevice
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: PreferredWaveOutDevice
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 468
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Preferred Wave Out Device
+  example: []
+  syntax:
+    content: PreferredWaveOutDevice = 64
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Proxy
+  commentId: F:UsbMonitor.UsbDeviceInterface.Proxy
+  id: Proxy
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Proxy
+  nameWithType: UsbDeviceInterface.Proxy
+  fullName: UsbMonitor.UsbDeviceInterface.Proxy
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Proxy
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 475
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Proxy
+  example: []
+  syntax:
+    content: Proxy = 65
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Quality
+  commentId: F:UsbMonitor.UsbDeviceInterface.Quality
+  id: Quality
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Quality
+  nameWithType: UsbDeviceInterface.Quality
+  fullName: UsbMonitor.UsbDeviceInterface.Quality
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Quality
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 482
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Quality
+  example: []
+  syntax:
+    content: Quality = 66
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Realtime
+  commentId: F:UsbMonitor.UsbDeviceInterface.Realtime
+  id: Realtime
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Realtime
+  nameWithType: UsbDeviceInterface.Realtime
+  fullName: UsbMonitor.UsbDeviceInterface.Realtime
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Realtime
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 489
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Realtime
+  example: []
+  syntax:
+    content: Realtime = 67
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Render
+  commentId: F:UsbMonitor.UsbDeviceInterface.Render
+  id: Render
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Render
+  nameWithType: UsbDeviceInterface.Render
+  fullName: UsbMonitor.UsbDeviceInterface.Render
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Render
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 496
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Render WAV and MIDI data
+  example: []
+  syntax:
+    content: Render = 68
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.SensorCamera
+  commentId: F:UsbMonitor.UsbDeviceInterface.SensorCamera
+  id: SensorCamera
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: SensorCamera
+  nameWithType: UsbDeviceInterface.SensorCamera
+  fullName: UsbMonitor.UsbDeviceInterface.SensorCamera
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: SensorCamera
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 503
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Sensor Camera
+  example: []
+  syntax:
+    content: SensorCamera = 69
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Splitter
+  commentId: F:UsbMonitor.UsbDeviceInterface.Splitter
+  id: Splitter
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Splitter
+  nameWithType: UsbDeviceInterface.Splitter
+  fullName: UsbMonitor.UsbDeviceInterface.Splitter
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Splitter
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 510
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Splitter
+  example: []
+  syntax:
+    content: Splitter = 70
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Synthesizer
+  commentId: F:UsbMonitor.UsbDeviceInterface.Synthesizer
+  id: Synthesizer
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Synthesizer
+  nameWithType: UsbDeviceInterface.Synthesizer
+  fullName: UsbMonitor.UsbDeviceInterface.Synthesizer
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Synthesizer
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 517
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Synthesizer
+  example: []
+  syntax:
+    content: Synthesizer = 71
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.SysAudio
+  commentId: F:UsbMonitor.UsbDeviceInterface.SysAudio
+  id: SysAudio
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: SysAudio
+  nameWithType: UsbDeviceInterface.SysAudio
+  fullName: UsbMonitor.UsbDeviceInterface.SysAudio
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: SysAudio
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 524
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Sys Audio
+  example: []
+  syntax:
+    content: SysAudio = 72
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Text
+  commentId: F:UsbMonitor.UsbDeviceInterface.Text
+  id: Text
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Text
+  nameWithType: UsbDeviceInterface.Text
+  fullName: UsbMonitor.UsbDeviceInterface.Text
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Text
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 531
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Text
+  example: []
+  syntax:
+    content: Text = 73
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Topology
+  commentId: F:UsbMonitor.UsbDeviceInterface.Topology
+  id: Topology
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Topology
+  nameWithType: UsbDeviceInterface.Topology
+  fullName: UsbMonitor.UsbDeviceInterface.Topology
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Topology
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 538
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Topology
+  example: []
+  syntax:
+    content: Topology = 74
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.TVAudio
+  commentId: F:UsbMonitor.UsbDeviceInterface.TVAudio
+  id: TVAudio
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: TVAudio
+  nameWithType: UsbDeviceInterface.TVAudio
+  fullName: UsbMonitor.UsbDeviceInterface.TVAudio
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: TVAudio
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 545
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: TV Audio
+  example: []
+  syntax:
+    content: TVAudio = 75
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.TVTuner
+  commentId: F:UsbMonitor.UsbDeviceInterface.TVTuner
+  id: TVTuner
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: TVTuner
+  nameWithType: UsbDeviceInterface.TVTuner
+  fullName: UsbMonitor.UsbDeviceInterface.TVTuner
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: TVTuner
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 552
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: TV Tuner
+  example: []
+  syntax:
+    content: TVTuner = 76
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.VBICodec
+  commentId: F:UsbMonitor.UsbDeviceInterface.VBICodec
+  id: VBICodec
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: VBICodec
+  nameWithType: UsbDeviceInterface.VBICodec
+  fullName: UsbMonitor.UsbDeviceInterface.VBICodec
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: VBICodec
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 559
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: VBI Codec
+  example: []
+  syntax:
+    content: VBICodec = 77
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Video
+  commentId: F:UsbMonitor.UsbDeviceInterface.Video
+  id: Video
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Video
+  nameWithType: UsbDeviceInterface.Video
+  fullName: UsbMonitor.UsbDeviceInterface.Video
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Video
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 566
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Video
+  example: []
+  syntax:
+    content: Video = 78
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.VideoCamera
+  commentId: F:UsbMonitor.UsbDeviceInterface.VideoCamera
+  id: VideoCamera
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: VideoCamera
+  nameWithType: UsbDeviceInterface.VideoCamera
+  fullName: UsbMonitor.UsbDeviceInterface.VideoCamera
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: VideoCamera
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 573
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Video Camera
+  example: []
+  syntax:
+    content: VideoCamera = 79
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.Virtual
+  commentId: F:UsbMonitor.UsbDeviceInterface.Virtual
+  id: Virtual
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: Virtual
+  nameWithType: UsbDeviceInterface.Virtual
+  fullName: UsbMonitor.UsbDeviceInterface.Virtual
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Virtual
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 580
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Virtual
+  example: []
+  syntax:
+    content: Virtual = 80
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.VPMux
+  commentId: F:UsbMonitor.UsbDeviceInterface.VPMux
+  id: VPMux
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: VPMux
+  nameWithType: UsbDeviceInterface.VPMux
+  fullName: UsbMonitor.UsbDeviceInterface.VPMux
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: VPMux
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 587
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Video Multiplexing
+  example: []
+  syntax:
+    content: VPMux = 81
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.WDAudio
+  commentId: F:UsbMonitor.UsbDeviceInterface.WDAudio
+  id: WDAudio
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: WDAudio
+  nameWithType: UsbDeviceInterface.WDAudio
+  fullName: UsbMonitor.UsbDeviceInterface.WDAudio
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: WDAudio
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 594
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: WD Audio
+  example: []
+  syntax:
+    content: WDAudio = 82
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.WPD2
+  commentId: F:UsbMonitor.UsbDeviceInterface.WPD2
+  id: WPD2
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: WPD2
+  nameWithType: UsbDeviceInterface.WPD2
+  fullName: UsbMonitor.UsbDeviceInterface.WPD2
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: WPD2
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 605
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Windows Portable Devices 2
+  example: []
+  syntax:
+    content: WPD2 = 83
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.UMBus
+  commentId: F:UsbMonitor.UsbDeviceInterface.UMBus
+  id: UMBus
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: UMBus
+  nameWithType: UsbDeviceInterface.UMBus
+  fullName: UsbMonitor.UsbDeviceInterface.UMBus
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: UMBus
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 612
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Microsoft UMBus Root Bus Enumerator generic
+  example: []
+  syntax:
+    content: UMBus = 84
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.RenderingControl
+  commentId: F:UsbMonitor.UsbDeviceInterface.RenderingControl
+  id: RenderingControl
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: RenderingControl
+  nameWithType: UsbDeviceInterface.RenderingControl
+  fullName: UsbMonitor.UsbDeviceInterface.RenderingControl
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: RenderingControl
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 619
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Rendering Control
+  example: []
+  syntax:
+    content: RenderingControl = 85
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.ConnectionManager
+  commentId: F:UsbMonitor.UsbDeviceInterface.ConnectionManager
+  id: ConnectionManager
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: ConnectionManager
+  nameWithType: UsbDeviceInterface.ConnectionManager
+  fullName: UsbMonitor.UsbDeviceInterface.ConnectionManager
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: ConnectionManager
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 626
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Connection Manager
+  example: []
+  syntax:
+    content: ConnectionManager = 86
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.AVTransport
+  commentId: F:UsbMonitor.UsbDeviceInterface.AVTransport
+  id: AVTransport
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: AVTransport
+  nameWithType: UsbDeviceInterface.AVTransport
+  fullName: UsbMonitor.UsbDeviceInterface.AVTransport
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: AVTransport
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 633
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: AV Transport
+  example: []
+  syntax:
+    content: AVTransport = 87
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+- uid: UsbMonitor.UsbDeviceInterface.ContentDirectory
+  commentId: F:UsbMonitor.UsbDeviceInterface.ContentDirectory
+  id: ContentDirectory
+  parent: UsbMonitor.UsbDeviceInterface
+  langs:
+  - csharp
+  - vb
+  name: ContentDirectory
+  nameWithType: UsbDeviceInterface.ContentDirectory
+  fullName: UsbMonitor.UsbDeviceInterface.ContentDirectory
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceInterface.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: ContentDirectory
+    path: ../Src/UsbMonitorShare/UsbDeviceInterface.cs
+    startLine: 640
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Content Directory
+  example: []
+  syntax:
+    content: ContentDirectory = 88
+    return:
+      type: UsbMonitor.UsbDeviceInterface
+references:
+- uid: UsbMonitor
+  commentId: N:UsbMonitor
+  href: UsbMonitor.html
+  name: UsbMonitor
+  nameWithType: UsbMonitor
+  fullName: UsbMonitor
+- uid: UsbMonitor.UsbDeviceInterface
+  commentId: T:UsbMonitor.UsbDeviceInterface
+  parent: UsbMonitor
+  href: UsbMonitor.UsbDeviceInterface.html
+  name: UsbDeviceInterface
+  nameWithType: UsbDeviceInterface
+  fullName: UsbMonitor.UsbDeviceInterface

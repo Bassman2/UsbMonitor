@@ -1,0 +1,224 @@
+### YamlMime:ManagedReference
+items:
+- uid: UsbMonitor.UsbDeviceChangeEvent
+  commentId: T:UsbMonitor.UsbDeviceChangeEvent
+  id: UsbDeviceChangeEvent
+  parent: UsbMonitor
+  children:
+  - UsbMonitor.UsbDeviceChangeEvent.Arrival
+  - UsbMonitor.UsbDeviceChangeEvent.Changed
+  - UsbMonitor.UsbDeviceChangeEvent.QueryRemove
+  - UsbMonitor.UsbDeviceChangeEvent.QueryRemoveFailed
+  - UsbMonitor.UsbDeviceChangeEvent.RemoveComplete
+  - UsbMonitor.UsbDeviceChangeEvent.RemovePending
+  langs:
+  - csharp
+  - vb
+  name: UsbDeviceChangeEvent
+  nameWithType: UsbDeviceChangeEvent
+  fullName: UsbMonitor.UsbDeviceChangeEvent
+  type: Enum
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceChangeEvent.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: UsbDeviceChangeEvent
+    path: ../Src/UsbMonitorShare/UsbDeviceChangeEvent.cs
+    startLine: 5
+  assemblies:
+  - FormsUsbMonitor
+  namespace: UsbMonitor
+  summary: Device action
+  example: []
+  syntax:
+    content: 'public enum UsbDeviceChangeEvent : uint'
+    content.vb: Public Enum UsbDeviceChangeEvent As UInteger
+- uid: UsbMonitor.UsbDeviceChangeEvent.Arrival
+  commentId: F:UsbMonitor.UsbDeviceChangeEvent.Arrival
+  id: Arrival
+  parent: UsbMonitor.UsbDeviceChangeEvent
+  langs:
+  - csharp
+  - vb
+  name: Arrival
+  nameWithType: UsbDeviceChangeEvent.Arrival
+  fullName: UsbMonitor.UsbDeviceChangeEvent.Arrival
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceChangeEvent.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Arrival
+    path: ../Src/UsbMonitorShare/UsbDeviceChangeEvent.cs
+    startLine: 11
+  assemblies:
+  - FormsUsbMonitor
+  namespace: UsbMonitor
+  summary: A device or piece of media has been inserted and is now available.
+  remarks: DBT_DEVICEARRIVAL
+  example: []
+  syntax:
+    content: Arrival = 32768
+    return:
+      type: UsbMonitor.UsbDeviceChangeEvent
+- uid: UsbMonitor.UsbDeviceChangeEvent.QueryRemove
+  commentId: F:UsbMonitor.UsbDeviceChangeEvent.QueryRemove
+  id: QueryRemove
+  parent: UsbMonitor.UsbDeviceChangeEvent
+  langs:
+  - csharp
+  - vb
+  name: QueryRemove
+  nameWithType: UsbDeviceChangeEvent.QueryRemove
+  fullName: UsbMonitor.UsbDeviceChangeEvent.QueryRemove
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceChangeEvent.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: QueryRemove
+    path: ../Src/UsbMonitorShare/UsbDeviceChangeEvent.cs
+    startLine: 17
+  assemblies:
+  - FormsUsbMonitor
+  namespace: UsbMonitor
+  summary: Permission is requested to remove a device or piece of media. Any application can deny this request and cancel the removal.
+  remarks: DBT_DEVICEQUERYREMOVE
+  example: []
+  syntax:
+    content: QueryRemove = 32769
+    return:
+      type: UsbMonitor.UsbDeviceChangeEvent
+- uid: UsbMonitor.UsbDeviceChangeEvent.QueryRemoveFailed
+  commentId: F:UsbMonitor.UsbDeviceChangeEvent.QueryRemoveFailed
+  id: QueryRemoveFailed
+  parent: UsbMonitor.UsbDeviceChangeEvent
+  langs:
+  - csharp
+  - vb
+  name: QueryRemoveFailed
+  nameWithType: UsbDeviceChangeEvent.QueryRemoveFailed
+  fullName: UsbMonitor.UsbDeviceChangeEvent.QueryRemoveFailed
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceChangeEvent.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: QueryRemoveFailed
+    path: ../Src/UsbMonitorShare/UsbDeviceChangeEvent.cs
+    startLine: 23
+  assemblies:
+  - FormsUsbMonitor
+  namespace: UsbMonitor
+  summary: A request to remove a device or piece of media has been canceled.
+  remarks: DBT_DEVICEQUERYREMOVEFAILED
+  example: []
+  syntax:
+    content: QueryRemoveFailed = 32770
+    return:
+      type: UsbMonitor.UsbDeviceChangeEvent
+- uid: UsbMonitor.UsbDeviceChangeEvent.RemovePending
+  commentId: F:UsbMonitor.UsbDeviceChangeEvent.RemovePending
+  id: RemovePending
+  parent: UsbMonitor.UsbDeviceChangeEvent
+  langs:
+  - csharp
+  - vb
+  name: RemovePending
+  nameWithType: UsbDeviceChangeEvent.RemovePending
+  fullName: UsbMonitor.UsbDeviceChangeEvent.RemovePending
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceChangeEvent.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: RemovePending
+    path: ../Src/UsbMonitorShare/UsbDeviceChangeEvent.cs
+    startLine: 29
+  assemblies:
+  - FormsUsbMonitor
+  namespace: UsbMonitor
+  summary: A device or piece of media is about to be removed. Cannot be denied.
+  remarks: DBT_DEVICEREMOVEPENDING
+  example: []
+  syntax:
+    content: RemovePending = 32771
+    return:
+      type: UsbMonitor.UsbDeviceChangeEvent
+- uid: UsbMonitor.UsbDeviceChangeEvent.RemoveComplete
+  commentId: F:UsbMonitor.UsbDeviceChangeEvent.RemoveComplete
+  id: RemoveComplete
+  parent: UsbMonitor.UsbDeviceChangeEvent
+  langs:
+  - csharp
+  - vb
+  name: RemoveComplete
+  nameWithType: UsbDeviceChangeEvent.RemoveComplete
+  fullName: UsbMonitor.UsbDeviceChangeEvent.RemoveComplete
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceChangeEvent.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: RemoveComplete
+    path: ../Src/UsbMonitorShare/UsbDeviceChangeEvent.cs
+    startLine: 35
+  assemblies:
+  - FormsUsbMonitor
+  namespace: UsbMonitor
+  summary: A device or piece of media has been removed.
+  remarks: DBT_DEVICEREMOVECOMPLETE
+  example: []
+  syntax:
+    content: RemoveComplete = 32772
+    return:
+      type: UsbMonitor.UsbDeviceChangeEvent
+- uid: UsbMonitor.UsbDeviceChangeEvent.Changed
+  commentId: F:UsbMonitor.UsbDeviceChangeEvent.Changed
+  id: Changed
+  parent: UsbMonitor.UsbDeviceChangeEvent
+  langs:
+  - csharp
+  - vb
+  name: Changed
+  nameWithType: UsbDeviceChangeEvent.Changed
+  fullName: UsbMonitor.UsbDeviceChangeEvent.Changed
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceChangeEvent.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Changed
+    path: ../Src/UsbMonitorShare/UsbDeviceChangeEvent.cs
+    startLine: 41
+  assemblies:
+  - FormsUsbMonitor
+  namespace: UsbMonitor
+  summary: A device has been added to or removed from the system.
+  remarks: DBT_DEVNODES_CHANGED
+  example: []
+  syntax:
+    content: Changed = 7
+    return:
+      type: UsbMonitor.UsbDeviceChangeEvent
+references:
+- uid: UsbMonitor
+  commentId: N:UsbMonitor
+  href: UsbMonitor.html
+  name: UsbMonitor
+  nameWithType: UsbMonitor
+  fullName: UsbMonitor
+- uid: UsbMonitor.UsbDeviceChangeEvent
+  commentId: T:UsbMonitor.UsbDeviceChangeEvent
+  parent: UsbMonitor
+  href: UsbMonitor.UsbDeviceChangeEvent.html
+  name: UsbDeviceChangeEvent
+  nameWithType: UsbDeviceChangeEvent
+  fullName: UsbMonitor.UsbDeviceChangeEvent

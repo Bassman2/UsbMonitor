@@ -1,0 +1,943 @@
+### YamlMime:ManagedReference
+items:
+- uid: UsbMonitor.UsbDeviceClass
+  commentId: T:UsbMonitor.UsbDeviceClass
+  id: UsbDeviceClass
+  parent: UsbMonitor
+  children:
+  - UsbMonitor.UsbDeviceClass.CDROM
+  - UsbMonitor.UsbDeviceClass.DiskDrive
+  - UsbMonitor.UsbDeviceClass.Display
+  - UsbMonitor.UsbDeviceClass.FDC
+  - UsbMonitor.UsbDeviceClass.FloppyDisk
+  - UsbMonitor.UsbDeviceClass.HDC
+  - UsbMonitor.UsbDeviceClass.HIDClass
+  - UsbMonitor.UsbDeviceClass.IEEE1394
+  - UsbMonitor.UsbDeviceClass.Image
+  - UsbMonitor.UsbDeviceClass.Keyboard
+  - UsbMonitor.UsbDeviceClass.MTPAnchorSynchronizationService
+  - UsbMonitor.UsbDeviceClass.MTPCalendarService
+  - UsbMonitor.UsbDeviceClass.MTPContactService
+  - UsbMonitor.UsbDeviceClass.MTPDeviceMetadataService
+  - UsbMonitor.UsbDeviceClass.MTPEnumerationSynchronizationService
+  - UsbMonitor.UsbDeviceClass.MTPHintsService
+  - UsbMonitor.UsbDeviceClass.MTPNotesService
+  - UsbMonitor.UsbDeviceClass.MTPRingtoneService
+  - UsbMonitor.UsbDeviceClass.MTPStatusService
+  - UsbMonitor.UsbDeviceClass.MTPTaskService
+  - UsbMonitor.UsbDeviceClass.Media
+  - UsbMonitor.UsbDeviceClass.Modem
+  - UsbMonitor.UsbDeviceClass.Mouse
+  - UsbMonitor.UsbDeviceClass.Net
+  - UsbMonitor.UsbDeviceClass.Ports
+  - UsbMonitor.UsbDeviceClass.Printer
+  - UsbMonitor.UsbDeviceClass.SCSIAdapter
+  - UsbMonitor.UsbDeviceClass.System
+  - UsbMonitor.UsbDeviceClass.USB
+  - UsbMonitor.UsbDeviceClass.Unknown
+  - UsbMonitor.UsbDeviceClass.WPD
+  langs:
+  - csharp
+  - vb
+  name: UsbDeviceClass
+  nameWithType: UsbDeviceClass
+  fullName: UsbMonitor.UsbDeviceClass
+  type: Enum
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceClass.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: UsbDeviceClass
+    path: ../Src/UsbMonitorShare/UsbDeviceClass.cs
+    startLine: 7
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: USB device class
+  example: []
+  syntax:
+    content: public enum UsbDeviceClass
+    content.vb: Public Enum UsbDeviceClass
+- uid: UsbMonitor.UsbDeviceClass.Unknown
+  commentId: F:UsbMonitor.UsbDeviceClass.Unknown
+  id: Unknown
+  parent: UsbMonitor.UsbDeviceClass
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: UsbDeviceClass.Unknown
+  fullName: UsbMonitor.UsbDeviceClass.Unknown
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceClass.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Unknown
+    path: ../Src/UsbMonitorShare/UsbDeviceClass.cs
+    startLine: 12
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Unknown
+  example: []
+  syntax:
+    content: Unknown = 0
+    return:
+      type: UsbMonitor.UsbDeviceClass
+- uid: UsbMonitor.UsbDeviceClass.WPD
+  commentId: F:UsbMonitor.UsbDeviceClass.WPD
+  id: WPD
+  parent: UsbMonitor.UsbDeviceClass
+  langs:
+  - csharp
+  - vb
+  name: WPD
+  nameWithType: UsbDeviceClass.WPD
+  fullName: UsbMonitor.UsbDeviceClass.WPD
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceClass.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: WPD
+    path: ../Src/UsbMonitorShare/UsbDeviceClass.cs
+    startLine: 19
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Windows Portable Devices
+  example: []
+  syntax:
+    content: WPD = 1
+    return:
+      type: UsbMonitor.UsbDeviceClass
+- uid: UsbMonitor.UsbDeviceClass.CDROM
+  commentId: F:UsbMonitor.UsbDeviceClass.CDROM
+  id: CDROM
+  parent: UsbMonitor.UsbDeviceClass
+  langs:
+  - csharp
+  - vb
+  name: CDROM
+  nameWithType: UsbDeviceClass.CDROM
+  fullName: UsbMonitor.UsbDeviceClass.CDROM
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceClass.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: CDROM
+    path: ../Src/UsbMonitorShare/UsbDeviceClass.cs
+    startLine: 26
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: CD/DVD/Blu-ray drives
+  example: []
+  syntax:
+    content: CDROM = 2
+    return:
+      type: UsbMonitor.UsbDeviceClass
+- uid: UsbMonitor.UsbDeviceClass.DiskDrive
+  commentId: F:UsbMonitor.UsbDeviceClass.DiskDrive
+  id: DiskDrive
+  parent: UsbMonitor.UsbDeviceClass
+  langs:
+  - csharp
+  - vb
+  name: DiskDrive
+  nameWithType: UsbDeviceClass.DiskDrive
+  fullName: UsbMonitor.UsbDeviceClass.DiskDrive
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceClass.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: DiskDrive
+    path: ../Src/UsbMonitorShare/UsbDeviceClass.cs
+    startLine: 33
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Hard drives
+  example: []
+  syntax:
+    content: DiskDrive = 3
+    return:
+      type: UsbMonitor.UsbDeviceClass
+- uid: UsbMonitor.UsbDeviceClass.Display
+  commentId: F:UsbMonitor.UsbDeviceClass.Display
+  id: Display
+  parent: UsbMonitor.UsbDeviceClass
+  langs:
+  - csharp
+  - vb
+  name: Display
+  nameWithType: UsbDeviceClass.Display
+  fullName: UsbMonitor.UsbDeviceClass.Display
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceClass.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Display
+    path: ../Src/UsbMonitorShare/UsbDeviceClass.cs
+    startLine: 40
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Video adapters
+  example: []
+  syntax:
+    content: Display = 4
+    return:
+      type: UsbMonitor.UsbDeviceClass
+- uid: UsbMonitor.UsbDeviceClass.FDC
+  commentId: F:UsbMonitor.UsbDeviceClass.FDC
+  id: FDC
+  parent: UsbMonitor.UsbDeviceClass
+  langs:
+  - csharp
+  - vb
+  name: FDC
+  nameWithType: UsbDeviceClass.FDC
+  fullName: UsbMonitor.UsbDeviceClass.FDC
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceClass.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: FDC
+    path: ../Src/UsbMonitorShare/UsbDeviceClass.cs
+    startLine: 47
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Floppy controllers
+  example: []
+  syntax:
+    content: FDC = 5
+    return:
+      type: UsbMonitor.UsbDeviceClass
+- uid: UsbMonitor.UsbDeviceClass.FloppyDisk
+  commentId: F:UsbMonitor.UsbDeviceClass.FloppyDisk
+  id: FloppyDisk
+  parent: UsbMonitor.UsbDeviceClass
+  langs:
+  - csharp
+  - vb
+  name: FloppyDisk
+  nameWithType: UsbDeviceClass.FloppyDisk
+  fullName: UsbMonitor.UsbDeviceClass.FloppyDisk
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceClass.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: FloppyDisk
+    path: ../Src/UsbMonitorShare/UsbDeviceClass.cs
+    startLine: 54
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Floppy drives
+  example: []
+  syntax:
+    content: FloppyDisk = 6
+    return:
+      type: UsbMonitor.UsbDeviceClass
+- uid: UsbMonitor.UsbDeviceClass.HDC
+  commentId: F:UsbMonitor.UsbDeviceClass.HDC
+  id: HDC
+  parent: UsbMonitor.UsbDeviceClass
+  langs:
+  - csharp
+  - vb
+  name: HDC
+  nameWithType: UsbDeviceClass.HDC
+  fullName: UsbMonitor.UsbDeviceClass.HDC
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceClass.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: HDC
+    path: ../Src/UsbMonitorShare/UsbDeviceClass.cs
+    startLine: 61
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Hard drive controllers
+  example: []
+  syntax:
+    content: HDC = 7
+    return:
+      type: UsbMonitor.UsbDeviceClass
+- uid: UsbMonitor.UsbDeviceClass.HIDClass
+  commentId: F:UsbMonitor.UsbDeviceClass.HIDClass
+  id: HIDClass
+  parent: UsbMonitor.UsbDeviceClass
+  langs:
+  - csharp
+  - vb
+  name: HIDClass
+  nameWithType: UsbDeviceClass.HIDClass
+  fullName: UsbMonitor.UsbDeviceClass.HIDClass
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceClass.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: HIDClass
+    path: ../Src/UsbMonitorShare/UsbDeviceClass.cs
+    startLine: 68
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Some USB devices
+  example: []
+  syntax:
+    content: HIDClass = 8
+    return:
+      type: UsbMonitor.UsbDeviceClass
+- uid: UsbMonitor.UsbDeviceClass.IEEE1394
+  commentId: F:UsbMonitor.UsbDeviceClass.IEEE1394
+  id: IEEE1394
+  parent: UsbMonitor.UsbDeviceClass
+  langs:
+  - csharp
+  - vb
+  name: IEEE1394
+  nameWithType: UsbDeviceClass.IEEE1394
+  fullName: UsbMonitor.UsbDeviceClass.IEEE1394
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceClass.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: IEEE1394
+    path: ../Src/UsbMonitorShare/UsbDeviceClass.cs
+    startLine: 75
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: IEEE 1394 host controller
+  example: []
+  syntax:
+    content: IEEE1394 = 9
+    return:
+      type: UsbMonitor.UsbDeviceClass
+- uid: UsbMonitor.UsbDeviceClass.Image
+  commentId: F:UsbMonitor.UsbDeviceClass.Image
+  id: Image
+  parent: UsbMonitor.UsbDeviceClass
+  langs:
+  - csharp
+  - vb
+  name: Image
+  nameWithType: UsbDeviceClass.Image
+  fullName: UsbMonitor.UsbDeviceClass.Image
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceClass.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Image
+    path: ../Src/UsbMonitorShare/UsbDeviceClass.cs
+    startLine: 82
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Cameras and scanners
+  example: []
+  syntax:
+    content: Image = 10
+    return:
+      type: UsbMonitor.UsbDeviceClass
+- uid: UsbMonitor.UsbDeviceClass.Keyboard
+  commentId: F:UsbMonitor.UsbDeviceClass.Keyboard
+  id: Keyboard
+  parent: UsbMonitor.UsbDeviceClass
+  langs:
+  - csharp
+  - vb
+  name: Keyboard
+  nameWithType: UsbDeviceClass.Keyboard
+  fullName: UsbMonitor.UsbDeviceClass.Keyboard
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceClass.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Keyboard
+    path: ../Src/UsbMonitorShare/UsbDeviceClass.cs
+    startLine: 89
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Keyboards
+  example: []
+  syntax:
+    content: Keyboard = 11
+    return:
+      type: UsbMonitor.UsbDeviceClass
+- uid: UsbMonitor.UsbDeviceClass.Modem
+  commentId: F:UsbMonitor.UsbDeviceClass.Modem
+  id: Modem
+  parent: UsbMonitor.UsbDeviceClass
+  langs:
+  - csharp
+  - vb
+  name: Modem
+  nameWithType: UsbDeviceClass.Modem
+  fullName: UsbMonitor.UsbDeviceClass.Modem
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceClass.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Modem
+    path: ../Src/UsbMonitorShare/UsbDeviceClass.cs
+    startLine: 96
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Modems
+  example: []
+  syntax:
+    content: Modem = 12
+    return:
+      type: UsbMonitor.UsbDeviceClass
+- uid: UsbMonitor.UsbDeviceClass.Mouse
+  commentId: F:UsbMonitor.UsbDeviceClass.Mouse
+  id: Mouse
+  parent: UsbMonitor.UsbDeviceClass
+  langs:
+  - csharp
+  - vb
+  name: Mouse
+  nameWithType: UsbDeviceClass.Mouse
+  fullName: UsbMonitor.UsbDeviceClass.Mouse
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceClass.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Mouse
+    path: ../Src/UsbMonitorShare/UsbDeviceClass.cs
+    startLine: 103
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Mice and pointing devices
+  example: []
+  syntax:
+    content: Mouse = 13
+    return:
+      type: UsbMonitor.UsbDeviceClass
+- uid: UsbMonitor.UsbDeviceClass.Media
+  commentId: F:UsbMonitor.UsbDeviceClass.Media
+  id: Media
+  parent: UsbMonitor.UsbDeviceClass
+  langs:
+  - csharp
+  - vb
+  name: Media
+  nameWithType: UsbDeviceClass.Media
+  fullName: UsbMonitor.UsbDeviceClass.Media
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceClass.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Media
+    path: ../Src/UsbMonitorShare/UsbDeviceClass.cs
+    startLine: 110
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Audio and video devices
+  example: []
+  syntax:
+    content: Media = 14
+    return:
+      type: UsbMonitor.UsbDeviceClass
+- uid: UsbMonitor.UsbDeviceClass.Net
+  commentId: F:UsbMonitor.UsbDeviceClass.Net
+  id: Net
+  parent: UsbMonitor.UsbDeviceClass
+  langs:
+  - csharp
+  - vb
+  name: Net
+  nameWithType: UsbDeviceClass.Net
+  fullName: UsbMonitor.UsbDeviceClass.Net
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceClass.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Net
+    path: ../Src/UsbMonitorShare/UsbDeviceClass.cs
+    startLine: 117
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Network adapters
+  example: []
+  syntax:
+    content: Net = 15
+    return:
+      type: UsbMonitor.UsbDeviceClass
+- uid: UsbMonitor.UsbDeviceClass.Ports
+  commentId: F:UsbMonitor.UsbDeviceClass.Ports
+  id: Ports
+  parent: UsbMonitor.UsbDeviceClass
+  langs:
+  - csharp
+  - vb
+  name: Ports
+  nameWithType: UsbDeviceClass.Ports
+  fullName: UsbMonitor.UsbDeviceClass.Ports
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceClass.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Ports
+    path: ../Src/UsbMonitorShare/UsbDeviceClass.cs
+    startLine: 124
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Serial and parallel ports
+  example: []
+  syntax:
+    content: Ports = 16
+    return:
+      type: UsbMonitor.UsbDeviceClass
+- uid: UsbMonitor.UsbDeviceClass.SCSIAdapter
+  commentId: F:UsbMonitor.UsbDeviceClass.SCSIAdapter
+  id: SCSIAdapter
+  parent: UsbMonitor.UsbDeviceClass
+  langs:
+  - csharp
+  - vb
+  name: SCSIAdapter
+  nameWithType: UsbDeviceClass.SCSIAdapter
+  fullName: UsbMonitor.UsbDeviceClass.SCSIAdapter
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceClass.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: SCSIAdapter
+    path: ../Src/UsbMonitorShare/UsbDeviceClass.cs
+    startLine: 131
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: SCSI and RAID controllers
+  example: []
+  syntax:
+    content: SCSIAdapter = 17
+    return:
+      type: UsbMonitor.UsbDeviceClass
+- uid: UsbMonitor.UsbDeviceClass.System
+  commentId: F:UsbMonitor.UsbDeviceClass.System
+  id: System
+  parent: UsbMonitor.UsbDeviceClass
+  langs:
+  - csharp
+  - vb
+  name: System
+  nameWithType: UsbDeviceClass.System
+  fullName: UsbMonitor.UsbDeviceClass.System
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceClass.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: System
+    path: ../Src/UsbMonitorShare/UsbDeviceClass.cs
+    startLine: 138
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: System buses, bridges, etc.
+  example: []
+  syntax:
+    content: System = 18
+    return:
+      type: UsbMonitor.UsbDeviceClass
+- uid: UsbMonitor.UsbDeviceClass.USB
+  commentId: F:UsbMonitor.UsbDeviceClass.USB
+  id: USB
+  parent: UsbMonitor.UsbDeviceClass
+  langs:
+  - csharp
+  - vb
+  name: USB
+  nameWithType: UsbDeviceClass.USB
+  fullName: UsbMonitor.UsbDeviceClass.USB
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceClass.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: USB
+    path: ../Src/UsbMonitorShare/UsbDeviceClass.cs
+    startLine: 145
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: USB host controllers and hubs
+  example: []
+  syntax:
+    content: USB = 19
+    return:
+      type: UsbMonitor.UsbDeviceClass
+- uid: UsbMonitor.UsbDeviceClass.Printer
+  commentId: F:UsbMonitor.UsbDeviceClass.Printer
+  id: Printer
+  parent: UsbMonitor.UsbDeviceClass
+  langs:
+  - csharp
+  - vb
+  name: Printer
+  nameWithType: UsbDeviceClass.Printer
+  fullName: UsbMonitor.UsbDeviceClass.Printer
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceClass.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: Printer
+    path: ../Src/UsbMonitorShare/UsbDeviceClass.cs
+    startLine: 152
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: Printers
+  example: []
+  syntax:
+    content: Printer = 20
+    return:
+      type: UsbMonitor.UsbDeviceClass
+- uid: UsbMonitor.UsbDeviceClass.MTPContactService
+  commentId: F:UsbMonitor.UsbDeviceClass.MTPContactService
+  id: MTPContactService
+  parent: UsbMonitor.UsbDeviceClass
+  langs:
+  - csharp
+  - vb
+  name: MTPContactService
+  nameWithType: UsbDeviceClass.MTPContactService
+  fullName: UsbMonitor.UsbDeviceClass.MTPContactService
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceClass.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: MTPContactService
+    path: ../Src/UsbMonitorShare/UsbDeviceClass.cs
+    startLine: 159
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: MTP Contact Service
+  example: []
+  syntax:
+    content: MTPContactService = 21
+    return:
+      type: UsbMonitor.UsbDeviceClass
+- uid: UsbMonitor.UsbDeviceClass.MTPCalendarService
+  commentId: F:UsbMonitor.UsbDeviceClass.MTPCalendarService
+  id: MTPCalendarService
+  parent: UsbMonitor.UsbDeviceClass
+  langs:
+  - csharp
+  - vb
+  name: MTPCalendarService
+  nameWithType: UsbDeviceClass.MTPCalendarService
+  fullName: UsbMonitor.UsbDeviceClass.MTPCalendarService
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceClass.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: MTPCalendarService
+    path: ../Src/UsbMonitorShare/UsbDeviceClass.cs
+    startLine: 166
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: MTP Calendar Service
+  example: []
+  syntax:
+    content: MTPCalendarService = 22
+    return:
+      type: UsbMonitor.UsbDeviceClass
+- uid: UsbMonitor.UsbDeviceClass.MTPNotesService
+  commentId: F:UsbMonitor.UsbDeviceClass.MTPNotesService
+  id: MTPNotesService
+  parent: UsbMonitor.UsbDeviceClass
+  langs:
+  - csharp
+  - vb
+  name: MTPNotesService
+  nameWithType: UsbDeviceClass.MTPNotesService
+  fullName: UsbMonitor.UsbDeviceClass.MTPNotesService
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceClass.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: MTPNotesService
+    path: ../Src/UsbMonitorShare/UsbDeviceClass.cs
+    startLine: 173
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: MTP Notes Service
+  example: []
+  syntax:
+    content: MTPNotesService = 23
+    return:
+      type: UsbMonitor.UsbDeviceClass
+- uid: UsbMonitor.UsbDeviceClass.MTPTaskService
+  commentId: F:UsbMonitor.UsbDeviceClass.MTPTaskService
+  id: MTPTaskService
+  parent: UsbMonitor.UsbDeviceClass
+  langs:
+  - csharp
+  - vb
+  name: MTPTaskService
+  nameWithType: UsbDeviceClass.MTPTaskService
+  fullName: UsbMonitor.UsbDeviceClass.MTPTaskService
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceClass.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: MTPTaskService
+    path: ../Src/UsbMonitorShare/UsbDeviceClass.cs
+    startLine: 180
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: MTP Task Service
+  example: []
+  syntax:
+    content: MTPTaskService = 24
+    return:
+      type: UsbMonitor.UsbDeviceClass
+- uid: UsbMonitor.UsbDeviceClass.MTPStatusService
+  commentId: F:UsbMonitor.UsbDeviceClass.MTPStatusService
+  id: MTPStatusService
+  parent: UsbMonitor.UsbDeviceClass
+  langs:
+  - csharp
+  - vb
+  name: MTPStatusService
+  nameWithType: UsbDeviceClass.MTPStatusService
+  fullName: UsbMonitor.UsbDeviceClass.MTPStatusService
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceClass.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: MTPStatusService
+    path: ../Src/UsbMonitorShare/UsbDeviceClass.cs
+    startLine: 187
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: MTP Status Service
+  example: []
+  syntax:
+    content: MTPStatusService = 25
+    return:
+      type: UsbMonitor.UsbDeviceClass
+- uid: UsbMonitor.UsbDeviceClass.MTPHintsService
+  commentId: F:UsbMonitor.UsbDeviceClass.MTPHintsService
+  id: MTPHintsService
+  parent: UsbMonitor.UsbDeviceClass
+  langs:
+  - csharp
+  - vb
+  name: MTPHintsService
+  nameWithType: UsbDeviceClass.MTPHintsService
+  fullName: UsbMonitor.UsbDeviceClass.MTPHintsService
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceClass.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: MTPHintsService
+    path: ../Src/UsbMonitorShare/UsbDeviceClass.cs
+    startLine: 194
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: MTP Hints Service
+  example: []
+  syntax:
+    content: MTPHintsService = 26
+    return:
+      type: UsbMonitor.UsbDeviceClass
+- uid: UsbMonitor.UsbDeviceClass.MTPDeviceMetadataService
+  commentId: F:UsbMonitor.UsbDeviceClass.MTPDeviceMetadataService
+  id: MTPDeviceMetadataService
+  parent: UsbMonitor.UsbDeviceClass
+  langs:
+  - csharp
+  - vb
+  name: MTPDeviceMetadataService
+  nameWithType: UsbDeviceClass.MTPDeviceMetadataService
+  fullName: UsbMonitor.UsbDeviceClass.MTPDeviceMetadataService
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceClass.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: MTPDeviceMetadataService
+    path: ../Src/UsbMonitorShare/UsbDeviceClass.cs
+    startLine: 201
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: MTP Device Metadata Service
+  example: []
+  syntax:
+    content: MTPDeviceMetadataService = 27
+    return:
+      type: UsbMonitor.UsbDeviceClass
+- uid: UsbMonitor.UsbDeviceClass.MTPRingtoneService
+  commentId: F:UsbMonitor.UsbDeviceClass.MTPRingtoneService
+  id: MTPRingtoneService
+  parent: UsbMonitor.UsbDeviceClass
+  langs:
+  - csharp
+  - vb
+  name: MTPRingtoneService
+  nameWithType: UsbDeviceClass.MTPRingtoneService
+  fullName: UsbMonitor.UsbDeviceClass.MTPRingtoneService
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceClass.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: MTPRingtoneService
+    path: ../Src/UsbMonitorShare/UsbDeviceClass.cs
+    startLine: 208
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: MTP Ringtone Service
+  example: []
+  syntax:
+    content: MTPRingtoneService = 28
+    return:
+      type: UsbMonitor.UsbDeviceClass
+- uid: UsbMonitor.UsbDeviceClass.MTPEnumerationSynchronizationService
+  commentId: F:UsbMonitor.UsbDeviceClass.MTPEnumerationSynchronizationService
+  id: MTPEnumerationSynchronizationService
+  parent: UsbMonitor.UsbDeviceClass
+  langs:
+  - csharp
+  - vb
+  name: MTPEnumerationSynchronizationService
+  nameWithType: UsbDeviceClass.MTPEnumerationSynchronizationService
+  fullName: UsbMonitor.UsbDeviceClass.MTPEnumerationSynchronizationService
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceClass.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: MTPEnumerationSynchronizationService
+    path: ../Src/UsbMonitorShare/UsbDeviceClass.cs
+    startLine: 215
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: MTP Enumeration Synchronization Service
+  example: []
+  syntax:
+    content: MTPEnumerationSynchronizationService = 29
+    return:
+      type: UsbMonitor.UsbDeviceClass
+- uid: UsbMonitor.UsbDeviceClass.MTPAnchorSynchronizationService
+  commentId: F:UsbMonitor.UsbDeviceClass.MTPAnchorSynchronizationService
+  id: MTPAnchorSynchronizationService
+  parent: UsbMonitor.UsbDeviceClass
+  langs:
+  - csharp
+  - vb
+  name: MTPAnchorSynchronizationService
+  nameWithType: UsbDeviceClass.MTPAnchorSynchronizationService
+  fullName: UsbMonitor.UsbDeviceClass.MTPAnchorSynchronizationService
+  type: Field
+  source:
+    remote:
+      path: Src/UsbMonitorShare/UsbDeviceClass.cs
+      branch: main
+      repo: https://github.com/Bassman2/UsbMonitor
+    id: MTPAnchorSynchronizationService
+    path: ../Src/UsbMonitorShare/UsbDeviceClass.cs
+    startLine: 222
+  assemblies:
+  - WpfUsbMonitor
+  namespace: UsbMonitor
+  summary: MTP Anchor Synchronization Service
+  example: []
+  syntax:
+    content: MTPAnchorSynchronizationService = 30
+    return:
+      type: UsbMonitor.UsbDeviceClass
+references:
+- uid: UsbMonitor
+  commentId: N:UsbMonitor
+  href: UsbMonitor.html
+  name: UsbMonitor
+  nameWithType: UsbMonitor
+  fullName: UsbMonitor
+- uid: UsbMonitor.UsbDeviceClass
+  commentId: T:UsbMonitor.UsbDeviceClass
+  parent: UsbMonitor
+  href: UsbMonitor.UsbDeviceClass.html
+  name: UsbDeviceClass
+  nameWithType: UsbDeviceClass
+  fullName: UsbMonitor.UsbDeviceClass

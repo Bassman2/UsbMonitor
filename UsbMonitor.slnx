@@ -7,6 +7,15 @@
     <Platform Name="x86" />
   </Configurations>
   <Folder Name="/Demo/" />
+  <Folder Name="/Demo/Demo .NET 10.0/">
+    <Project Path="Demo/Demo .NET 10.0/FormsDeviceCatcherEvent100/FormsDeviceCatcherEvent100.csproj" />
+    <Project Path="Demo/Demo .NET 10.0/FormsDeviceCatcherMember100/FormsDeviceCatcherMember100.csproj" />
+    <Project Path="Demo/Demo .NET 10.0/FormsDeviceCatcherOverride100/FormsDeviceCatcherOverride100.csproj" />
+    <Project Path="Demo/Demo .NET 10.0/WpfDeviceCatcherEvent100/WpfDeviceCatcherEvent100.csproj" />
+    <Project Path="Demo/Demo .NET 10.0/WpfDeviceCatcherMember100/WpfDeviceCatcherMember100.csproj" />
+    <Project Path="Demo/Demo .NET 10.0/WpfDeviceCatcherMvvm100/WpfDeviceCatcherMvvm100.csproj" />
+    <Project Path="Demo/Demo .NET 10.0/WpfDeviceCatcherOverride100/WpfDeviceCatcherOverride100.csproj" />
+  </Folder>
   <Folder Name="/Demo/Demo .NET 4.8/">
     <Project Path="Demo/Demo .NET 4.8/FormsDeviceCatcherEvent48/FormsDeviceCatcherEventk48.csproj" Id="08dc8b4d-9990-49cb-8999-e74d103cbdfe" />
     <Project Path="Demo/Demo .NET 4.8/FormsDeviceCatcherMember48/FormsDeviceCatcherMember48.csproj" Id="a6778443-0808-4607-86cc-c6e5e41893f4" />
@@ -62,6 +71,7 @@
     <Project Path="Demo/Demo Share/WpfDeviceCatcherOverrideShare/WpfDeviceCatcherOverrideShare.shproj" />
   </Folder>
   <Folder Name="/Src/">
+    <Project Path="Src/FormsUsbMonitor100/FormsUsbMonitor100.csproj" />
     <Project Path="Src/FormsUsbMonitor48/FormsUsbMonitor48.csproj" Id="a1529179-ba0e-4ad8-9f89-3ec007aea44e" />
     <Project Path="Src/FormsUsbMonitor60/FormsUsbMonitor60.csproj" />
     <Project Path="Src/FormsUsbMonitor70/FormsUsbMonitor70.csproj" />
@@ -69,6 +79,7 @@
     <Project Path="Src/FormsUsbMonitor90/FormsUsbMonitor90.csproj" />
     <Project Path="Src/FormsUsbMonitorShare/FormsUsbMonitorShare.shproj" />
     <Project Path="Src/UsbMonitorShare/UsbMonitorShare.shproj" />
+    <Project Path="Src/WpfUsbMonitor100/WpfUsbMonitor100.csproj" />
     <Project Path="Src/WpfUsbMonitor48/WpfUsbMonitor48.csproj" Id="494a3e91-10e0-4f20-a0fc-77f0ce01e576" />
     <Project Path="Src/WpfUsbMonitor60/WpfUsbMonitor60.csproj" />
     <Project Path="Src/WpfUsbMonitor70/WpfUsbMonitor70.csproj" />
